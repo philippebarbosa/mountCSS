@@ -1,0 +1,47 @@
+// ****************************************************************
+// _Base list
+// ****************************************************************
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &.default-ul {
+    list-style-type: disc;
+    margin-bottom: $baseFontSize;
+    padding-left: $baseFontSize;
+  }
+
+  &.default-ol {
+    list-style-type: decimal;
+    margin-bottom: $baseFontSize;
+    padding-left: $baseFontSize;
+  }
+}
+
+dl {
+  margin-bottom: $baseFontSize;
+
+  dt {
+    font-weight: bold;
+    margin-top: $baseFontSize;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+.list-inline {
+    display: block;
+    padding: 0;
+    li {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        text-align: center;
+        vertical-align: middle;
+        margin-left: -0.33333em;
+    }
+}

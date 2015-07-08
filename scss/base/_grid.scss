@@ -1,0 +1,71 @@
+// Grid layout
+.container {
+    @extend .clearfix;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+
+    @media (min-width : $desktop) {
+        max-width: 960px;
+    }
+    @media (min-width : $desktop-large) {
+        max-width: 1420px;
+    }
+    @media (min-width : $desktop-xlarge) {
+        max-width: 1600px;
+    }
+}
+
+.row {
+    @extend .clearfix;
+    display: block;
+}
+
+.row [class*="col-"] {
+    float: left;
+    min-height: 1px;
+    margin-left:1%;
+}
+
+.row [class*="col-"]:first-child {
+    margin-left:0;
+}
+
+//Grid classes
+.col-1 {
+    width:7.41666666667%;
+}
+.col-2 {
+    width:15.8333333333%;
+}
+.col-3 {
+    width:24.25%;
+}
+.col-4 {
+    width:32.6666666667%;
+}
+.col-5 {
+    width:41.0833333333%;
+}
+.col-6 {
+    width:49.5%;
+}
+.col-7 {
+    width:57.9166666667%;
+}
+.col-8 {
+    width:66.3333333333%;
+}
+.col-9 {
+    width:74.75%;
+}
+.col-10 {
+    width:83.1666666667%;
+}
+.col-11 {
+    width:91.5833333333%;
+}
+.col-12 {
+    margin-left:0;
+    width:100%;
+}

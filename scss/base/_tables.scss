@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+  margin: $baseFontSize 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid darken($baseBorderColor, 15%);
+  font-weight: 600;
+  padding: ($baseFontSize / 2);
+  text-align: left;
+}
+
+td {
+  border: $baseBorderColor;
+  padding: ($baseFontSize / 2);
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}

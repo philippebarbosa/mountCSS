@@ -1,0 +1,19 @@
+.breadcrumb {
+    @extend .list-inline;
+
+    li:after {
+        content:"/";
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        margin: 0 ($baseFontSize / 2);
+        vertical-align: middle;
+    }
+
+    li.is-active {
+        color: $green;
+        &:after {
+            color: $mainColor;
+        }
+    }
+}

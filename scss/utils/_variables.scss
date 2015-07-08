@@ -1,0 +1,74 @@
+
+  // ****************************************************************
+// _variables
+// ****************************************************************
+
+// Colors
+$mainColor           : #7f8c8d;
+$baseBackgroundColor : white;
+
+$headerFontColor     : $mainColor;
+$baseFontColor       : $deepGrayDarker;
+
+$baseLinkColor       : $mainColor;
+$hoverLinkColor      : darken($mainColor, 20);
+
+// Typography
+$sans-serif          : $helvetica;
+$serif               : $georgia;
+$yourWebFontName     : "FontName"; // Provide your custom font here
+
+
+$headerFontFamily : $sans-serif;
+$baseFontFamily : $serif;
+
+// Sizes
+$baseFontSize        : 1rem;
+$baseLineHeight      : 1.6;
+
+//Types weight
+$light               : 300;
+$regular             : 400;
+$medium              : 500;
+$semibold            : 600;
+$bold                : 700;
+$ultrabold           : 900;
+
+// zi-etc            : 400;
+$zi-master           : 9999;
+$zi-1                : 300;
+$zi-2                : 200;
+$zi-3                : 100;
+$zi-4                : -1;
+
+// Media queries
+$mobile         : 414px;
+$tablet         : 769px;
+$desktop        : 961px;
+$desktop-large  : 1200px;
+$desktop-xlarge : 1800px;
+
+// Misc
+$baseBorderRadius : 3px;
+$baseBorderColor : $grayLight;
+
+// Buttons
+$baseBtnColor : $white ;
+$baseBtnBackgroundColor : $mainColor;
+
+$baseBtnHoverColor : $black;
+$baseBtnHoverBackgroundColor : darken($baseBtnBackgroundColor, 10);
+
+$buttonUppercase : true;
+
+// forms
+$fieldsetBackgroundColor : $grayLight;
+$inputBorderColor : $baseBorderColor;
+$inputBackgroundColor : $white;
+$form-box-shadow : inset 0 1px 3px rgba(0,0,0,0.06);
+$form-box-shadow-focus : inset 0 1px 3px $grayDark, 0 0 5px $grayDark;
+
+// Paths
+$fontPath : "../fonts/";
+$imgPath : "../img/";
+$svgPath : "../svg/";

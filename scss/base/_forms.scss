@@ -1,0 +1,130 @@
+fieldset {
+  background-color: $fieldsetBackgroundColor;
+  border: $baseBorderColor;
+  margin: 0 0 ($baseLineHeight / 2);
+  padding: $baseLineHeight;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: ($baseLineHeight / 2) / 2;
+
+  &.required::after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+select[multiple=multiple],
+textarea {
+  background-color: $baseBackgroundColor;
+  border: 1px solid $baseBorderColor;
+  border-radius: $baseBorderRadius;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  margin-bottom: $baseFontSize / 2;
+  padding: $baseFontSize / 2 ;
+  transition: border-color;
+  width: 100%;
+
+  &:hover {
+    border-color: darken($baseBorderColor, 10%);
+  }
+
+  &:focus {
+    border-color: $mainColor;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+  appearance : none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: ($baseLineHeight / 2) / 2;
+}
+
+input[type="file"] {
+  padding-bottom: ($baseLineHeight / 2);
+  width: 100%;
+}
+
+select {
+  margin-bottom: $baseLineHeight;
+  max-width: 100%;
+  width: auto;
+}
+
+
+// Reset input type button
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button {
+  appearence: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: $baseBtnBackgroundColor;
+  border-radius: $baseBorderRadius;
+  border: none;
+  color: $baseBtnColor;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  font-weight: $bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition: all .3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $baseBtnHoverBackgroundColor;
+    color: $baseBtnHoverColor;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

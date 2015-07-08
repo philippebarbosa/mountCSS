@@ -1,0 +1,85 @@
+// Base Style
+.btn {
+    display:inline-block;
+    vertical-align:middle;
+    white-space:nowrap;
+    font-family:inherit;
+    font-size:100%;
+    cursor:pointer;
+    border:none;
+    margin:0;
+    padding-top:   0;
+    padding-bottom:0;
+    line-height:3;
+    padding-right:1rem;
+    padding-left: 1rem;
+    border-radius:$baseBorderRadius;
+    background: $baseBtnBackgroundColor;
+    color: $baseBtnColor;
+    font-family: $headerFontFamily;
+
+    @if $buttonUppercase {
+      text-transform: uppercase;
+    }
+}
+
+.btn {
+    &,
+    &:hover{
+        text-decoration:none;
+        background-color: $baseBtnHoverBackgroundColor;
+    }
+
+    &:active,
+    &:focus{
+        outline:none;
+    }
+}
+
+// Size
+.btn-small{
+    padding-right:0.5rem;
+    padding-left: 0.5rem;
+    line-height:2;
+}
+
+.btn-large {
+    padding-right:1.5rem;
+    padding-left: 1.5rem;
+    line-height:4;
+}
+
+.btn-huge {
+    padding-right:2rem;
+    padding-left: 2rem;
+    line-height:5;
+}
+
+.btn-full {
+    width:100%;
+    padding-right:0;
+    padding-left: 0;
+    text-align:center;
+}
+
+// colors :
+.btn-success {
+  background-color: $green;
+  &:hover {
+    background-color: darken($green, 5);
+  }
+}
+
+.btn-error {
+  background-color: $red;
+  &:hover {
+    background-color: darken($red, 5);
+  }
+}
+
+.btn-warning {
+  background-color: $orange;
+  &:hover {
+    background-color: darken($orange, 5);
+  }
+}

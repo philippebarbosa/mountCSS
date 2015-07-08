@@ -1,0 +1,29 @@
+* {
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+html {
+  font-size:100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: $regular $baseFontSize $helvetica;
+  line-height: $baseLineHeight;
+  background: $baseBackgroundColor;
+  color: $baseFontColor;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

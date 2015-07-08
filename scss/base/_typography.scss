@@ -1,0 +1,149 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headerFontFamily;
+  line-height: $baseLineHeight;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  color: $headerFontColor;
+}
+
+h1 {
+  font-size: $baseFontSize * 2.25; // 16 * 2.25 = 36px
+}
+
+h2 {
+  font-size: $baseFontSize * 2; // 16 * 2 = 32px
+}
+
+h3 {
+  font-size: $baseFontSize * 1.75; // 16 * 1.75 = 28px
+}
+
+h4 {
+  font-size: $baseFontSize * 1.5; // 16 * 1.5 = 24px
+}
+
+h5 {
+  font-size: $baseFontSize * 1.25; // 16 * 1.25 = 20px
+}
+
+h6 {
+  font-size: $baseFontSize;
+}
+
+p {
+  margin: 0 0 ($baseLineHeight * .5);
+  font-family: $baseFontFamily;
+}
+
+a {
+  color: $baseLinkColor;
+  transition: all .3s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: $hoverLinkColor;
+  }
+
+  &:active, &:focus {
+    color: $hoverLinkColor;
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: 1px solid $mainColor;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $baseLineHeight 0;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+    display: block;
+    padding: ($baseFontSize / 2) 0 ($baseFontSize / 2) ($baseFontSize / 1.5);
+    border-left: ($baseFontSize / 2) solid $mainColor;
+    border-color: rgba(0,0,0,.1);
+    font-size: 1rem;
+}
+
+blockquote p {
+    margin-bottom: ($baseFontSize / 4);
+}
+
+blockquote p:last-child,
+p:last-child {
+    margin-bottom: 0;
+}
+
+cite {
+  color: lighten($baseFontColor, 25);
+  font-style: italic;
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}
+
+
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    border-bottom: 1px dotted #DDD;
+}
+
+mark {
+    background-color: #FF9;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Prevents sub and sup affecting line-height in all browsers | gist.github.com/413930 */
+
+sub,
+sup {
+    position: relative;
+    margin: 0 1px;
+    font-size: 80%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+small {
+    font-size: 80%;
+}
+
+abbr[title],
+acronym[title] {
+    border-bottom: 1px dashed #ccc;
+    border-color: rgba(0,0,0,.2);
+    cursor: help;
+}
+
+hr {
+    clear: both;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #f0f0f0;
+}
