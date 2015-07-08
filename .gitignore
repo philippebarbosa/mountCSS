@@ -1,7 +1,9 @@
 ### Filetype & folder ###
 #########################
 
-sources/* # (Put any of your projects files, as .PSD, .AI, anything else, in the sources directory)
+# (Put any of your projects files, as .PSD, .AI, anything else, in the sources directory :)
+sources/*
+
 dist/*
 build/*
 *.unprefixed.css
