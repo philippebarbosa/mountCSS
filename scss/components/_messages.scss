@@ -1,0 +1,36 @@
+.message {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: $white;
+  background: $mainColor;
+  font-size: 90%;
+  margin: .5rem auto;
+  border-radius: $baseBorderRadius;
+}
+
+.message-success {
+    background: lighten($success, 40);
+    border: 1px solid $success;
+    color: darken($success, 20);
+}
+
+.message-error {
+    background: lighten($error, 40);
+    border: 1px solid $error;
+    color: darken($error, 20);
+}
+
+.message-warning {
+    background: lighten($warning, 40);
+    border: 1px solid $warning;
+    color: darken($warning, 20);
+}
+
+.message-info {
+    background: lighten($info, 40);
+    border: 1px solid $info;
+    color: darken($info, 20);
+}

@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         livereload: true
       },
       html: {
-        files: '**/*.html'
+        files: ['**/*.php', '**/*.html']
       },
       css: {
         files: '**/*.scss',

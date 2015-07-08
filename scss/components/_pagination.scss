@@ -1,10 +1,18 @@
 .pagination{
-    text-align:center;
     letter-spacing:-0.31em;
     word-spacing:-0.43em;
     list-style:none;
     margin-left:0;
     @extends .clearfix;
+    &.pagination-left {
+        text-align:left;
+    }
+    &.pagination-center {
+        text-align:center;
+    }
+    &.pagination-right {
+        text-align:right;
+    }
 }
 
 .pagination > li{

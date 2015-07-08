@@ -4,18 +4,23 @@
 // ****************************************************************
 
 // Colors
-$mainColor           : #306a65;
+$mainColor           : $deepGray;
 $baseBackgroundColor : white;
 
-$headerFontColor     : $mainColor;
-$baseFontColor       : $deepGrayDarker;
+$headerFontColor     : darken($mainColor, 30);
+$baseFontColor       : $black;
 
 $baseLinkColor       : $mainColor;
 $hoverLinkColor      : darken($mainColor, 20);
 
+$success : $green;
+$warning : $orange;
+$error : $red;
+$info: $blue;
+
 // Typography
 $sans-serif          : $helvetica;
-$serif               : $georgia;
+$serif               : $sans-serif;
 $yourWebFontName     : "FontName"; // Provide your custom font here
 
 
@@ -50,23 +55,29 @@ $desktop-xlarge : 1800px;
 
 // Misc
 $baseBorderRadius : 3px;
-$baseBorderColor : $grayLight;
+$baseBorderColor : $deepGray;
 
 // Buttons
 $baseBtnColor : $white ;
 $baseBtnBackgroundColor : $mainColor;
 
-$baseBtnHoverColor : $black;
+
+$baseBtnHoverColor : $white;
 $baseBtnHoverBackgroundColor : darken($baseBtnBackgroundColor, 10);
 
 $buttonUppercase : true;
 
+// hero
+$heroPadding : 3rem 1rem;
+$heroHeight : false; // set an integer to give a fixed height to your hero (ex.: $heroHeight : 40vh; )
+$overlayColor : $black;
+
 // forms
-$fieldsetBackgroundColor : $grayLight;
+$fieldsetBackgroundColor : $baseBackgroundColor;
 $inputBorderColor : $baseBorderColor;
 $inputBackgroundColor : $white;
-$form-box-shadow : inset 0 1px 3px rgba(0,0,0,0.06);
-$form-box-shadow-focus : inset 0 1px 3px $grayDark, 0 0 5px $grayDark;
+$form-box-shadow : 0;
+$form-box-shadow-focus : inset 0 1px 1px $grayDark;
 
 // Paths
 $fontPath : "../fonts/";

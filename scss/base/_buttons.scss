@@ -6,9 +6,9 @@
     font-family:inherit;
     font-size:100%;
     cursor:pointer;
-    border:none;
-    margin:0;
-    padding-top:   0;
+    border:1px solid $baseBtnColor;
+    margin:.5rem;
+    padding-top:0;
     padding-bottom:0;
     line-height:3;
     padding-right:1rem;
@@ -28,6 +28,7 @@
     &:hover{
         text-decoration:none;
         background-color: $baseBtnHoverBackgroundColor;
+        color : $baseBtnHoverColor;
     }
 
     &:active,
@@ -64,22 +65,39 @@
 
 // colors :
 .btn-success {
-  background-color: $green;
+  border: 1px solid darken($success, 5);
+  background-color: $success;
   &:hover {
-    background-color: darken($green, 5);
+    background-color: darken($success, 5);
   }
 }
 
 .btn-error {
-  background-color: $red;
+  border: 1px solid darken($error, 5);
+  background-color: $error;
   &:hover {
-    background-color: darken($red, 5);
+    background-color: darken($error, 5);
   }
 }
 
 .btn-warning {
-  background-color: $orange;
+  border: 1px solid darken($warning, 5);
+  background-color: $warning;
   &:hover {
-    background-color: darken($orange, 5);
+    background-color: darken($warning, 5);
   }
+}
+
+.btn-info {
+  border: 1px solid darken($info, 5);
+  background-color: $info;
+  &:hover {
+    background-color: darken($info, 5);
+  }
+}
+
+.btn-inverse,
+.btn-inverse:hover {
+    background: $white;
+    color: $mainColor;
 }

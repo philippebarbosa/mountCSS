@@ -1,8 +1,9 @@
 fieldset {
   background-color: $fieldsetBackgroundColor;
-  border: $baseBorderColor;
+  border: 1px solid $baseBorderColor;
   margin: 0 0 ($baseLineHeight / 2);
   padding: $baseLineHeight;
+  border-radius: $baseBorderRadius;
 }
 
 input,
@@ -52,15 +53,15 @@ textarea {
   font-size: $baseFontSize;
   margin-bottom: $baseFontSize / 2;
   padding: $baseFontSize / 2 ;
-  transition: border-color;
+  transition: border-color .4s ease;
   width: 100%;
 
   &:hover {
-    border-color: darken($baseBorderColor, 10%);
+    border-color: darken($deepGray, 10);
   }
 
   &:focus {
-    border-color: $mainColor;
+    border-color: darken($baseBorderColor, 10);
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }

@@ -1,0 +1,72 @@
+/* _Classic Hero
+---------------------------------- */
+.hero {
+    display: block;
+    padding: 3rem 1rem;
+    background: $mainColor no-repeat top center; // when using dynamic background image
+    background-size: cover;
+    width: 100%;
+    @if $heroHeight {
+        height : $heroHeight;
+    }
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: $zi-2;
+    color: white;
+}
+
+.hero-content-center {
+    text-align: center;
+}
+
+.hero-content-left {
+    text-align: left;
+}
+
+.hero-content-right {
+    text-align: right;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize($overlayColor, .75);
+    z-index: $zi-3;
+}
+
+.hero-cta {
+    margin-top: 5rem;
+}
+
+/* _dynamicHeigtHero
+---------------------------------- */
+
+.hero-dynamic {
+    padding: 0;
+    line-height: 0;
+    position: relative;
+    width: 100%;
+    .hero-content {
+        transform: translate(-50%, -50%);
+        left: 50%;
+        margin: auto;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        z-index: $zi-2;
+    }
+}
+
+.hero-dynamic img {
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+}

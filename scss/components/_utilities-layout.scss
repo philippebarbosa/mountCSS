@@ -1,0 +1,27 @@
+// ****************************************************************
+// _alightment : Center text within a div
+// ****************************************************************
+
+.alightment-container {
+    display: table;
+}
+
+.alightment-content {
+    display: table-cell;
+}
+
+.alightment-content-top {
+    @extend .alightment-content;
+    vertical-align: top;
+}
+
+.alightment-content-middle {
+    @extend .alightment-content;
+    vertical-align: middle;
+}
+
+.alightment-content-bottom {
+    @extend .alightment-content;
+    vertical-align: bottom;
+}
+
