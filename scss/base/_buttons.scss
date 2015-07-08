@@ -101,3 +101,11 @@
     background: $white;
     color: $mainColor;
 }
+
+.btn-disabled,
+.btn-disabled:hover,
+.btn-disabled:active,
+.btn-disabled:focus{
+    opacity: 0.4;
+    cursor:text;
+}

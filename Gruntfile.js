@@ -15,7 +15,7 @@ module.exports = function (grunt) {
       dev: {
         options: {
           precision: 4,
-          style: 'expanded',
+          style: 'compressed',
           lineNumbers: true
         },
         files: {

@@ -30,6 +30,11 @@
         .module-title {
             margin-top: 2rem;
         }
+
+        [class*="box-item"] {
+            background: rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -110,6 +115,10 @@
                     <h3 class="module-title">Hero</h3>
                    <hr>
                    <?php include('patterns/modules/hero.php') ?>
+
+                    <h3 class="module-title">Blocks</h3>
+                   <hr>
+                   <?php include('patterns/modules/blocks.php') ?>
                 </section>
             </div>
         </div>

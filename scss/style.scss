@@ -3,40 +3,38 @@
 // ****************************************************************
 
 
-// Vendors
-@import
-    'vendors/normalize';
+/* _VENDORS
+---------------------------------- */
+@import 'vendors/normalize';
 
-// Utils
-@import
-  'utils/font-stacks',
-  'utils/colors',
-  'utils/brands-colors',
-  'utils/mixins',
-  'utils/variables';
+/* _UTILS
+---------------------------------- */
+@import 'utils/font-stacks',
+        'utils/colors',
+        'utils/brands-colors',
+        'utils/mixins',
+        'utils/variables';
 
-// Base
-@import
-    'base/defaults',
-    'base/typography',
-    'base/grid',
-    'base/lists',
-    'base/forms',
-    'base/buttons',
-    'base/tables';
+/* _BASE
+---------------------------------- */
+@import 'base/defaults',
+        'base/typography',
+        'base/grid',
+        'base/lists',
+        'base/forms',
+        'base/buttons',
+        'base/tables';
 
+/* _COMPONENTS
+---------------------------------- */
+@import 'components/breadcrumbs',
+        'components/pagination',
+        'components/media-object',
+        'components/messages',
+        'components/hero',
+        'components/tags',
+        'components/utilities-layout';
 
-// Components
-@import
-    'components/breadcrumbs',
-    'components/pagination',
-    'components/media-object',
-    'components/messages',
-    'components/hero',
-    'components/tags',
-    'components/utilities-layout';
-
-// Page
-@import
-  'pages/home';
-
+/* _PAGE
+---------------------------------- */
+@import 'pages/home';

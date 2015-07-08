@@ -25,3 +25,21 @@
     vertical-align: bottom;
 }
 
+// ****************************************************************
+// _row-box : Stacked divs without margin/padding
+// ****************************************************************
+
+.row-box {
+    @extend .row;
+
+    [class*="box-item"] {
+        display: box;
+        float: left;
+        padding: 1rem;
+    }
+}
+
+.box-item-50 { width : 50% }
+.box-item-33 { width : 33.33333333% }
+.box-item-25 { width : 25% }
+.box-item-20 { width : 20% }

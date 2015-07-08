@@ -130,8 +130,14 @@ sub {
     bottom: -0.25em;
 }
 
-small {
+small,
+.small {
     font-size: 80%;
+    line-height: $baseLineHeight * .9;
+}
+
+.lead {
+  font-size: 120%;
 }
 
 abbr[title],

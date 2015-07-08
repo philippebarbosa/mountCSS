@@ -1,9 +1,14 @@
 fieldset {
   background-color: $fieldsetBackgroundColor;
   border: 1px solid $baseBorderColor;
-  margin: 0 0 ($baseLineHeight / 2);
+  margin: 0 0 ($baseFontSize / 2);
   padding: $baseLineHeight;
   border-radius: $baseBorderRadius;
+}
+
+legend {
+  text-transform: uppercase;
+  padding: 0 ($baseFontSize / 2);
 }
 
 input,
@@ -15,8 +20,8 @@ select {
 }
 
 label {
-  font-weight: 600;
-  margin-bottom: ($baseLineHeight / 2) / 2;
+  font-weight: $bold;
+  margin-top: $baseFontSize;
 
   &.required::after {
     content: "*";
@@ -92,6 +97,27 @@ select {
   width: auto;
 }
 
+/* _InputStates
+---------------------------------- */
+.input-error {
+  border: 1px solid $error !important;
+  margin-bottom: .3rem;
+}
+
+.input-success {
+  border: 1px solid $success !important;
+  margin-bottom: .3rem;
+}
+
+.input-message-error {
+  color: $error;
+  font-size: 75%;
+}
+.input-message-success {
+  color: $success;
+  font-size: 75%;
+}
+
 
 // Reset input type button
 button,
@@ -117,6 +143,7 @@ button {
   vertical-align: middle;
   white-space: nowrap;
   transition: all .3s ease;
+  margin-top: 1rem;
 
   &:hover,
   &:focus {
