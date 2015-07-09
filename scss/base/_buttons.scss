@@ -98,8 +98,9 @@
 
 .btn-inverse,
 .btn-inverse:hover {
-    background: $white;
+    background: $baseBackgroundColor;
     color: $mainColor;
+    border: 1px solid $mainColor;
 }
 
 .btn-disabled,

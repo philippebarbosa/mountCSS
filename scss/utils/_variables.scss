@@ -7,7 +7,7 @@
 
 /* _Colors
 ---------------------------------- */
-$mainColor           : $deepGray;
+$mainColor           : $turquoise;
 $baseBackgroundColor : white;
 
 $headerFontColor     : darken($mainColor, 30);
@@ -27,18 +27,6 @@ $info                : $blue;
 
 /* _Typography
 ---------------------------------- */
-$sans-serif       : $helvetica;
-$serif            : $sans-serif;
-$monospace        : $consolas;
-$yourWebFontName  : "FontName"; // Provide your custom font here
-
-$headerFontFamily : $sans-serif;
-$baseFontFamily   : $serif;
-
-// Sizes
-$baseFontSize     : 1rem;
-$baseLineHeight   : 1.6;
-
 //Types weight
 $light            : 300;
 $regular          : 400;
@@ -47,6 +35,37 @@ $semibold         : 600;
 $bold             : 700;
 $ultrabold        : 900;
 
+
+$sans-serif       : $helvetica;
+$serif            : $sans-serif;
+$monospace        : $consolas;
+$yourWebFontName  : "FontName"; // Provide your custom font here
+
+$headerFontFamily : $sans-serif;
+$baseFontFamily   : $serif;
+$baseFontWeight   : $regular;
+
+// Sizes
+$baseFontSize     : .875rem;
+$baseLineHeight   : 1.6;
+
+
+
+
+
+
+// Layout
+$baseBorderRadius : 3px;
+$baseBorderColor : $deepGray;
+
+
+
+
+/* _Header
+---------------------------------- */
+$headerBackgroundColor : $white;
+$headerBoxShadow : 0 8px 6px -6px transparentize($black, .6);
+$headerUppercase : false;
 
 
 
@@ -108,9 +127,6 @@ $zi-2                : 200;
 $zi-3                : 100;
 $zi-4                : -1;
 
-// Layout
-$baseBorderRadius : 3px;
-$baseBorderColor : $deepGray;
 
 
 

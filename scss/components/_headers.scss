@@ -1,0 +1,66 @@
+/* _Base
+---------------------------------- */
+.header {
+  @extend .clearfix;
+  display: block;
+  background-color: $headerBackgroundColor;
+  padding: 0 $baseFontSize;
+
+  a {
+    display: block;
+    padding: $baseFontSize 1rem;
+  }
+
+  @if $headerUppercase {
+      text-transform: uppercase;
+  }
+
+
+  @if $headerBoxShadow {
+    box-shadow : $headerBoxShadow;
+  }
+
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .is-active {
+    background-color: $mainColor;
+    a {
+        color: $white;
+    }
+  }
+
+}
+
+/* _Positionning
+---------------------------------- */
+.nav-left {
+    float: left;
+    width: auto;
+}
+
+.nav-right {
+    float: right;
+    width: auto;
+}
+
+.nav-center {
+    display: block;
+    text-align: center;
+}
+
+/* _Extras
+---------------------------------- */
+.nav-logo {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    img, svg {
+        display: block;
+    }
+}

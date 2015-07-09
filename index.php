@@ -123,6 +123,10 @@
                     <h3 class="module-title">Embed-responsive</h3>
                    <hr>
                    <?php include('patterns/modules/embed-responsive.php') ?>
+
+                    <h3 class="module-title">Headers</h3>
+                   <hr>
+                   <?php include('patterns/modules/header.php') ?>
                 </section>
             </div>
         </div>

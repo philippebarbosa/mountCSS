@@ -130,8 +130,11 @@ select {
         @media (min-width : $desktop) {
           float: left;
         }
-
         width: auto;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin: 0;
+        padding: 0 1rem;
     }
     input[type=email] {
       border-radius: $baseBorderRadius $baseBorderRadius 0 0;

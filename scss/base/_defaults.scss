@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font: $regular $baseFontSize $helvetica;
+  font: $baseFontWeight $baseFontSize $helvetica;
   line-height: $baseLineHeight;
   background: $baseBackgroundColor;
   color: $baseFontColor;

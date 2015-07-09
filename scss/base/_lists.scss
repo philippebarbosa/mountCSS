@@ -25,11 +25,11 @@ dl {
 
   dt {
     font-weight: bold;
-    margin-top: $baseFontSize;
+    // margin-top: $baseFontSize;
   }
 
   dd {
-    margin: 0;
+    margin: 0 0 $baseFontSize;
   }
 }
 

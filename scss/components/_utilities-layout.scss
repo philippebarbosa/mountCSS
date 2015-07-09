@@ -43,3 +43,20 @@
 .box-item-33 { width : 33.33333333% }
 .box-item-25 { width : 25% }
 .box-item-20 { width : 20% }
+
+
+// ****************************************************************
+// _split : Split a title and it's content on each side of the container
+// ****************************************************************
+
+.split{
+    text-align:right;
+    list-style:none;
+    margin-left:0;
+}
+
+.split-title{
+    text-align:left;
+    float:left;
+    clear:left;
+}
