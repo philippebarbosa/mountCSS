@@ -49,13 +49,34 @@
 // _split : Split a title and it's content on each side of the container
 // ****************************************************************
 
-.split{
+/* _Split for definition lists
+---------------------------------- */
+.split {
     text-align:right;
     list-style:none;
     margin-left:0;
 }
 
 .split-title{
+    text-align:left;
+    float:left;
+    clear:left;
+}
+
+/* _Split for any div
+---------------------------------- */
+.split-container {
+    @extend .clearfix;
+    text-align: right;
+}
+
+.split-right {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.split-left {
     text-align:left;
     float:left;
     clear:left;

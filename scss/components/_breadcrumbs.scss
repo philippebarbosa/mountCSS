@@ -1,8 +1,12 @@
 .breadcrumb {
     @extend .list-inline;
 
-    li:after {
-        content:"/";
+    li {
+        padding: 0;
+    }
+
+    li:before {
+        content: "\00BB" "\00A0";
         display: inline-block;
         *display: inline;
         *zoom: 1;
@@ -10,9 +14,14 @@
         vertical-align: middle;
     }
 
+    li:first-child:before {
+        content: none;
+    }
+
     li.is-active {
         color: $green;
-        &:after {
+        font-weight: $bold;
+        &:before {
             color: $mainColor;
         }
     }

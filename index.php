@@ -35,6 +35,21 @@
             background: rgba(0, 0, 0, 0.3);
             text-align: center;
         }
+
+        .alightment-demo {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            padding: 1rem;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        .alightment-container {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 
@@ -108,25 +123,33 @@
                    <hr>
                    <?php include('patterns/modules/tags.php') ?>
 
-                    <h3 class="module-title">Message</h3>
+                   <h3 class="module-title">Message</h3>
                    <hr>
                    <?php include('patterns/modules/messages.php') ?>
 
-                    <h3 class="module-title">Hero</h3>
+                   <h3 class="module-title">Hero</h3>
                    <hr>
                    <?php include('patterns/modules/hero.php') ?>
 
-                    <h3 class="module-title">Blocks</h3>
+                   <h3 class="module-title">Layout utilities</h3>
                    <hr>
-                   <?php include('patterns/modules/blocks.php') ?>
+                   <?php include('patterns/modules/layout-utilities.php') ?>
 
-                    <h3 class="module-title">Embed-responsive</h3>
+                   <h3 class="module-title">Embed-responsive</h3>
                    <hr>
                    <?php include('patterns/modules/embed-responsive.php') ?>
 
-                    <h3 class="module-title">Headers</h3>
+                   <h3 class="module-title">Headers</h3>
                    <hr>
                    <?php include('patterns/modules/header.php') ?>
+
+                   <h3 class="module-title">Headers</h3>
+                   <hr>
+                   <?php include('patterns/modules/header.php') ?>
+
+                   <h3 class="module-title">Footer</h3>
+                   <hr>
+                   <?php include('patterns/modules/footer.php') ?>
                 </section>
             </div>
         </div>

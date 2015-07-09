@@ -1,0 +1,58 @@
+/* _Base
+---------------------------------- */
+.footer {
+  padding: $baseFontSize 1rem;
+  background-color: $footerBackgroundColor;
+}
+
+.footer-logo {
+  text-align: center;
+  img {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  }
+}
+
+.footer-section-title {
+  font-size: 1.3rem;
+  font-weight: $bold;
+  color: $footerColor;
+}
+
+.footer-section-item,
+.footer-section-item a,
+.footer-nav-item,
+.footer-nav-item a {
+  color: $footerItemColor;
+}
+
+.footer-nav-item {
+  font-size: 80%;
+}
+
+.footer-legals p {
+  font-size: 80%;
+  text-align: center;
+  color: $footerColor;
+}
+
+.footer-nav {
+  text-align: center;
+  @extend .clearfix;
+}
+
+.footer-nav-left {
+  float: left;
+}
+
+.footer-nav-center {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.footer-nav-right {
+  float: right;
+}
+
