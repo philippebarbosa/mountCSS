@@ -1,9 +1,12 @@
-
 // ****************************************************************
 // _variables
 // ****************************************************************
 
-// Colors
+
+
+
+/* _Colors
+---------------------------------- */
 $mainColor           : $deepGray;
 $baseBackgroundColor : white;
 
@@ -18,7 +21,12 @@ $warning             : $orange;
 $error               : $red;
 $info                : $blue;
 
-// Typography
+
+
+
+
+/* _Typography
+---------------------------------- */
 $sans-serif       : $helvetica;
 $serif            : $sans-serif;
 $monospace        : $consolas;
@@ -28,58 +36,92 @@ $headerFontFamily : $sans-serif;
 $baseFontFamily   : $serif;
 
 // Sizes
-$baseFontSize        : 1rem;
-$baseLineHeight      : 1.6;
+$baseFontSize     : 1rem;
+$baseLineHeight   : 1.6;
 
 //Types weight
-$light               : 300;
-$regular             : 400;
-$medium              : 500;
-$semibold            : 600;
-$bold                : 700;
-$ultrabold           : 900;
+$light            : 300;
+$regular          : 400;
+$medium           : 500;
+$semibold         : 600;
+$bold             : 700;
+$ultrabold        : 900;
 
-// zi-etc            : 400;
-$zi-master           : 9999;
-$zi-1                : 300;
-$zi-2                : 200;
-$zi-3                : 100;
-$zi-4                : -1;
 
-// Media queries
-$mobile         : 414px;
-$tablet         : 769px;
-$desktop        : 961px;
-$desktop-large  : 1200px;
-$desktop-xlarge : 1800px;
 
-// Misc
-$baseBorderRadius : 3px;
-$baseBorderColor : $deepGray;
 
-// Buttons
+
+/* _Forms
+---------------------------------- */
+$fieldsetBackgroundColor : $baseBackgroundColor;
+$inputBorderColor : $baseBorderColor;
+$inputBackgroundColor : $white;
+$form-box-shadow : 0;
+$form-box-shadow-focus : 0;
+
+
+
+
+
+/* _Buttons
+---------------------------------- */
 $baseBtnColor : $white ;
 $baseBtnBackgroundColor : $mainColor;
-
 
 $baseBtnHoverColor : $white;
 $baseBtnHoverBackgroundColor : darken($baseBtnBackgroundColor, 10);
 
 $buttonUppercase : true;
 
-// hero
+
+
+
+
+/* _MediaQueries
+---------------------------------- */
+$mobile         : 414px;
+$tablet         : 769px;
+$desktop        : 961px;
+$desktop-large  : 1200px;
+$desktop-xlarge : 1800px;
+
+
+
+
+
+/* _Paths
+---------------------------------- */
+$fontPath : "../fonts/";
+$imgPath : "../img/";
+$svgPath : "../svg/";
+
+
+
+
+
+/* _Layout and sizes
+---------------------------------- */
+// Z-indexes
+$zi-master           : 9999;
+$zi-1                : 300;
+$zi-2                : 200;
+$zi-3                : 100;
+$zi-4                : -1;
+
+// Layout
+$baseBorderRadius : 3px;
+$baseBorderColor : $deepGray;
+
+
+
+
+/* _Hero
+---------------------------------- */
 $heroPadding : 3rem 1rem;
 $heroHeight : false; // set an integer to give a fixed height to your hero (ex.: $heroHeight : 40vh; )
 $overlayColor : $black;
 
-// forms
-$fieldsetBackgroundColor : $baseBackgroundColor;
-$inputBorderColor : $baseBorderColor;
-$inputBackgroundColor : $white;
-$form-box-shadow : 0;
-$form-box-shadow-focus : inset 0 1px 1px $grayDark;
 
-// Paths
-$fontPath : "../fonts/";
-$imgPath : "../img/";
-$svgPath : "../svg/";
+
+
+
