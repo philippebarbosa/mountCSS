@@ -1,0 +1,17 @@
+.embed-responsive {
+  margin: ($baseFontSize * 2) 0 0;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  embed,
+  object,
+  iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+  }
+}

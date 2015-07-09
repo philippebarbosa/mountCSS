@@ -21,7 +21,6 @@ select {
 
 label {
   font-weight: $bold;
-  margin-top: $baseFontSize;
 
   &.required::after {
     content: "*";
@@ -56,7 +55,6 @@ textarea {
   box-sizing: border-box;
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
-  margin-bottom: $baseFontSize / 2;
   padding: $baseFontSize / 2 ;
   transition: border-color .4s ease;
   width: 100%;

@@ -119,6 +119,10 @@
                     <h3 class="module-title">Blocks</h3>
                    <hr>
                    <?php include('patterns/modules/blocks.php') ?>
+
+                    <h3 class="module-title">Embed-responsive</h3>
+                   <hr>
+                   <?php include('patterns/modules/embed-responsive.php') ?>
                 </section>
             </div>
         </div>

@@ -1,5 +1,5 @@
 
-  // ****************************************************************
+// ****************************************************************
 // _variables
 // ****************************************************************
 
@@ -13,19 +13,19 @@ $baseFontColor       : $black;
 $baseLinkColor       : $mainColor;
 $hoverLinkColor      : darken($mainColor, 20);
 
-$success : $green;
-$warning : $orange;
-$error : $red;
-$info: $blue;
+$success             : $green;
+$warning             : $orange;
+$error               : $red;
+$info                : $blue;
 
 // Typography
-$sans-serif          : $helvetica;
-$serif               : $sans-serif;
-$yourWebFontName     : "FontName"; // Provide your custom font here
-
+$sans-serif       : $helvetica;
+$serif            : $sans-serif;
+$monospace        : $consolas;
+$yourWebFontName  : "FontName"; // Provide your custom font here
 
 $headerFontFamily : $sans-serif;
-$baseFontFamily : $serif;
+$baseFontFamily   : $serif;
 
 // Sizes
 $baseFontSize        : 1rem;
