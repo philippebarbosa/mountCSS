@@ -7,11 +7,11 @@
 
 /* _Colors
 ---------------------------------- */
-$mainColor           : $turquoise;
-$baseBackgroundColor : white;
+$mainColor           : $green;
+$baseBackgroundColor : $white;
 
-$headerFontColor     : darken($mainColor, 30);
-$baseFontColor       : $black;
+$headerFontColor     : $black-faded;
+$baseFontColor       : $grayDarker;
 
 $baseLinkColor       : $mainColor;
 $hoverLinkColor      : darken($mainColor, 20);
@@ -36,10 +36,11 @@ $bold             : 700;
 $ultrabold        : 900;
 
 
+$yourWebFontName  : "FontName"; // Provide your custom font here
+
 $sans-serif       : $helvetica;
 $serif            : $sans-serif;
 $monospace        : $consolas;
-$yourWebFontName  : "FontName"; // Provide your custom font here
 
 $headerFontFamily : $sans-serif;
 $baseFontFamily   : $serif;
@@ -55,7 +56,7 @@ $baseLineHeight   : 1.6;
 
 
 // Layout
-$baseBorderRadius : 3px;
+$baseBorderRadius : 3px; // Set to "false" to cancel any radius on your project
 $baseBorderColor : $deepGray;
 
 

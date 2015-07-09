@@ -1,6 +1,13 @@
-/* _Classic Hero
----------------------------------- */
-.hero {
+// ****************************************************************
+// _Hero
+// ****************************************************************
+
+
+
+/**
+ * Core
+ */
+.hero { // container
     display: block;
     padding: 3rem 1rem;
     background: $mainColor no-repeat top center; // when using dynamic background image
@@ -12,12 +19,18 @@
     position: relative;
 }
 
-.hero-content {
+
+.hero-content { // inner content
     position: relative;
     z-index: $zi-2;
     color: white;
 }
 
+
+
+/**
+ * Text alignement
+ */
 .hero-content-center {
     text-align: center;
 }
@@ -30,6 +43,11 @@
     text-align: right;
 }
 
+
+
+/**
+ * If you need an overlay to cover picture, here it is :
+ */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -40,13 +58,18 @@
     z-index: $zi-3;
 }
 
-.hero-cta {
+.hero-cta { // call to action
     margin-top: 5rem;
 }
 
-/* _dynamicHeigtHero
----------------------------------- */
 
+
+/**
+ *
+ * Dynamic height hero :
+ * Inline <img> in markup sets the height of the hero
+ *
+ */
 .hero-dynamic {
     padding: 0;
     line-height: 0;

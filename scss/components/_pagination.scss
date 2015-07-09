@@ -1,9 +1,14 @@
+// ****************************************************************
+// _Pagination
+// ****************************************************************
 .pagination{
     letter-spacing:-0.31em;
     word-spacing:-0.43em;
     list-style:none;
     margin-left:0;
     @extends .clearfix;
+
+    // Use this to position your pagination
     &.pagination-left {
         text-align:left;
     }
@@ -13,6 +18,7 @@
     &.pagination-right {
         text-align:right;
     }
+
 }
 
 .pagination > li{

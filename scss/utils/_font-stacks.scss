@@ -1,9 +1,11 @@
-// CSS FONT STACKS: Nig thanks to http://cssfontstack.com/
-// $helvetica_Light courtesy of http://css-tricks.com/
+// ****************************************************************
+// _FontStacks : Courtesy of cssfontstack.com
+// $helvetica_Light : courtesy of http://css-tricks.com/
+// ****************************************************************
 
-// SANS-SERIF
-//============================================================================ */
-
+/**
+ * SANS_SERIF
+ */
 $helvetica            : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $helveticaLight       : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; // Don't forget to put font-weight : 300 to $helvetica_Light
 $arial                : Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -27,9 +29,12 @@ $trebuchetMS          : "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", 
 $verdana              : Verdana, Geneva, sans-serif;
 
 
-// SERIF
-//============================================================================ */
 
+
+
+/**
+ * SERIF
+ */
 $baskerville          : Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 $bigCaslon            : "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 $bodoniMT             : "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
@@ -48,9 +53,14 @@ $rockwell             : Rockwell, "Courier Bold", Courier, Georgia, Times, "Time
 $rockwellExtraBold    : "Rockwell Extra Bold", "Rockwell Bold", monospace;
 $timesNewRoman        : TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 
-// MONOSPACED
-//============================================================================ */
 
+
+
+
+
+/**
+ * MONOSPACED
+ */
 $andaleMono           : "Andale Mono", AndaleMono, monospace;
 $consolas             : Consolas, monaco, monospace;
 $courierNew           : "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
@@ -58,13 +68,25 @@ $lucidaConsole        : "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bit
 $lucidaSansTypewriter : "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 $monaco               : Monaco, Consolas, "Lucida Console", monospace;
 
-// FANTASY
-//============================================================================ */
 
+
+
+
+
+
+/**
+ * FANTASY
+ */
 $copperplate          : Copperplate, "Copperplate Gothic Light", fantasy;
 $papyrus              : Papyrus, fantasy;
 
-// SCRIPT
-//============================================================================ */
 
+
+
+
+
+
+/**
+ * SCRIPT
+ */
 $brushScriptMT        : "Brush Script MT", cursive;

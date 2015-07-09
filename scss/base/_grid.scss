@@ -1,4 +1,8 @@
-// Grid layout
+// ****************************************************************
+// _GridLayout
+// ****************************************************************
+
+
 .container {
     @extend .clearfix;
     margin: 0 auto;
@@ -22,50 +26,88 @@
 }
 
 .row [class*="col-"] {
-    float: left;
     min-height: 1px;
-    margin-left:1%;
+    @media (min-width : $desktop) {
+        float: left;
+        margin-left:1%;
+    }
 }
 
 .row [class*="col-"]:first-child {
     margin-left:0;
 }
 
-//Grid classes
+
+/**
+ * Grid Classes
+ */
 .col-1 {
-    width:7.41666666667%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:7.41666666667%;
+    }
 }
 .col-2 {
-    width:15.8333333333%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:15.8333333333%;
+    }
 }
 .col-3 {
-    width:24.25%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:24.25%;
+    }
 }
 .col-4 {
-    width:32.6666666667%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:32.6666666667%;
+    }
 }
 .col-5 {
-    width:41.0833333333%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:41.0833333333%;
+    }
 }
 .col-6 {
-    width:49.5%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:49.5%;
+    }
 }
 .col-7 {
-    width:57.9166666667%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:57.9166666667%;
+    }
 }
 .col-8 {
-    width:66.3333333333%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:66.3333333333%;
+    }
 }
 .col-9 {
-    width:74.75%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:74.75%;
+    }
 }
 .col-10 {
-    width:83.1666666667%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:83.1666666667%;
+    }
 }
 .col-11 {
-    width:91.5833333333%;
+    width: 100%;
+    @media (min-width : $desktop) {
+        width:91.5833333333%;
+    }
 }
 .col-12 {
+    width: 100%;
     margin-left:0;
-    width:100%;
 }

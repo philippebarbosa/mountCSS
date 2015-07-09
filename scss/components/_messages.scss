@@ -1,3 +1,11 @@
+// ****************************************************************
+// _Messages
+// ****************************************************************
+
+
+/**
+ * Core
+ */
 .message {
   display: inline-block;
   *display: inline;
@@ -11,6 +19,10 @@
   border-radius: $baseBorderRadius;
 }
 
+
+/**
+ * Colors
+ */
 .message-success {
     background: lighten($success, 40);
     border: 1px solid $success;
@@ -35,6 +47,10 @@
     color: darken($info, 20);
 }
 
+
+/**
+ * Fit message width to parent
+ */
 .message-block {
   width: 100%;
 }

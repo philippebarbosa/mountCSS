@@ -1,4 +1,11 @@
-// Base Style
+// ****************************************************************
+// _Buttons
+// ****************************************************************
+
+
+/**
+ * Core styles
+ */
 .btn {
     display:inline-block;
     vertical-align:middle;
@@ -13,10 +20,13 @@
     line-height:3;
     padding-right:1rem;
     padding-left: 1rem;
-    border-radius:$baseBorderRadius;
     background: $baseBtnBackgroundColor;
     color: $baseBtnColor;
     font-family: $headerFontFamily;
+
+    @if $baseBorderRadius {
+      border-radius:$baseBorderRadius;
+    }
 
     @if $buttonUppercase {
       text-transform: uppercase;
@@ -37,7 +47,10 @@
     }
 }
 
-// Size
+
+/**
+ * Sizes
+ */
 .btn-small{
     padding-right:0.5rem;
     padding-left: 0.5rem;
@@ -63,7 +76,10 @@
     text-align:center;
 }
 
-// colors :
+
+/**
+ * Colors
+ */
 .btn-success {
   border: 1px solid darken($success, 5);
   background-color: $success;

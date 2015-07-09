@@ -1,9 +1,13 @@
+// ****************************************************************
+// _BaseTypographicStyles
+// ****************************************************************
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $headerFontFamily;
   line-height: $baseLineHeight;
-  margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
   color: $headerFontColor;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -69,11 +73,13 @@ blockquote {
     padding: ($baseFontSize / 2) 0 ($baseFontSize / 2) ($baseFontSize / 1.5);
     border-left: ($baseFontSize / 2) solid $mainColor;
     border-color: rgba(0,0,0,.1);
-    font-size: 1rem;
+    font-size: $baseFontSize;
+    margin-left: 0;
 }
 
 blockquote p {
-    margin-bottom: ($baseFontSize / 4);
+    margin: 0;
+    font-style: italic;
 }
 
 blockquote p:last-child,
@@ -90,17 +96,17 @@ cite {
   }
 }
 
-
 del {
     text-decoration: line-through;
 }
 
 ins {
-    border-bottom: 1px dotted #DDD;
+    border-bottom: 1px dotted $mainColor;
 }
 
 mark {
-    background-color: #FF9;
+    background: $mainColor;
+    padding: 0 .2rem;
 }
 
 em {

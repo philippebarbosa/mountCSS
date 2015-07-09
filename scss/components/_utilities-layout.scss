@@ -1,5 +1,5 @@
 // ****************************************************************
-// _alightment : Center text within a div
+// _Alightment : Center text within a div
 // ****************************************************************
 
 .alightment-container {
@@ -39,18 +39,40 @@
     }
 }
 
-.box-item-50 { width : 50% }
-.box-item-33 { width : 33.33333333% }
-.box-item-25 { width : 25% }
-.box-item-20 { width : 20% }
+.box-item-50 {
+    width: 100%;
+    @media (min-width : $tablet) {
+        width : 50%;
+    }
+}
+.box-item-33 {
+    width: 100%;
+    @media (min-width : $tablet) {
+        width : 33.33333333%;
+    }
+}
+.box-item-25 {
+    width: 100%;
+    @media (min-width : $tablet) {
+        width : 25%;
+    }
+}
+.box-item-20 {
+    width: 100%;
+    @media (min-width : $tablet) {
+        width : 20%;
+    }
+}
 
 
 // ****************************************************************
 // _split : Split a title and it's content on each side of the container
 // ****************************************************************
 
-/* _Split for definition lists
----------------------------------- */
+
+/**
+ * Split for definition lists
+ */
 .split {
     text-align:right;
     list-style:none;
@@ -63,8 +85,12 @@
     clear:left;
 }
 
-/* _Split for any div
----------------------------------- */
+
+
+
+/**
+ *  Split for any div
+ */
 .split-container {
     @extend .clearfix;
     text-align: right;

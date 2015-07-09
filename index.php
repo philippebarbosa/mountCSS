@@ -12,11 +12,11 @@
          padding-bottom: 10rem;
         }
         .grid-demo {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.2);
             padding: .3rem 0;
             text-align: center;
             color: black;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
         .sg-section-title {
             display: block;

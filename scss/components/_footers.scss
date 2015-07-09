@@ -1,10 +1,20 @@
-/* _Base
----------------------------------- */
+// ****************************************************************
+// _Footers
+// ****************************************************************
+
+
+/**
+ * Core
+ */
 .footer {
   padding: $baseFontSize 1rem;
   background-color: $footerBackgroundColor;
 }
 
+
+/**
+ * Utils
+ */
 .footer-logo {
   text-align: center;
   img {

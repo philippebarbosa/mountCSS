@@ -1,3 +1,11 @@
+// ****************************************************************
+// _Tables
+// ****************************************************************
+
+
+/**
+ * Core styles
+ */
 table {
   border-collapse: collapse;
   margin: $baseFontSize 0;
@@ -7,7 +15,7 @@ table {
 
 th {
   border-bottom: 1px solid darken($baseBorderColor, 15%);
-  font-weight: 600;
+  font-weight: $bold;
   padding: ($baseFontSize / 2);
   text-align: left;
 }
@@ -22,3 +30,36 @@ td,
 th {
   vertical-align: middle;
 }
+
+
+/**
+ * Classic and hover theme
+ */
+.table-basic,
+.table-basic-hover {
+    color: #333;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    tr,
+    td,
+    th {
+        border: 1px solid #d0d0d0;
+    }
+
+    tbody tr,
+    tbody td,
+    tbody th {
+        border: 1px solid #e0e0e0;
+    }
+}
+
+.table-basic-hover tr:hover {
+    color: #000;
+    background: #fafafa;
+}
+
+.table-basic-hover th {
+    background: #f0f0f0;
+}
+
+
