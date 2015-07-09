@@ -2,21 +2,31 @@
 // _Imports
 // ****************************************************************
 
-
-/* _VENDORS
----------------------------------- */
+/**
+ * _VENDORS
+ */
 @import 'vendors/normalize';
 
-/* _UTILS
----------------------------------- */
+
+
+
+
+/**
+ * _UTILS
+ */
 @import 'utils/font-stacks',
         'utils/colors',
         'utils/brands-colors',
         'utils/mixins',
         'utils/variables';
 
-/* _BASE
----------------------------------- */
+
+
+
+
+/**
+ * _BASE
+ */
 @import 'base/defaults',
         'base/typography',
         'base/grid',
@@ -25,8 +35,13 @@
         'base/buttons',
         'base/tables';
 
-/* _COMPONENTS
----------------------------------- */
+
+
+
+
+/**
+ * _COMPONENTS
+ */
 @import 'components/headers',
         'components/footers',
         'components/breadcrumbs',
@@ -38,6 +53,11 @@
         'components/utilities-layout',
         'components/embed-responsive';
 
-/* _PAGE
----------------------------------- */
+
+
+
+
+/**
+ * _PAGE
+ */
 @import 'pages/home';
