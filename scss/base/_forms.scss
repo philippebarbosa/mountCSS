@@ -58,9 +58,8 @@ input[type="week"],
 input:not([type]),
 select[multiple=multiple],
 textarea {
-  background-color: $baseBackgroundColor;
+  background-color: $inputBackgroundColor;
   border: 1px solid $baseBorderColor;
-  transition: border .4 ease;
   @if $baseBorderRadius {
     border-radius: $baseBorderRadius;
   }
@@ -175,7 +174,6 @@ select {
         }
     }
     input[type=submit] {
-      border-radius: $baseBorderRadius;
       width: 100%;
       @if $baseBorderRadius {
         border-radius: 0 0 $baseBorderRadius $baseBorderRadius;
