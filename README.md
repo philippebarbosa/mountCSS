@@ -8,7 +8,7 @@ All the library is in the `scss/`folder. You need to compile `style.scss` into a
 
 Start by customizing the `_variables.scss` and extend the structure depending on your project.
   
-** PLEASE NOTE THAT THE WHOLE LIBRARY IS UNPREFIXED, YOU'LL NEED TO USE AUTOPREFIXR OR POSTCSS TO PROVIDE THE PREFIX ON THE COMPILED VERSION **  
+**PLEASE NOTE THAT THE WHOLE LIBRARY IS UNPREFIXED, YOU'LL NEED TO USE AUTOPREFIXR OR POSTCSS TO PROVIDE THE PREFIX ON THE COMPILED VERSION**
 
 # Structure
 ---
