@@ -6,7 +6,7 @@ mountCSS (beta) is a simple SCSS starter and small component library to quicksta
 ---
 All the library is in the `scss/`folder. You need to compile `style.scss` into a valid .css file (A basic Gruntfile is included in this repository that provide a simple autoprefixing and compile.).  
 
-Start by customizing the `_variables.scss' and extend the structure depending on your project.
+Start by customizing the `_variables.scss` and extend the structure depending on your project.
   
 ** PLEASE NOTE THAT THE WHOLE LIBRARY IS UNPREFIXED, YOU'LL NEED TO USE AUTOPREFIXR OR POSTCSS TO PROVIDE THE PREFIX ON THE COMPILED VERSION **  
 
