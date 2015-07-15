@@ -1,9 +1,6 @@
 ### Filetype & folder ###
 #########################
 
-# (Put any of your projects files, as .PSD, .AI, anything else, in the sources directory :)
-sources/*
-
 dist/*
 build/*
 *.unprefixed.css
@@ -48,7 +45,8 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# MountCSS, currently in development
-index.html
+# MountCSS styleguide, currently in development
+sources/*
+index.php
 style.css
 patterns/*
