@@ -73,3 +73,129 @@
     }
   }
 }
+
+// ****************************************************************
+//
+// _Boxshadow : Some simple drop shadows mixin, in case you'll need it
+// e.g. : .youBox { @extend %dsBottom; }
+//
+// ****************************************************************
+//
+
+
+%bsBottom {
+    box-shadow: 0 10px 6px -6px #777;
+}
+/* _each Side
+---------------------------------- */
+
+%bsSided {
+    // base element need to be at position: relative;
+    position: relative;
+    &:before, &:after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width: 300px;
+        background: #777;
+        box-shadow: 0 15px 10px #777;
+        transform: rotate(-3deg);
+    }
+    &:after {
+        transform: rotate(3deg);
+        right: 10px;
+        left: auto;
+    }
+}
+/* _Left Side Only
+---------------------------------- */
+
+%bsSideLeft {
+    position: relative;
+    &:before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width: 300px;
+        background: #777;
+        box-shadow: 0 15px 10px #777;
+        transform: rotate(-3deg);
+    }
+}
+/* _Right Side Only
+---------------------------------- */
+
+%bsSideRight {
+    position: relative;
+    &:after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        right: 10px;
+        left: auto;
+        width: 50%;
+        top: 80%;
+        max-width: 300px;
+        background: #777;
+        box-shadow: 0 15px 10px #777;
+        transform: rotate(3deg);
+    }
+}
+/* _Relief
+---------------------------------- */
+
+%bsRelief {
+    position: relative;
+    &:before, &:after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 25px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width: 300px;
+        background: #777;
+        box-shadow: 0 35px 20px #777;
+        transform: rotate(-8deg);
+    }
+    &:after {
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        transform: rotate(8deg);
+        right: 10px;
+        left: auto;
+    }
+}
+
+%bsReliefBoth {
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        border-radius: 100px / 10px;
+    }
+    &:after {
+        right: 10px;
+        left: auto;
+        transform: skew(8deg) rotate(3deg);
+    }
+}
