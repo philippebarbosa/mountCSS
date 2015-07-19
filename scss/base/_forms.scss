@@ -70,6 +70,7 @@ textarea {
   padding: $baseFontSize / 2 ;
   transition: border .4s ease;
   width: 100%;
+  -webkit-appearance: none;
 
   &:hover {
     border-color: darken($deepGray, 10);
@@ -175,6 +176,7 @@ select {
     }
     input[type=submit] {
       width: 100%;
+      -webkit-appearance: none;
       @if $baseBorderRadius {
         border-radius: 0 0 $baseBorderRadius $baseBorderRadius;
       }
