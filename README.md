@@ -1,10 +1,10 @@
 ![MountCSS Logo](http://barbo.sa.com/16FPu/60Bwg3lr+)  
 
-mountCSS (beta) is a simple SCSS starter and small component library to quickstart your websites. Like Bootstrap but in a very lightweight version and more pragmatic. It provides basic styles for common elements that you can easily custom.  
+mountCSS (beta) is a simple SCSS starter and small component library to quickstart your websites. Like Bootstrap in a very lightweight version and without the bloat. It provides basic styles for common elements that you can easily custom.  
 
 # How to use
 ---
-All the library is in the `scss/`folder. You need to compile `style.scss` into a valid .css file (A basic Gruntfile is included in this repository that provide a simple autoprefixing and compile.).  
+All the library is in the `scss/` folder. You need to compile `style.scss` into a valid `.css` file (A basic `gulpfile.js` is included in this repository that compile and prefix).  
 
 Start by customizing the `_variables.scss` and extend the structure depending on your project.
   
