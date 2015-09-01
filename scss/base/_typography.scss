@@ -44,8 +44,10 @@ a {
   transition: all .3s ease;
   text-decoration: none;
 
-  &:hover {
-    color: $hoverLinkColor;
+  @media (min-width : $desktop ) {
+    &:hover {
+      color: $hoverLinkColor;
+    }
   }
 
   &:active, &:focus {
