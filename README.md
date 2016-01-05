@@ -14,35 +14,38 @@ Start by customizing the `_variables.scss` and extend the structure depending on
 ---
 
 ```scss
-├── style.scss // The main file that calls all partials
-├── base // Basic html styles
-│   ├── _buttons.scss
-│   ├── _defaults.scss
-│   ├── _forms.scss
-│   ├── _grid.scss
-│   ├── _lists.scss
-│   ├── _tables.scss
-│   └── _typography.scss
-├── components // Some common patterns used on website
-│   ├── _breadcrumbs.scss
-│   ├── _embed-responsive.scss
-│   ├── _footers.scss
-│   ├── _headers.scss
-│   ├── _hero.scss
-│   ├── _media-object.scss
-│   ├── _messages.scss
-│   ├── _pagination.scss
-│   ├── _tags.scss
-│   ├── _utilities-forms.scss
-│   └── _utilities-layout.scss
-├── pages // Include specific page styles here
-│   └── _home.scss
-├── utils // Some usefull variables & mixin.
-│   ├── _brands-colors.scss
-│   ├── _colors.scss
-│   ├── _font-stacks.scss
-│   ├── _mixins.scss
-│   └── _variables.scss // CUSTOMIZE THE BASE STYLES HERE
-└── vendors
-    └── _normalize.scss
+|-- _style.scss // The main file that calls all partials
+|-- base
+|  |-- _buttons.scss
+|  |-- _defaults.scss
+|  |-- _forms.scss
+|  |-- _grid.scss
+|  |-- _lists.scss
+|  |-- _tables.scss
+|  `-- _typography.scss
+|-- components // Some common patterns used on website
+|  |-- _breadcrumbs.scss
+|  |-- _embed-responsive.scss
+|  |-- _footers.scss
+|  |-- _headers.scss
+|  |-- _hero.scss
+|  |-- _media-object.scss
+|  |-- _messages.scss
+|  |-- _pagination.scss
+|  |-- _tags.scss
+|  |-- _utilities-forms.scss
+|  `-- _utilities-layout.scss
+|-- config
+|  `-- _variables.scss
+|-- pages // CUSTOMIZE THE BASE STYLES HERE
+|  `-- _home.scss
+|-- style.scss
+|-- tree_out
+|-- utils
+|  |-- _brands-colors.scss
+|  |-- _colors.scss
+|  |-- _font-stacks.scss
+|  `-- _mixins.scss
+`-- vendors
+   `-- _normalize.scss
 ```
