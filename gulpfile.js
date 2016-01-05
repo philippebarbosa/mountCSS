@@ -57,7 +57,7 @@ gulp.task('css', function () {
 
 // default task (development)
 gulp.task('default', ['css'], function () {
-    gulp.watch('scss/*/*.scss', ['css']);
+    gulp.watch('scss/**/*.scss', ['css']);
 });
 
 // Build tasks
