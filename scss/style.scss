@@ -17,9 +17,14 @@
 @import 'utils/font-stacks',
         'utils/colors',
         'utils/brands-colors',
-        'utils/mixins',
-        'utils/variables';
+        'utils/mixins';
 
+
+/**
+ * _Config
+ */
+
+@import 'config/variables';
 
 
 
