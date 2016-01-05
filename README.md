@@ -4,7 +4,7 @@ mountCSS (beta) is a simple SCSS starter and small component library to quicksta
 
 # How to use
 ---
-All the library is in the `scss/` folder. You need to compile `style.scss` into a valid `.css` file (A basic `gulpfile.js` is included in this repository that compile and prefix).  
+All the library is in the `scss/` folder. You need to compile `style.scss` into a valid `.css` file (A basic `gulpfile.js` is included in this repository that compile, prefix css and group media queries together).  
 
 Start by customizing the `_variables.scss` and extend the structure depending on your project.
   
