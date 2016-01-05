@@ -12,10 +12,10 @@
     @media (min-width : $desktop) {
         max-width: 960px;
     }
-    @media (min-width : $desktop-large) {
+    @media (min-width : $desktop_large) {
         max-width: 1420px;
     }
-    @media (min-width : $desktop-xlarge) {
+    @media (min-width : $desktop_xlarge) {
         max-width: 1600px;
     }
 }
