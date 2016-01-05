@@ -3,10 +3,10 @@
 // ****************************************************************
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $headerFontFamily;
+  font-family: $header_font_family;
   line-height: $baseLineHeight;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
-  color: $headerFontColor;
+  color: $header_font_color;
   margin-bottom: 0;
 }
 
@@ -36,28 +36,28 @@ h6 {
 
 p {
   margin: 0 0 $baseLineHeight*0.5rem;
-  font-family: $baseFontFamily;
+  font-family: $base_font_family;
 }
 
 a {
-  color: $baseLinkColor;
+  color: $base_link_color;
   transition: all .3s ease;
   text-decoration: none;
 
   @media (min-width : $desktop ) {
     &:hover {
-      color: $hoverLinkColor;
+      color: $hover_link_color;
     }
   }
 
   &:active, &:focus {
-    color: $hoverLinkColor;
+    color: $hover_link_color;
     outline: none;
   }
 }
 
 hr {
-  border-bottom: 1px solid $mainColor;
+  border-bottom: 1px solid $main_color;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -73,7 +73,7 @@ img {
 blockquote {
     display: block;
     padding: ($baseFontSize / 2) 0 ($baseFontSize / 2) ($baseFontSize / 1.5);
-    border-left: ($baseFontSize / 2) solid $mainColor;
+    border-left: ($baseFontSize / 2) solid $main_color;
     border-color: rgba(0,0,0,.1);
     font-size: $baseFontSize;
     margin-left: 0;
@@ -90,7 +90,7 @@ p:last-child {
 }
 
 cite {
-  color: lighten($baseFontColor, 25);
+  color: lighten($base_font_color, 25);
   font-style: italic;
 
   &:before {
@@ -103,11 +103,11 @@ del {
 }
 
 ins {
-    border-bottom: 1px dotted $mainColor;
+    border-bottom: 1px dotted $main_color;
 }
 
 mark {
-    background: $mainColor;
+    background: $main_color;
     padding: 0 .2rem;
 }
 

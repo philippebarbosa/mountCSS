@@ -10,17 +10,17 @@
 .media {
     display:block;
     @extend .clearfix;
-    margin: 0 0 $baseFontSize;
+    margin: 0 0 $base_font_size;
 }
 
 .media-img{
     float:left;
-    margin-right:$baseFontSize;
+    margin-right:$base_font_size;
 }
 
 .media-img-inverse {
     float:right;
-    margin-left:$baseFontSize;
+    margin-left:$base_font_size;
 }
 
 .media-img img,

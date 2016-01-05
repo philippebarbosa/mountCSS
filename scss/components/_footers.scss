@@ -7,8 +7,8 @@
  * Core
  */
 .footer {
-  padding: $baseFontSize 1rem;
-  background-color: $footerBackgroundColor;
+  padding: $base_font_size 1rem;
+  background-color: $footer_background_color;
 }
 
 
@@ -27,14 +27,14 @@
 .footer-section-title {
   font-size: 1.3rem;
   font-weight: $bold;
-  color: $footerColor;
+  color: $footer_color;
 }
 
 .footer-section-item,
 .footer-section-item a,
 .footer-nav-item,
 .footer-nav-item a {
-  color: $footerItemColor;
+  color: $footer_item_color;
 }
 
 .footer-nav-item {
@@ -45,7 +45,7 @@
 .footer-legals a {
   font-size: 80%;
   text-align: center;
-  color: $footerColor;
+  color: $footer_color;
 }
 
 .footer-nav {

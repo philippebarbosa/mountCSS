@@ -13,22 +13,22 @@
     font-family:inherit;
     font-size:100%;
     cursor:pointer;
-    border:1px solid $baseBtnColor;
+    border:1px solid $base_btn_color;
     margin:.5rem;
     padding-top:0;
     padding-bottom:0;
     line-height:3;
     padding-right:1rem;
     padding-left: 1rem;
-    background: $baseBtnBackgroundColor;
-    color: $baseBtnColor;
-    font-family: $headerFontFamily;
+    background: $base_btn_background_color;
+    color: $base_btn_color;
+    font-family: $header_font_family;
 
-    @if $baseBorderRadius {
-      border-radius:$baseBorderRadius;
+    @if $base_border_radius {
+      border-radius:$base_border_radius;
     }
 
-    @if $buttonUppercase {
+    @if $button_uppercase {
       text-transform: uppercase;
     }
 }
@@ -36,8 +36,8 @@
 .btn {
     &:hover{
         text-decoration:none;
-        background-color: $baseBtnHoverBackgroundColor;
-        color : $baseBtnHoverColor;
+        background-color: $base_btn_hover_background_color;
+        color : $base_btn_hover_color;
     }
 
     &:active,
@@ -113,9 +113,9 @@
 
 .btn-inverse,
 .btn-inverse:hover {
-    background: $baseBackgroundColor;
-    color: $mainColor;
-    border: 1px solid $baseBackgroundColor;
+    background: $base_background_color;
+    color: $main_color;
+    border: 1px solid $base_background_color;
 }
 
 .btn-disabled,

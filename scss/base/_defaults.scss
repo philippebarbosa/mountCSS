@@ -18,10 +18,10 @@ html {
 }
 
 body {
-  font: $baseFontWeight $baseFontSize $helvetica;
-  line-height: $baseLineHeight;
-  background: $baseBackgroundColor;
-  color: $baseFontColor;
+  font: $base_font_weight $base_font_size $helvetica;
+  line-height: $base_line_height;
+  background: $base_background_color;
+  color: $base_font_color;
 }
 
 .clearfix {

@@ -25,7 +25,7 @@ input,
 label,
 select {
   display: block;
-  font-family: $baseFontFamily;
+  font-family: $base_font_family;
   font-size: $baseFontSize;
 }
 
@@ -65,7 +65,7 @@ textarea {
   }
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
-  font-family: $baseFontFamily;
+  font-family: $base_font_family;
   font-size: $baseFontSize;
   padding: $baseFontSize / 2 ;
   transition: border .4s ease;
@@ -73,12 +73,12 @@ textarea {
   -webkit-appearance: none;
 
   &:hover {
-    border-color: darken($deepGray, 10);
+    border-color: darken($deep_gray, 10);
   }
 
   &:focus {
     border-color: darken($baseBorderColor, 10);
-    border-left: ($baseFontSize / 3) solid $mainColor;
+    border-left: ($baseFontSize / 3) solid $main_color;
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }
@@ -145,7 +145,7 @@ select {
       min-width: 430px;
     }
     input {
-        font: $light 1rem $headerFontColor;
+        font: $light 1rem $header_font_color;
 
         @media (min-width : $desktop) {
           float: left;
@@ -191,11 +191,11 @@ select {
         outline: 0;
         margin-top: 0;
         &:hover {
-            background: lighten($mainColor,5%);
+            background: lighten($main_color,5%);
         }
         &:active {
             outline: 0;
-            background: darken($mainColor,5%);
+            background: darken($main_color,5%);
         }
     }
 }
@@ -218,7 +218,7 @@ button {
   color: $baseBtnColor;
   cursor: pointer;
   display: inline-block;
-  font-family: $baseFontFamily;
+  font-family: $base_font_family;
   font-size: $baseFontSize;
   font-weight: $bold;
   line-height: 1;

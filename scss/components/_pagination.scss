@@ -22,7 +22,7 @@
 }
 
 .pagination > li{
-    padding:$baseFontSize / 2;
+    padding:$base_font_size / 2;
     letter-spacing:normal;
     word-spacing:normal;
     display:inline-block;
@@ -32,8 +32,8 @@
 
 
 .pagination > li > a{
-    padding:$baseFontSize / 2;
-    margin:-$baseFontSize / 2;
+    padding:$base_font_size / 2;
+    margin:-$base_font_size / 2;
 }
 
 .pagination-first a:before{

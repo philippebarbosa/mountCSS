@@ -8,21 +8,21 @@
 .header {
   @extend .clearfix;
   display: block;
-  background-color: $headerBackgroundColor;
-  padding: 0 $baseFontSize;
+  background-color: $header_background_color;
+  padding: 0 $base_font_size;
 
   a {
     display: block;
-    padding: $baseFontSize 1rem;
+    padding: $base_font_size 1rem;
   }
 
-  @if $headerUppercase {
+  @if $header_uppercase {
       text-transform: uppercase;
   }
 
 
-  @if $headerBoxShadow {
-    box-shadow : $headerBoxShadow;
+  @if $header_box_shadow {
+    box-shadow : $header_box_shadow;
   }
 
   &.is-fixed {
@@ -33,7 +33,7 @@
   }
 
   .is-active {
-    background-color: $mainColor;
+    background-color: $main_color;
     a {
         color: $white;
     }

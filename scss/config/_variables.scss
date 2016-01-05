@@ -7,19 +7,19 @@
 
 /* _Colors
 ---------------------------------- */
-$mainColor           : $green;
-$baseBackgroundColor : $white;
+$main_color            : $green;
+$base_background_color : $white;
 
-$headerFontColor     : $black-faded;
-$baseFontColor       : $grayDarker;
+$header_font_color     : $black_faded;
+$base_font_color       : $gray_darker;
 
-$baseLinkColor       : $mainColor;
-$hoverLinkColor      : darken($mainColor, 20);
+$base_link_color       : $main_color;
+$hover_link_color      : darken($main_color, 20);
 
-$success             : $green;
-$warning             : $orange;
-$error               : $red;
-$info                : $blue;
+$success               : $green;
+$warning               : $orange;
+$error                 : $red;
+$info                  : $blue;
 
 
 
@@ -28,65 +28,60 @@ $info                : $blue;
 /* _Typography
 ---------------------------------- */
 //Types weight
-$light            : 300;
-$regular          : 400;
-$medium           : 500;
-$semibold         : 600;
-$bold             : 700;
-$ultrabold        : 900;
+$light              : 300;
+$regular            : 400;
+$medium             : 500;
+$semibold           : 600;
+$bold               : 700;
+$ultrabold          : 900;
 
 
-$yourWebFontName  : "FontName"; // Provide your custom font here
+$your_web_font_name : "font_name"; // Provide your custom font here
 
-$sans-serif       : $helvetica;
-$serif            : $sans-serif;
-$monospace        : $consolas;
+$sans_serif         : $helvetica;
+$serif              : $sans_serif;
+$monospace          : $consolas;
 
-$headerFontFamily : $sans-serif;
-$baseFontFamily   : $serif;
-$baseFontWeight   : $regular;
+$header_font_family : $sans_serif;
+$base_font_family   : $serif;
+$base_font_weight   : $regular;
 
 // Sizes
-$baseFontSize     : .875rem;
-$baseLineHeight   : 1.6;
-
-
-
-
-
+$base_font_size     : .875rem;
+$base_line_height   : 1.6;
 
 // Layout
-$baseBorderRadius : 3px; // Set to "false" to cancel any radius on your project
-$baseBorderColor : $deepGray;
+$base_border_radius : 3px; // Set to "false" to cancel any radius on your project
+$base_border_color  : $deep_gray;
 
 
 
 
 /* _Header
 ---------------------------------- */
-$headerBackgroundColor : $white;
-$headerBoxShadow : 0 8px 6px -6px transparentize($black, .6);
-$headerUppercase : false;
+$header_background_color : $white;
+$header_box_shadow       : 0 8px 6px -6px transparentize($black, .6);
+$header_uppercase        : false;
 
 
 
 
 /* _Footer
 ---------------------------------- */
-$footerBackgroundColor : $black;
-$footerColor : $white;
-$footerItemColor : $gray;
+$footer_background_color : $black;
+$footer_color            : $white;
+$footer_item_color       : $gray;
 
 
 
 
 /* _Forms
 ---------------------------------- */
-$fieldsetBackgroundColor : $baseBackgroundColor;
-$inputBorderColor : $baseBorderColor;
-$inputBackgroundColor : $white;
-$form-box-shadow : 0;
-$form-box-shadow-focus : 0;
+$fieldset_background_color : $base_background_color;
+$input_border_color        : $base_border_color;
+$input_background_color    : $white;
+$form_box_shadow           : 0;
+$form_box_shadow-focus     : 0;
 
 
 
@@ -94,13 +89,13 @@ $form-box-shadow-focus : 0;
 
 /* _Buttons
 ---------------------------------- */
-$baseBtnColor : $white ;
-$baseBtnBackgroundColor : $mainColor;
+$base_btn_color                  : $white ;
+$base_btn_background_color       : $main_color;
 
-$baseBtnHoverColor : $white;
-$baseBtnHoverBackgroundColor : darken($baseBtnBackgroundColor, 10);
+$base_btn_hover_color            : $white;
+$base_btn_hover_background_color : darken($base_btn_background_color, 10);
 
-$buttonUppercase : true;
+$button_uppercase                : true;
 
 
 
@@ -111,8 +106,8 @@ $buttonUppercase : true;
 $mobile         : 414px;
 $tablet         : 769px;
 $desktop        : 961px;
-$desktop-large  : 1200px;
-$desktop-xlarge : 1800px;
+$desktop_large  : 1200px;
+$desktop_xlarge : 1800px;
 
 
 
@@ -120,9 +115,9 @@ $desktop-xlarge : 1800px;
 
 /* _Paths
 ---------------------------------- */
-$fontPath : "../fonts";
-$imgPath : "../img";
-$svgPath : "../svg";
+$font_path : "../fonts";
+$img_path  : "../img";
+$svg_path  : "../svg";
 
 
 
@@ -131,11 +126,13 @@ $svgPath : "../svg";
 /* _Layout and sizes
 ---------------------------------- */
 // Z-indexes
-$zi-master           : 9999;
-$zi-1                : 300;
-$zi-2                : 200;
-$zi-3                : 100;
-$zi-4                : -1;
+$zi_master : 9999;
+$zi_5      : 500;
+$zi_4      : 400;
+$zi_1      : 300;
+$zi_2      : 200;
+$zi_3      : 100;
+$zi_0      : -1;
 
 
 
@@ -143,9 +140,9 @@ $zi-4                : -1;
 
 /* _Hero
 ---------------------------------- */
-$heroPadding : 3rem 1rem;
-$heroHeight : false; // set an integer to give a fixed height to your hero (ex.: $heroHeight : 40vh; )
-$overlayColor : $black;
+$hero_padding  : 3rem 1rem;
+$hero_height   : false; // set an integer to give a fixed height to your hero (ex. : $hero_height : 40vh; )
+$overlay_color : $black;
 
 
 
