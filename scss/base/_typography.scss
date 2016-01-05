@@ -4,38 +4,38 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header_font_family;
-  line-height: $baseLineHeight;
+  line-height: $base_line_height;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
   color: $header_font_color;
   margin-bottom: 0;
 }
 
 h1 {
-  font-size: $baseFontSize * 2.25; // 16 * 2.25 = 36px
+  font-size: $base_font_size * 2.25; // 16 * 2.25 = 36px
 }
 
 h2 {
-  font-size: $baseFontSize * 2; // 16 * 2 = 32px
+  font-size: $base_font_size * 2; // 16 * 2 = 32px
 }
 
 h3 {
-  font-size: $baseFontSize * 1.75; // 16 * 1.75 = 28px
+  font-size: $base_font_size * 1.75; // 16 * 1.75 = 28px
 }
 
 h4 {
-  font-size: $baseFontSize * 1.5; // 16 * 1.5 = 24px
+  font-size: $base_font_size * 1.5; // 16 * 1.5 = 24px
 }
 
 h5 {
-  font-size: $baseFontSize * 1.25; // 16 * 1.25 = 20px
+  font-size: $base_font_size * 1.25; // 16 * 1.25 = 20px
 }
 
 h6 {
-  font-size: $baseFontSize;
+  font-size: $base_font_size;
 }
 
 p {
-  margin: 0 0 $baseLineHeight*0.5rem;
+  margin: 0 0 $base_line_height*0.5rem;
   font-family: $base_font_family;
 }
 
@@ -61,7 +61,7 @@ hr {
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: $baseLineHeight 0;
+  margin: $base_line_height 0;
 }
 
 img {
@@ -72,10 +72,10 @@ img {
 
 blockquote {
     display: block;
-    padding: ($baseFontSize / 2) 0 ($baseFontSize / 2) ($baseFontSize / 1.5);
-    border-left: ($baseFontSize / 2) solid $main_color;
+    padding: ($base_font_size / 2) 0 ($base_font_size / 2) ($base_font_size / 1.5);
+    border-left: ($base_font_size / 2) solid $main_color;
     border-color: rgba(0,0,0,.1);
-    font-size: $baseFontSize;
+    font-size: $base_font_size;
     margin-left: 0;
 }
 
@@ -141,7 +141,7 @@ sub {
 small,
 .small {
     font-size: 80%;
-    line-height: $baseLineHeight * .9;
+    line-height: $base_line_height * .9;
 }
 
 .lead {
@@ -169,6 +169,6 @@ code {
     white-space: nowrap;
     padding: 0 4px;
     border: 1px solid $gray;
-    border-radius: $baseBorderRadius;
+    border-radius: $base_border_radius;
     background: $grayLight;
 }

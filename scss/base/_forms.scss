@@ -7,18 +7,18 @@
  * Core
  */
 fieldset {
-  background-color: $fieldsetBackgroundColor;
-  border: 1px solid $baseBorderColor;
-  margin: 0 0 ($baseFontSize / 2);
-  padding: $baseLineHeight;
-  @if $baseBorderRadius {
-    border-radius: $baseBorderRadius;
+  background-color: $fieldset_background_color;
+  border: 1px solid $base_border_color;
+  margin: 0 0 ($base_font_size / 2);
+  padding: $base_line_height;
+  @if $base_border_radius {
+    border-radius: $base_border_radius;
   }
 }
 
 legend {
   text-transform: uppercase;
-  padding: 0 ($baseFontSize / 2);
+  padding: 0 ($base_font_size / 2);
 }
 
 input,
@@ -26,7 +26,7 @@ label,
 select {
   display: block;
   font-family: $base_font_family;
-  font-size: $baseFontSize;
+  font-size: $base_font_size;
 }
 
 label {
@@ -58,16 +58,16 @@ input[type="week"],
 input:not([type]),
 select[multiple=multiple],
 textarea {
-  background-color: $inputBackgroundColor;
-  border: 1px solid $baseBorderColor;
-  @if $baseBorderRadius {
-    border-radius: $baseBorderRadius;
+  background-color: $input_background_color;
+  border: 1px solid $base_border_color;
+  @if $base_border_radius {
+    border-radius: $base_border_radius;
   }
-  box-shadow: $form-box-shadow;
+  box-shadow: $form_box_shadow;
   box-sizing: border-box;
   font-family: $base_font_family;
-  font-size: $baseFontSize;
-  padding: $baseFontSize / 2 ;
+  font-size: $base_font_size;
+  padding: $base_font_size / 2 ;
   transition: border .4s ease;
   width: 100%;
   -webkit-appearance: none;
@@ -77,9 +77,9 @@ textarea {
   }
 
   &:focus {
-    border-color: darken($baseBorderColor, 10);
-    border-left: ($baseFontSize / 3) solid $main_color;
-    box-shadow: $form-box-shadow-focus;
+    border-color: darken($base_border_color, 10);
+    border-left: ($base_font_size / 3) solid $main_color;
+    box-shadow: $form_box_shadow-focus;
     outline: none;
   }
 }
@@ -95,16 +95,16 @@ input[type="search"] {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-  margin-right: ($baseLineHeight / 2) / 2;
+  margin-right: ($base_line_height / 2) / 2;
 }
 
 input[type="file"] {
-  padding-bottom: ($baseLineHeight / 2);
+  padding-bottom: ($base_line_height / 2);
   width: 100%;
 }
 
 select {
-  margin-bottom: $baseLineHeight;
+  margin-bottom: $base_line_height;
   max-width: 100%;
   width: auto;
 }
@@ -157,15 +157,15 @@ select {
         padding: 0 1rem;
     }
     input[type=email] {
-      @if $baseBorderRadius {
-        border-radius: $baseBorderRadius $baseBorderRadius 0 0;
+      @if $base_border_radius {
+        border-radius: $base_border_radius $base_border_radius 0 0;
       }
       // padding: 0 .5em;
       width: 100%;
       @media (min-width : $desktop) {
           width: 70%;
-          @if $baseBorderRadius {
-            border-radius: $baseBorderRadius 0 0 $baseBorderRadius;
+          @if $base_border_radius {
+            border-radius: $base_border_radius 0 0 $base_border_radius;
           }
       }
 
@@ -177,12 +177,12 @@ select {
     input[type=submit] {
       width: 100%;
       -webkit-appearance: none;
-      @if $baseBorderRadius {
-        border-radius: 0 0 $baseBorderRadius $baseBorderRadius;
+      @if $base_border_radius {
+        border-radius: 0 0 $base_border_radius $base_border_radius;
       }
       @media (min-width : $desktop) {
           width: 30%;
-          border-radius: 0 $baseBorderRadius $baseBorderRadius 0;
+          border-radius: 0 $base_border_radius $base_border_radius 0;
       }
         // padding: 0 .5em;
         font-weight: $bold;
@@ -212,14 +212,14 @@ input[type="submit"],
 button {
   appearence: none;
   -webkit-font-smoothing: antialiased;
-  background-color: $baseBtnBackgroundColor;
-  border-radius: $baseBorderRadius;
+  background-color: $base_btn_background_color;
+  border-radius: $base_border_radius;
   border: none;
-  color: $baseBtnColor;
+  color: $base_btn_color;
   cursor: pointer;
   display: inline-block;
   font-family: $base_font_family;
-  font-size: $baseFontSize;
+  font-size: $base_font_size;
   font-weight: $bold;
   line-height: 1;
   padding: 0.75em 1em;
@@ -232,8 +232,8 @@ button {
 
   &:hover,
   &:focus {
-    background-color: $baseBtnHoverBackgroundColor;
-    color: $baseBtnHoverColor;
+    background-color: $base_btn_hover_background_color;
+    color: $base_btn_hover_color;
   }
 
   &:disabled {

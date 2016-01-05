@@ -19,27 +19,27 @@ ol {
  */
 ul.default {
   list-style-type: disc;
-  margin-bottom: $baseFontSize;
-  padding-left: $baseFontSize;
+  margin-bottom: $base_font_size;
+  padding-left: $base_font_size;
 }
 
 ol.default {
   list-style-type: decimal;
-  margin-bottom: $baseFontSize;
-  padding-left: $baseFontSize;
+  margin-bottom: $base_font_size;
+  padding-left: $base_font_size;
 }
 
 dl {
-  margin-bottom: $baseFontSize;
+  margin-bottom: $base_font_size;
 
   dt {
     font-weight: bold;
     color: $header_font_color;
-    // margin-top: $baseFontSize;
+    // margin-top: $base_font_size;
   }
 
   dd {
-    margin: 0 0 $baseFontSize;
+    margin: 0 0 $base_font_size;
   }
 }
 
@@ -56,7 +56,7 @@ dl {
         *zoom: 1;
         text-align: center;
         vertical-align: middle;
-        padding: 0 ($baseFontSize / 2);
+        padding: 0 ($base_font_size / 2);
         margin-left: -0.33333em;
     }
 }

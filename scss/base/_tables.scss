@@ -8,21 +8,21 @@
  */
 table {
   border-collapse: collapse;
-  margin: $baseFontSize 0;
+  margin: $base_font_size 0;
   table-layout: fixed;
   width: 100%;
 }
 
 th {
-  border-bottom: 1px solid darken($baseBorderColor, 15%);
+  border-bottom: 1px solid darken($base_border_color, 15%);
   font-weight: $bold;
-  padding: ($baseFontSize / 2);
+  padding: ($base_font_size / 2);
   text-align: left;
 }
 
 td {
-  border: $baseBorderColor;
-  padding: ($baseFontSize / 2);
+  border: $base_border_color;
+  padding: ($base_font_size / 2);
 }
 
 tr,
