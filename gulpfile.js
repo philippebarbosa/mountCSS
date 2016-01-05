@@ -1,22 +1,66 @@
-//Plugins
-var gulp = require('gulp');
-sass = require('gulp-ruby-sass'),
-autoprefixer = require('gulp-autoprefixer');
+/**
+ * Plugins
+ */
+var gulp         = require('gulp');
+    sass         = require('gulp-sass'),
+    postcss      = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    mqpacker     = require('css-mqpacker'),
+    concat       = require('gulp-concat');
 
-// Compile SCSS
-gulp.task('css', function () {
-    return sass('scss/style.scss')
-        .on('error', function (err) {
-            console.error('Error! ', err.message);
-        })
-        .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('./'));
+
+/**
+ *
+ * Environnement
+ *
+ */
+
+env = (function() {
+    var env = 'development';
+    return env;
+} ());
+
+// Set to production (for builds)
+gulp.task( 'envProduction', function() {
+    env = 'production';
 });
 
-// Tasks
+
+/**
+ * CSS
+ */
+gulp.task('css', function () {
+
+    if ( env === 'production' ) {
+        output = 'compressed';
+    } else {
+        output = 'expanded';
+    }
+
+    var processors = [
+        autoprefixer({browsers: ['last 2 version']}),
+        mqpacker({
+            sort: true
+        })
+    ];
+
+    return gulp.src('scss/style.scss')
+        .pipe(sass({ outputStyle : output }).on('error', sass.logError))
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('css/'));
+
+});
+
+ /**
+ * TASKS
+ */
+
+// default task (development)
 gulp.task('default', ['css'], function () {
     gulp.watch('scss/*/*.scss', ['css']);
+});
+
+// Build tasks
+gulp.task( "build", [ 'envProduction', 'css'], function () {
+    console.log("Build complete !");
 });
