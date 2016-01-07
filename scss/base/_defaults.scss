@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font: $base_font_weight $base_font_size $helvetica;
+  font: $base_font_weight $base_font_size $base_font_family;
   line-height: $base_line_height;
   background: $base_background_color;
   color: $base_font_color;

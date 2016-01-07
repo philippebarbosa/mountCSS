@@ -65,9 +65,9 @@ textarea {
   }
   box-shadow: $form_box_shadow;
   box-sizing: border-box;
-  font-family: $base_font_family;
+  font-family: $input_font_family;
   font-size: $base_font_size;
-  padding: $base_font_size / 2 ;
+  padding: $base_font_size / 2;
   transition: border .4s ease;
   width: 100%;
   -webkit-appearance: none;
