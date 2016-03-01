@@ -40,7 +40,6 @@ Start by customizing the `_variables.scss` and extend the structure depending on
 |-- pages // CUSTOMIZE THE BASE STYLES HERE
 |  `-- _home.scss
 |-- style.scss
-|-- tree_out
 |-- utils
 |  |-- _brands-colors.scss
 |  |-- _colors.scss
