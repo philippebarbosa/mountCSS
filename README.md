@@ -1,6 +1,6 @@
 ![MountCSS Logo](http://barbo.sa.com/16FPu/60Bwg3lr+)  
 
-mountCSS (beta) is a simple SCSS starter and small component library to quickstart your websites. Like Bootstrap in a very lightweight version and without the bloat. It provides basic styles for common elements that you can easily custom.  
+mountCSS (beta) is a simple SCSS starter and small pattern library to quickstart your websites. Like Bootstrap in a very lightweight version and without the bloat. It provides basic styles for common elements that you can easily custom.  
 
 # How to use
 ---
@@ -8,7 +8,7 @@ All the library is in the `scss/` folder. You need to compile `style.scss` into 
 
 Start by customizing the `_variables.scss` and extend the structure depending on your project.
   
-**PLEASE NOTE THAT THE WHOLE LIBRARY IS UNPREFIXED, YOU'LL NEED TO USE AUTOPREFIXR OR POSTCSS TO PROVIDE THE PREFIX ON THE COMPILED VERSION**
+**Please note that the whole library is unprefixed, you'll need to use autoprefixr or postcss to provide the prefix on the compiled version**
 
 # Structure
 ---
@@ -23,7 +23,11 @@ Start by customizing the `_variables.scss` and extend the structure depending on
 |  |-- _lists.scss
 |  |-- _tables.scss
 |  `-- _typography.scss
-|-- components // Some common patterns used on website
+|-- config // Suit basinc mountCSS styles heres
+|  `-- _variables.scss
+|-- pages // Customize the base styles here
+|  `-- _home.scss
+|-- patterns // Some common patterns used on website
 |  |-- _breadcrumbs.scss
 |  |-- _embed-responsive.scss
 |  |-- _footers.scss
@@ -35,11 +39,6 @@ Start by customizing the `_variables.scss` and extend the structure depending on
 |  |-- _tags.scss
 |  |-- _utilities-forms.scss
 |  `-- _utilities-layout.scss
-|-- config
-|  `-- _variables.scss
-|-- pages // CUSTOMIZE THE BASE STYLES HERE
-|  `-- _home.scss
-|-- style.scss
 |-- utils
 |  |-- _brands-colors.scss
 |  |-- _colors.scss
