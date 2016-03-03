@@ -1,20 +1,20 @@
 ### Filetype & folder ###
 #########################
 
-dist/*
-build/*
+dist
+build
 *.unprefixed.css
 *.log
 *.map
-bower_components/
-node_modules/
+bower_components
+node_modules
 .sass-cache
 
 ### SublimeText ###
 ###################
 
 *.sublime-workspace
-# *.sublime-project
+*.sublime-project
 
 ### OSX ###
 ###########
@@ -31,7 +31,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
+tree_out
 
 ### Windows ###
 ###############
@@ -45,8 +45,5 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# MountCSS styleguide, currently in development
-sources/*
-index.php
+sources
 style.css
-patterns/*

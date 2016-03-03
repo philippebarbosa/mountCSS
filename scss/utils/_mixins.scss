@@ -1,6 +1,6 @@
 // // ****************************************************************
-// _Fontface mixin : Simply creates an arrow on a box
-// e.g. : @include font-face("Samplina Neue", fonts/SamplinaNeue, bold, italic);
+// _Fontface mixin : Create a font face with a one line mixin
+// e.g. : @include font-face(["Samplina Neue"], fonts/SamplinaNeue, bold, italic);
 // *******************************************************************
 
 @function str-replace($string, $search, $replace: "") {
@@ -46,12 +46,12 @@
 // *******************************************************************
 @mixin retina-background-image($file, $type, $width, $height) {
   background-image: url($file + '.' + $type);
-  @media "only screen and (-webkit-min-device-pixel-ratio: 2),
+  @media ("only screen and (-webkit-min-device-pixel-ratio: 2),
           only screen and (min--moz-device-pixel-ratio: 2),
           only screen and (-o-min-device-pixel-ratio: 2/1),
           only screen and (min-device-pixel-ratio: 2),
           only screen and (min-resolution: 192dpi),
-          only screen and (min-resolution: 2dppx)";
+          only screen and (min-resolution: 2dppx)")
   {
     background-image: url($file + '@2x.' + $type);
     @include background-size($width, $height);
