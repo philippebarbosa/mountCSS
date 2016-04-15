@@ -14,7 +14,7 @@
     font-size:100%;
     cursor:pointer;
     border:1px solid $base_btn_color;
-    margin:.5rem;
+    margin:.5rem 0;
     padding-top:0;
     padding-bottom:0;
     line-height:3;
@@ -30,6 +30,10 @@
 
     @if $button_uppercase {
       text-transform: uppercase;
+    }
+
+    .btn {
+      margin-left: .5rem;
     }
 }
 
