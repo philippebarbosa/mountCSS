@@ -48,12 +48,12 @@ a {
     &:hover {
       color: $hover_link_color;
     }
+    &:active, &:focus {
+      color: $hover_link_color;
+      outline: none;
+    }
   }
 
-  &:active, &:focus {
-    color: $hover_link_color;
-    outline: none;
-  }
 }
 
 hr {
