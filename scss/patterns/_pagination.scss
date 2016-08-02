@@ -6,7 +6,7 @@
     word-spacing:-0.43em;
     list-style:none;
     margin-left:0;
-    @extends .clearfix;
+    @extend .clearfix;
 
     // Use this to position your pagination
     &.pagination-left {
