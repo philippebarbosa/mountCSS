@@ -12,7 +12,7 @@
 
 
 /**
- * _UTILS
+ * _UTILS : Some usefull things
  */
 @import 'utils/font-stacks',
         'utils/colors',
@@ -21,7 +21,7 @@
 
 
 /**
- * _Config
+ * _CONFIG : Your project variables
  */
 
 @import 'config/variables';
@@ -30,7 +30,7 @@
 
 
 /**
- * _BASE
+ * _BASE : The basics
  */
 @import 'base/defaults',
         'base/typography',
@@ -45,7 +45,7 @@
 
 
 /**
- * _PA TTERNS
+ * _PATTERNS : Common patterns used on websites
  */
 @import 'patterns/headers',
         'patterns/footers',
@@ -59,10 +59,16 @@
         'patterns/embed-responsive';
 
 
+/**
+ * _COMPONENTS : Your project specific components may be listed here
+ */
 
+@import 'components/sharable',
+        'components/component',
+        'components/component';
 
 
 /**
- * _PAGE
+ * _PAGE : If you need special styles for pages, here you go
  */
 @import 'pages/home';
