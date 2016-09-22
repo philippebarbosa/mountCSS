@@ -107,3 +107,30 @@
     float:left;
     clear:left;
 }
+
+
+
+
+// ****************************************************************
+// _Inline Group : Set elements to be inline
+// ****************************************************************
+
+.inline-container {
+    display: inline-block;
+}
+
+.inline-container,
+.inline-container--top,
+.inline-container--bottom {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: $base_font_size;
+}
+
+.inline-container--top {
+    vertical-align: top;
+}
+
+.inline-container--bottom {
+    vertical-align: bottom;
+}
