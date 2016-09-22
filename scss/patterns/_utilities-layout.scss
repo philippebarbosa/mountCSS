@@ -119,18 +119,18 @@
     display: inline-block;
 }
 
-.inline-container,
-.inline-container--top,
-.inline-container--bottom {
+.inline-item,
+.inline-item--top,
+.inline-item--bottom {
     display: inline-block;
     vertical-align: middle;
     margin-left: $base_font_size;
 }
 
-.inline-container--top {
+.inline-item--top {
     vertical-align: top;
 }
 
-.inline-container--bottom {
+.inline-item--bottom {
     vertical-align: bottom;
 }
