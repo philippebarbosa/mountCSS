@@ -45,7 +45,11 @@ gulp.task('css', function () {
     ];
 
     return gulp.src('scss/style.scss')
-        .pipe(sass({ outputStyle : output }).on('error', sass.logError))
+        .pipe(sass({
+            outputStyle : output,
+            sourceComments: 'map'
+        })
+        .on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(gulp.dest('css/'));
 
