@@ -10,36 +10,44 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-h1 {
+h1,
+.title__h1 {
   font-size: $base_font_size * 2.25; // 16 * 2.25 = 36px
 }
 
-h2 {
+h2,
+.title__h2 {
   font-size: $base_font_size * 2; // 16 * 2 = 32px
 }
 
-h3 {
+h3,
+.title__h3 {
   font-size: $base_font_size * 1.75; // 16 * 1.75 = 28px
 }
 
-h4 {
+h4,
+.title__h4 {
   font-size: $base_font_size * 1.5; // 16 * 1.5 = 24px
 }
 
-h5 {
+h5,
+.title__h5 {
   font-size: $base_font_size * 1.25; // 16 * 1.25 = 20px
 }
 
-h6 {
+h6,
+.title__h6 {
   font-size: $base_font_size;
 }
 
-p {
+p,
+.text {
   margin: 0 0 $base_line_height*0.5rem;
   font-family: $base_font_family;
 }
 
-a {
+a,
+.link {
   color: $base_link_color;
   transition: all .3s ease;
   text-decoration: none;
@@ -56,7 +64,8 @@ a {
 
 }
 
-hr {
+hr,
+.hr {
   border-bottom: 1px solid $main_color;
   border-left: none;
   border-right: none;

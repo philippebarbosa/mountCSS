@@ -25,7 +25,7 @@
     display: block;
 }
 
-.row [class*="col-"] {
+.row [class*="col__"] {
     min-height: 1px;
     @media (min-width : $desktop) {
         float: left;
@@ -33,7 +33,7 @@
     }
 }
 
-.row [class*="col-"]:first-child {
+.row [class*="col__"]:first-child {
     margin-left:0;
 }
 
@@ -41,73 +41,73 @@
 /**
  * Grid Classes
  */
-.col-1 {
+.col__1 {
     width: 100%;
     @media (min-width : $desktop) {
         width:7.41666666667%;
     }
 }
-.col-2 {
+.col__2 {
     width: 100%;
     @media (min-width : $desktop) {
         width:15.8333333333%;
     }
 }
-.col-3 {
+.col__3 {
     width: 100%;
     @media (min-width : $desktop) {
         width:24.25%;
     }
 }
-.col-4 {
+.col__4 {
     width: 100%;
     @media (min-width : $desktop) {
         width:32.6666666667%;
     }
 }
-.col-5 {
+.col__5 {
     width: 100%;
     @media (min-width : $desktop) {
         width:41.0833333333%;
     }
 }
-.col-6 {
+.col__6 {
     width: 100%;
     @media (min-width : $desktop) {
         width:49.5%;
     }
 }
-.col-7 {
+.col__7 {
     width: 100%;
     @media (min-width : $desktop) {
         width:57.9166666667%;
     }
 }
-.col-8 {
+.col__8 {
     width: 100%;
     @media (min-width : $desktop) {
         width:66.3333333333%;
     }
 }
-.col-9 {
+.col__9 {
     width: 100%;
     @media (min-width : $desktop) {
         width:74.75%;
     }
 }
-.col-10 {
+.col__10 {
     width: 100%;
     @media (min-width : $desktop) {
         width:83.1666666667%;
     }
 }
-.col-11 {
+.col__11 {
     width: 100%;
     @media (min-width : $desktop) {
         width:91.5833333333%;
     }
 }
-.col-12 {
+.col__12 {
     width: 100%;
     margin-left:0;
 }

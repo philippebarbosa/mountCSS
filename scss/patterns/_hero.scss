@@ -20,7 +20,7 @@
 }
 
 
-.hero-content { // inner content
+.hero__content { // inner content
     position: relative;
     z-index: $zi_2;
     color: white;
@@ -31,15 +31,15 @@
 /**
  * Text alignement
  */
-.hero-content-center {
+.hero__content-center {
     text-align: center;
 }
 
-.hero-content-left {
+.hero__content-left {
     text-align: left;
 }
 
-.hero-content-right {
+.hero__content-right {
     text-align: right;
 }
 
@@ -48,7 +48,7 @@
 /**
  * If you need an overlay to cover picture, here it is :
  */
-.hero-overlay {
+.hero__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,7 +58,7 @@
     z-index: $zi_3;
 }
 
-.hero-cta { // call to action
+.hero__cta { // call to action
     margin-top: 5rem;
 }
 
@@ -70,12 +70,12 @@
  * Inline <img> in markup sets the height of the hero
  *
  */
-.hero-dynamic {
+.hero__dynamic {
     padding: 0;
     line-height: 0;
     position: relative;
     width: 100%;
-    .hero-content {
+    .hero__content {
         transform: translate(-50%, -50%);
         left: 50%;
         margin: auto;
@@ -86,7 +86,7 @@
     }
 }
 
-.hero-dynamic img {
+.hero__dynamic img {
     height: auto;
     left: 0;
     position: relative;

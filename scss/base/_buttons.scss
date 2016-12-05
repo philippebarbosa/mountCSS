@@ -54,25 +54,25 @@
 /**
  * Sizes
  */
-.btn-small{
+.btn__small{
     padding-right:0.5rem;
     padding-left: 0.5rem;
     line-height:2;
 }
 
-.btn-large {
+.btn__large {
     padding-right:1.5rem;
     padding-left: 1.5rem;
     line-height:4;
 }
 
-.btn-huge {
+.btn__huge {
     padding-right:2rem;
     padding-left: 2rem;
     line-height:5;
 }
 
-.btn-full {
+.btn__full {
     width:100%;
     padding-right:0;
     padding-left: 0;
@@ -83,7 +83,7 @@
 /**
  * Colors
  */
-.btn-success {
+.btn__success {
   border: 1px solid darken($success, 5);
   background-color: $success;
   &:hover {
@@ -91,7 +91,7 @@
   }
 }
 
-.btn-error {
+.btn__error {
   border: 1px solid darken($error, 5);
   background-color: $error;
   &:hover {
@@ -99,7 +99,7 @@
   }
 }
 
-.btn-warning {
+.btn__warning {
   border: 1px solid darken($warning, 5);
   background-color: $warning;
   &:hover {
@@ -107,7 +107,7 @@
   }
 }
 
-.btn-info {
+.btn__info {
   border: 1px solid darken($info, 5);
   background-color: $info;
   &:hover {
@@ -115,17 +115,17 @@
   }
 }
 
-.btn-inverse,
-.btn-inverse:hover {
+.btn__inverse,
+.btn__inverse:hover {
     background: $base_background_color;
     color: $main_color;
     border: 1px solid $base_background_color;
 }
 
-.btn-disabled,
-.btn-disabled:hover,
-.btn-disabled:active,
-.btn-disabled:focus{
+.btn__disabled,
+.btn__disabled:hover,
+.btn__disabled:active,
+.btn__disabled:focus{
     opacity: 0.4;
     cursor:text;
 }

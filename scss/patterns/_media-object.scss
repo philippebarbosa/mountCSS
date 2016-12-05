@@ -13,30 +13,30 @@
     margin: 0 0 $base_font_size;
 }
 
-.media-img{
+.media__img{
     float:left;
     margin-right:$base_font_size;
 }
 
-.media-img-inverse {
+.media__img--inverse {
     float:right;
     margin-left:$base_font_size;
 }
 
-.media-img img,
-.media-img-inverse img {
+.media__img img,
+.media__img--inverse img {
     display:block;
 }
 
-.media-content {
+.media__content {
     overflow:hidden;
 }
 
-.media-content,
-.media-content > :last-child{
+.media__content,
+.media__content > :last-child{
     margin-bottom:0;
 }
 
-.media-content > p {
+.media__content > p {
     margin-top: 0;
 }

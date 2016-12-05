@@ -23,25 +23,25 @@
 /**
  * Colors
  */
-.message-success {
+.message__success {
     background: lighten($success, 40);
     border: 1px solid $success;
     color: darken($success, 20);
 }
 
-.message-error {
+.message__error {
     background: lighten($error, 40);
     border: 1px solid $error;
     color: darken($error, 20);
 }
 
-.message-warning {
+.message__warning {
     background: lighten($warning, 40);
     border: 1px solid $warning;
     color: darken($warning, 20);
 }
 
-.message-info {
+.message__info {
     background: lighten($info, 40);
     border: 1px solid $info;
     color: darken($info, 20);
@@ -51,6 +51,6 @@
 /**
  * Fit message width to parent
  */
-.message-block {
+.message__block {
   width: 100%;
 }

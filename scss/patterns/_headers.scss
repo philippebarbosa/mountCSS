@@ -46,17 +46,17 @@
 /**
  * Positionning : Use these class to position your inner nav element
  */
-.nav-left {
+.nav__left {
     float: left;
     width: auto;
 }
 
-.nav-right {
+.nav__right {
     float: right;
     width: auto;
 }
 
-.nav-center {
+.nav__center {
     display: block;
     text-align: center;
 }
@@ -65,7 +65,7 @@
 /**
  * Nav logo styles
  */
-.nav-logo {
+.nav__logo {
     display: inline-block;
     *display: inline;
     *zoom: 1;

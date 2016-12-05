@@ -113,21 +113,21 @@ select {
 /**
  * Input States
  */
-.input-error {
+.input__error {
   border: 1px solid $error !important;
   margin-bottom: .3rem;
 }
 
-.input-success {
+.input__success {
   border: 1px solid $success !important;
   margin-bottom: .3rem;
 }
 
-.input-message-error {
+.input__message--error {
   color: $error;
   font-size: 75%;
 }
-.input-message-success {
+.input__message--success {
   color: $success;
   font-size: 75%;
 }
@@ -137,7 +137,7 @@ select {
 /**
  * Sticked input/button
  */
-.sticked-form {
+.sticked__form {
     margin: 0 auto;
     width: 100%;
     @media (min-width : $tablet) {

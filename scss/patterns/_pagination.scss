@@ -9,13 +9,13 @@
     @extend .clearfix;
 
     // Use this to position your pagination
-    &.pagination-left {
+    &.pagination__left {
         text-align:left;
     }
-    &.pagination-center {
+    &.pagination__center {
         text-align:center;
     }
-    &.pagination-right {
+    &.pagination__right {
         text-align:right;
     }
 
@@ -36,10 +36,10 @@
     margin:-$base_font_size / 2;
 }
 
-.pagination-first a:before{
+.pagination__first a:before{
     content:"\00AB" "\00A0";
 }
 
-.pagination-last a:after{
+.pagination__last a:after{
     content:"\00A0" "\00BB";
 }
