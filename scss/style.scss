@@ -23,7 +23,6 @@
 /**
  * _CONFIG : Your project variables
  */
-
 @import 'config/variables';
 
 
@@ -60,12 +59,9 @@
 
 
 /**
- * _COMPONENTS : Your project specific components may be listed here
+ * _THEME : Your project specific components may be listed here
  */
-
-@import 'components/sharable',
-        'components/component',
-        'components/component';
+@import 'theme/theme';
 
 
 /**
