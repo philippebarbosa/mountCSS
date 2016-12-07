@@ -51,7 +51,11 @@ dl {
 /**
  * List inline
  */
-.list__inline {
+
+.list__inline,
+.list__inline--center,
+.list__inline--left,
+.list__inline--right {
     display: block;
     padding: 0;
     li {
@@ -63,4 +67,14 @@ dl {
         padding: 0 ($base_font_size / 2);
         margin-left: -0.33333em;
     }
+}
+
+.list__inline--center {
+    text-align: center;
+}
+.list__inline--left {
+    text-align: left;
+}
+.list__inline--right {
+    text-align: right;
 }

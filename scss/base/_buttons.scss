@@ -129,3 +129,35 @@
     opacity: 0.4;
     cursor:text;
 }
+
+// ****************************************************************
+// _Btn layouting
+// ****************************************************************
+
+.btn__group,
+.btn__group--center,
+.btn__group--left,
+.btn__group--right {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  .btn,
+  .btn__inverse,
+  .btn__alt {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+.btn__group--center {
+  text-align: center;
+}
+.btn__group--left {
+  text-align: left;
+}
+.btn__group--right {
+  text-align: right;
+}
+
+// ------- End of Btn layouting -------- \
