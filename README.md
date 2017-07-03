@@ -1,6 +1,6 @@
 ![MountCSS Logo](http://barbo.sa.com/16FPu/60Bwg3lr+)  
 
-mountCSS (beta) is a simple SCSS starter and small pattern library to quickstart your websites. Like Bootstrap in a very lightweight version and without the bloat. It provides basic styles for common elements that you can easily custom.  
+mountCSS (beta) is a simple front starter and small pattern library to quickstart your websites. Like Bootstrap in a very lightweight version and without the bloat. It provides basic styles for common elements that you can easily custom.  
 
 # How to use
 ---
@@ -9,6 +9,11 @@ All the library is in the `scss/` folder. You need to compile `style.scss` into 
 Start by customizing the `_variables.scss` and extend the structure depending on your project.
   
 **Please note that the whole library is unprefixed, you'll need to use autoprefixr or postcss to provide the prefix on the compiled version**
+
+# Frontend starter
+---
+
+To quickly start to work, I added a small structure structure (index.html, js folders, gulpfile workflow), to quickly start to code your website. a
 
 # Structure
 ---
