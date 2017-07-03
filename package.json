@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "description": "mountCSS is a SCSS starter and small component library to quickstart your websites.",
   "devDependencies": {
-    "gulp": "^3.9.0",
     "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.12.3",
     "css-mqpacker": "^4.0.0",
     "csswring": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
     "gulp-concat": "^2.6.0",
+    "gulp-imageoptim": "^1.0.4",
     "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^6.0.1",
-    "gulp-sass": "^2.1.0"
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.4.2"
   },
   "repository": {
     "type": "git",
