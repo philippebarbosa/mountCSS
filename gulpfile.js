@@ -104,6 +104,6 @@ gulp.task('default', ['css', 'jsLibs', 'jsScripts', 'browser-sync'], function ()
 });
 
 // Build tasks
-gulp.task( "prod", [ 'css', 'jsLibs', 'jsScripts', 'minify-css', 'jsLibsBuild', 'jsScriptsBuild'], function () {
+gulp.task( "prod", ['minify-css', 'jsLibsBuild', 'jsScriptsBuild'], function () {
     console.log("Build complete !");
 });
