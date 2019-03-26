@@ -1,0 +1,562 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"/>
+    <title>Styleguide : MountCSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendors/modernizr.js"></script>
+    <style>
+      .demo_grid {
+        line-height: 3rem;
+        text-align: center;
+        background-color: gray;
+        /* font-weight: bold; */
+        color: white;
+        margin-bottom: 1.6rem;
+      }
+
+      .demo_section {
+        display: block;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: black;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #000;
+      }
+    </style>
+</head>
+<body>
+<div class="wrap" id="top" role="document">
+    <!--
+        ********************
+        GRID
+        ********************
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <h1 class="demo_section">Grid :</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <div class="demo_grid">
+                    col_12
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col_6">
+                <div class="demo_grid">
+                    col_6
+                </div>
+            </div>
+            <div class="col_6">
+                <div class="demo_grid">
+                    col_6
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col_12 col_md_6">
+                <div class="demo_grid">
+                    col_12 col_md_6
+                </div>
+            </div>
+            <div class="col_12 col_md_6">
+                <div class="demo_grid">
+                    col_12 col_md_6
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col_md_6 push_md_3">
+                <div class="demo_grid">
+                    col_md_6 push_md_3
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container_s">
+        <div class="row">
+            <div class="col_12">
+                <div class="demo_grid">
+                    <h1>A small container</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container_xs">
+        <div class="row">
+            <div class="col_12">
+                <div class="demo_grid">
+                    <h1>A xsmall container</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        ********************
+        Typography
+        ********************
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <div class="row">
+                    <div class="col_12">
+                        <h1 class="demo_section">Headers :</h1>
+                    </div>
+                    <div class="col_12">
+                        <h1>Title h1</h1>
+                        <h2>Title h2</h2>
+                        <h3>Title h3</h3>
+                        <h4>Title h4</h4>
+                        <h5>Title h5</h5>
+                        <h6>Title h6</h6>
+                        <p class="title">A classic p tag using htitle styles </p>
+                    </div>
+
+
+                    <div class="col_12">
+                        <h1 class="demo_section">Paragraphs :</h1>
+                    </div>
+                    <div class="col_12">
+                        <div class="row">
+                            <div class="col_12">
+                                <p>Classic : Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eligendi facere quas repellat unde quae eveniet! Fugiat consequuntur, voluptatibus tempora, magni fugit saepe quis tempore nesciunt illum facilis harum. Facilis?</p>
+                                <p class="text__primary">Use text_primary class : Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eligendi facere quas repellat unde quae eveniet! Fugiat consequuntur, voluptatibus tempora, magni fugit saepe quis tempore nesciunt illum facilis harum. Facilis?</p>
+                                <p class="text__secondary">Use text_secondary class : Nesciunt, eligendi facere quas repellat unde quae eveniet! Fugiat consequuntur, voluptatibus tempora, magni fugit saepe quis tempore nesciunt illum facilis harum. Facilis?</p>
+                                <p class="text__tertiary">Use text_tertiary class : Fugiat consequuntur, voluptatibus tempora, magni fugit saepe quis tempore nesciunt illum facilis harum. Facilis?</p>
+                                <div style="padding: 1rem;margin: 1rem auto; background:black;">
+                                        <p class="text__inverse">Use text__inverse class : Fugiat consequuntur, voluptatibus tempora, magni fugit saepe quis tempore nesciunt illum facilis harum. Facilis?</p>
+                                </div>
+                                <p><a href="#!">This is a text link</a>.</p>
+                                <p><strong>Strong is used to indicate strong importance.</strong></p>
+                                <p><em>This text has added emphasis.</em></p>
+                                <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+                                <p>The <i>i element</i> is text that is offset from the normal text.</p>
+                                <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+                                <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+                                <p><s>This text has a strikethrough</s>.</p>
+                                <p>Superscript<sup>®</sup>.</p>
+                                <p>Subscript for things like H<sub>2</sub>O.</p>
+                                <p><small>This small text is small for for fine print, etc.</small></p>
+                                <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+                                <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+                                <p><cite>This is a citation.</cite></p>
+                                <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+                                <p>The <mark>mark element</mark> indicates a highlight.</p>
+                                <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+                                <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+                            </div>
+                            <div class="col_12">
+                                    <h1 class="demo_section">Links :</h1>
+                                </div>
+                            <div class="col_6">
+                                <a class="link__primary" href="#">link_primary</a>
+                                <a class="link__secondary" href="#">link_secondary</a>
+                                <a class="link__tertiary" href="#">link_tertiary</a>
+                                <div style="padding: 1rem;margin: 1rem auto; background:black;">
+                                    <a class="link__inverse" href="#">link__inverse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col_12">
+                        <h1 class="demo_section">Lists :</h1>
+                    </div>
+
+                    <div class="col_12 col_md_6">
+                        <ul>
+                            <li>Unordered Item 1</li>
+                            <li>Unordered Item 2</li>
+                            <li>Unordered Item 3
+                                <ul>
+                                    <li>Unordered Item 3.1</li>
+                                    <li>Unordered Item 3.2
+                                        <ul>
+                                            <li>Unordered Item 3.2.1</li>
+                                            <li>Unordered Item 3.2.2</li>
+                                        </ul>
+                                    </li>
+                                    <li>Unordered Item 3.3</li>
+                                </ul>
+                            </li>
+                            <li>Unordered Item 4</li>
+                            <li>
+                                <p>
+                                    Unordered Item in a p tag
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Unordered Item in a a tag
+                                </a>
+                            </li>
+                            <li>
+                                <p>
+                                    Very long item : lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam. Ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col_12 col_md_6">
+                        <ol>
+                            <li>Ordered Item 1</li>
+                            <li>Ordered Item 2</li>
+                            <li>Ordered Item 3
+                                <ul>
+                                    <li>Ordered Item 3.1</li>
+                                    <li>Ordered Item 3.2
+                                        <ul>
+                                            <li>Ordered Item 3.2.1</li>
+                                            <li>Ordered Item 3.2.2</li>
+                                        </ul>
+                                    </li>
+                                    <li>Ordered Item 3.3</li>
+                                </ul>
+                            </li>
+                            <li>Ordered Item 4</li>
+                            <li>
+                                <p>
+                                    Ordered Item in a p tag
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ordered Item in a a tag
+                                </a>
+                            </li>
+                            <li>
+                                <p>
+                                    Very long Ordered item : lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam. Ipsum dolor sit amet consectetur adipisicing elit. Quasi, laboriosam.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <hr>
+                    <ul class="list__inline">
+                        <li class="list__inline__item">List inline item 1</li>
+                        <li class="list__inline__item">List inline item 2</li>
+                        <li class="list__inline__item">List inline item 3</li>
+                        <li class="list__inline__item">List inline items are left centered by default</li>
+                    </ul>
+                    <ul class="list__inline center">
+                        <li class="list__inline__item">List inline item center item</li>
+                        <li class="list__inline__item">List inline item</li>
+                        <li class="list__inline__item">List inline item</li>
+                    </ul>
+                    <ul class="list__inline right">
+                        <li class="list__inline__item">List inline item right item</li>
+                        <li class="list__inline__item">List inline item</li>
+                        <li class="list__inline__item">List inline item</li>
+                    </ul>
+                    <hr>
+                    <ul class="list__inline center__md">
+                        <li class="list__inline__item">List inline center from $tablet</li>
+                        <li class="list__inline__item">List inline item</li>
+                        <li class="list__inline__item">List inline item</li>
+                    </ul>
+                    <ul class="list__inline center__lg">
+                        <li class="list__inline__item">List inline center from $desktop</li>
+                        <li class="list__inline__item">List inline item center 2</li>
+                        <li class="list__inline__item">List inline item center 3</li>
+                    </ul>
+                    <ul class="list__inline right__md">
+                        <li class="list__inline__item">List inline right from $tablet</li>
+                        <li class="list__inline__item">List inline item right 2</li>
+                        <li class="list__inline__item">List inline item right 3</li>
+                    </ul>
+                    <ul class="list__inline right__lg">
+                        <li class="list__inline__item">List inline right from $desktop</li>
+                        <li class="list__inline__item">List inline item right 2</li>
+                        <li class="list__inline__item">List inline item right 3</li>
+                    </ul>
+
+                    <div class="col_12">
+                        <h1 class="demo_section">Buttons :</h1>
+                    </div>
+
+                    <div class="col_12">
+                        <a href="#" class="btn">ahref btn</a>
+                        <a href="#" class="btn btn__primary">A primary ahref btn</a>
+                        <a href="#" class="btn btn__secondary">A secondary ahref btn</a>
+                        <a href="#" class="btn btn__tertiary">A tertiary ahref btn</a>
+
+                        <div style="display:inline-block;padding: 1rem;margin: 1rem auto; background:black;">
+                        <a href="#" class="btn btn__inverse">A inverse ahref btn</a>
+                        </div>
+
+                        <br>
+                        <a href="#" class="btn btn__valid">A valid ahref btn</a>
+                        <a href="#" class="btn btn__error">A error ahref btn</a>
+                        <a href="#" class="btn btn__info">A info ahref btn</a>
+
+
+                        <br>
+
+                        <a href="#" class="btn btn__xxl">ahref xxl btn</a>
+                        <a href="#" class="btn btn__xl">ahref xl btn</a>
+                        <a href="#" class="btn">ahref btn</a>
+                        <a href="#" class="btn btn__small">ahref btn small</a>
+                        <a href="#" class="btn btn__xsmall">ahref btn xsmall</a>
+
+                        <br>
+
+                        <p class="btn">Classic tag button</p>
+                        <span class="btn">Another classic tag button</span>
+
+                        <div style="max-width:200px">
+                        <a href="#" class="btn">A long text button just to check the line-height</a>
+                        </div>
+
+                        <a href="#" class="btn">ahref btn</a>
+                        <a href="#" class="btn btn__primary">A primary ahref btn</a>
+                        <a href="#" class="btn btn__secondary">A secondary ahref btn</a>
+                        <a href="#" class="btn btn__tertiary">A tertiary ahref btn</a>
+                        <div style="display:inline-block;padding: 1rem;margin: 1rem auto; background:black;">
+                        <a href="#" class="btn btn__inverse">A inverse ahref btn</a>
+                        </div>
+
+                        <a href="#" class="btn btn__outline">ahref btn</a>
+                        <a href="#" class="btn btn__primary btn__outline">A primary ahref btn</a>
+                        <a href="#" class="btn btn__secondary btn__outline">A secondary ahref btn</a>
+                        <a href="#" class="btn btn__tertiary btn__outline">A tertiary ahref btn</a>
+                        <div style="display:inline-block;padding: 1rem;margin: 1rem auto; background:black;">
+                        <a href="#" class="btn btn__inverse btn__outline">A inverse ahref btn</a>
+                        </div>
+
+                        <button class="btn">A form button</button>
+                        <button class="btn btn__secondary">A form button themed</button>
+
+                        <p>
+                            A <button class="button__link" onclick="alert('Hello World !')">button link</button> for js behavior.
+                        </p>
+
+                        <form action="">
+                            <input type="submit" value="Input type submit button">
+                        </form>
+
+                        <a href="#" class="btn btn__block">Full width button</a>
+                        <a href="#" class="btn btn__block__md">Full width from $tablet button</a>
+                        <a href="#" class="btn btn__block__lg">Full width from $desktop button</a>
+
+                        <br>
+
+                        <a href="#" class="btn btn__block sm__only">Full width button below $tablet</a>
+                        <a href="#" class="btn btn__block smd__only">Full width button below $desktop</a>
+
+                        <br>
+
+                        <button class="btn">
+                            <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                            A button with an icon before
+                        </button>
+
+                        <button class="btn">
+                            A form button with an icon after
+                            <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                        </button>
+
+                        <br>
+
+                        <button class="btn btn__circular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                        </button>
+
+                        <a href="#" class="btn btn__circular btn__secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                        </a>
+
+                        <button class="btn btn__circular btn__tertiary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                        </button>
+
+                        <a href="#" class="btn btn__circular btn__xxl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                        </a>
+
+                        <a href="#" class="btn btn__circular btn__xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                        </a>
+
+                        <a href="#" class="btn btn__circular btn__small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                        </a>
+
+                        <a href="#" class="btn btn__circular btn__xsmall">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 11.522l1.578-1.626 7.734 4.619 13.335-12.526 1.353 1.354-14 18.646z"></path></svg>
+                        </a>
+
+                        <div class="btn__group">
+                            <a class="btn" href="#">Button group item</a>
+                            <a class="btn" href="#">Button group item</a>
+                        </div>
+
+                        <div class="btn__group__md">
+                            <a class="btn" href="#">Button group from $tablet item</a>
+                            <a class="btn" href="#">Button group from $tablet item</a>
+                        </div>
+
+                        <div class="btn__group__lg">
+                            <a class="btn" href="#">Button group from $desktop item</a>
+                            <a class="btn" href="#">Button group from $desktop item</a>
+                        </div>
+                    </div>
+
+                    <div class="col_12">
+                        <h1 class="demo_section">Tables :</h1>
+                    </div>
+
+                    <div class="col_12">
+                        <!-- Tableau simple avec en-tête -->
+                        <p>Table classic :</p>
+                        <table>
+                            <tbody><tr>
+                                <th>Prénom (table unstyled)</th>
+                                <th>Nom</th>
+                            </tr>
+                            <tr>
+                                <td>Jean</td>
+                                <td>Dupont</td>
+                            </tr>
+                            <tr>
+                                <td>Marion</td>
+                                <td>Duval</td>
+                            </tr>
+                        </tbody></table>
+
+                        <!-- Tableau simple avec en-tête -->
+                        <p>Table basic styled :</p>
+                        <table class="table__basic">
+                            <tbody><tr>
+                                <th>Prénom (table basic)</th>
+                                <th>Nom</th>
+                            </tr>
+                            <tr>
+                                <td>Jean</td>
+                                <td>Dupont</td>
+                            </tr>
+                            <tr>
+                                <td>Marion</td>
+                                <td>Duval</td>
+                            </tr>
+                        </tbody></table>
+
+                        <p>Table basic hover styled :</p>
+                        <table class="table__basic__hover">
+                            <tbody><tr>
+                                <th>Prénom (table basic)</th>
+                                <th>Nom</th>
+                            </tr>
+                            <tr>
+                                <td>Jean</td>
+                                <td>Dupont</td>
+                            </tr>
+                            <tr>
+                                <td>Marion</td>
+                                <td>Duval</td>
+                            </tr>
+                        </tbody></table>
+
+                            <!-- Tableau utilisant thead, tfoot, et tbody -->
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>Contenu d'en-tête 1</th>
+                                <th>Contenu d'en-tête 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>Contenu interne 1</td>
+                                <td>Contenu interne 2</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                <td>Pied de tableau 1</td>
+                                <td>Pied de tableau 2</td>
+                                </tr>
+                            </tfoot>
+                            </table>
+
+                            <!-- Tableau utilisant colgroup -->
+                            <table>
+                            <colgroup span="4" class="columns"></colgroup>
+                            <tbody><tr>
+                                <th>Pays</th>
+                                <th>Capitales</th>
+                                <th>Population</th>
+                                <th>Langue</th>
+                            </tr>
+                            <tr>
+                                <td>USA</td>
+                                <td>Washington D.C.</td>
+                                <td>309 millions</td>
+                                <td>Anglais</td>
+                            </tr>
+                            <tr>
+                                <td>Suède</td>
+                                <td>Stockholm</td>
+                                <td>9 millions</td>
+                                <td>Suédois</td>
+                            </tr>
+                            </tbody></table>
+
+                            <!-- Tableau utilisant colgroup et col -->
+                            <table>
+                            <colgroup>
+                                <col class="column1">
+                                <col class="columns2plus3" span="2">
+                            </colgroup>
+                            <tbody><tr>
+                                <th>Citron vert</th>
+                                <th>Citron</th>
+                                <th>Orange</th>
+                            </tr>
+                            <tr>
+                                <td>Vert</td>
+                                <td>Jaune</td>
+                                <td>Orange</td>
+                            </tr>
+                            </tbody></table>
+
+                            <!-- Tableau simple avec une légende -->
+                            <table>
+                            <caption>Super légende</caption>
+                            <tbody><tr>
+                                <td>Données géniales</td>
+                            </tr>
+                            </tbody></table>
+                    </div>
+
+                    <div class="col_12">
+                        <h1 class="demo_section">Forms :</h1>
+                    </div>
+
+                    <div class="col_12">
+                        todo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

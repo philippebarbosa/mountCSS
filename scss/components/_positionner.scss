@@ -1,0 +1,39 @@
+// ****************************************************************
+// _positionner
+// ****************************************************************
+
+.positionner {
+    position: relative;
+}
+
+.positionned {
+    position: absolute;
+}
+
+.pos_full_center {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.pos_center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pos_bottom {
+    bottom: 0;
+}
+
+.pos_top {
+    bottom: 0;
+}
+
+.pos_left {
+    left: 0;
+}
+
+.pos_right {
+    right: 0;
+}
+// ------- End of positionner -------- \

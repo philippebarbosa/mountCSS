@@ -1,0 +1,127 @@
+// ****************************************************************
+// _section
+// ****************************************************************
+
+// LAYOUT
+//---------------------------------- //
+
+$section_padding: 6rem 0;
+$section_content_margin: 2rem 0;
+$section_footer_margin: 2rem 0;
+
+.section {
+    display: block;
+    width: 100%;
+    padding: $section_padding;
+    background-color: $base_background_color;
+}
+
+.section_content {
+    display: block;
+    margin: $section_content_margin;
+}
+
+.section_footer {
+    display: block;
+    margin: $section_footer_margin;
+}
+
+
+// THEME
+//---------------------------------- //
+
+@each $theme, $color in $themes {
+    .section_#{$theme} {
+        background_color: $color;
+        color: $base_background_color;
+    }
+}
+
+
+// ALIGNMENT
+//---------------------------------- //
+
+.section_left {
+    text-align: left;
+}
+
+.section_center {
+    text-align: center;
+}
+
+.section_right {
+    text-align: right;
+}
+
+// TYPOGAPHY
+//---------------------------------- //
+
+$section_title_size: 4.5rem;
+$section_title_md_size: 5rem;
+$section_title_lg_size: 6.5rem;
+
+$section_title_weight: $bold;
+$section_title_color: $quartery;
+$section_title_transform: inherit;
+
+.section_title {
+    font-size: $section_title_size;
+    @media (min-width : $tablet ) {
+        font-size: $section_title_md_size;
+    }
+        @media (min-width : $desktop ) {
+        font-size: $section_title_lg_size;
+    }
+    font-weight: $section_title_weight;
+    color: $section_title_color;
+    text-transform: $section_title_transform;
+}
+
+$section_title_small_size: 2.8rem;
+$section_title_small_md_size: 4rem;
+$section_title_small_lg_size: 4rem;
+
+$section_title_small_weight: $regular;
+$section_title_small_color: $quartery;
+
+.section_title_small {
+    font-size: $section_title_small_size;
+
+    @media (min-width : $tablet ) {
+        font-size: $section_title_small_md_size;
+    }
+
+    @media (min-width : $desktop ) {
+        font-size: $section_title_small_lg_size;
+    }
+}
+
+$section_baseline_size: 1.2rem;
+$section_baseline_weight: $bold;
+$section_baseline_color: $primary;
+$section_baseline_transform: uppercase;
+.section_baseline {
+    font-size: $section_baseline_size;
+    font-weight: $section_baseline_weight;
+    color: $section_baseline_color;
+    text-transform: $section_baseline_transform;
+}
+
+$section_baseline_small_size: 1.2rem;
+$section_baseline_small_weight: $regular;
+$section_baseline_small_color: $quartery;
+.section_baseline_small {
+    font-size: $section_title_small_size;
+}
+
+// BUTTONS
+//---------------------------------- //
+
+// FORM
+//---------------------------------- //
+
+// GRAPHICS
+//---------------------------------- //
+
+
+// ------- End of ModuleName -------- \

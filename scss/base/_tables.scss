@@ -9,7 +9,7 @@
 table {
   border-collapse: collapse;
   margin: $base_font_size 0;
-  table__layout: fixed;
+  table-layout: fixed;
   width: 100%;
 }
 
@@ -36,7 +36,7 @@ th {
  * Classic and hover theme
  */
 .table__basic,
-.table__basic-hover {
+.table__basic__hover {
     color: #333;
     background: $white;
     border: 1px solid #d0d0d0;
@@ -53,12 +53,12 @@ th {
     }
 }
 
-.table__basic-hover tr:hover {
+.table__basic__hover tr:hover {
     color: #000;
     background: #fafafa;
 }
 
-.table__basic-hover th {
+.table__basic__hover th {
     background: #f0f0f0;
 }
 

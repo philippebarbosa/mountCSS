@@ -13,42 +13,45 @@ Start by customizing the `_variables.scss` and extend the structure depending on
 # Frontend starter
 ---
 
-To quickly start to work, I added a small structure structure (index.html, js folders, gulpfile workflow), to quickly start to code your website. a
+To quickly start to work, I added a small structure structure (index.html, js folders, gulpfile workflow), to quickly start to code your website.
 
 # Structure
 ---
 
-```scss
-|-- _style.scss // The main file that calls all partials
-|-- base
-|  |-- _buttons.scss
-|  |-- _defaults.scss
-|  |-- _forms.scss
-|  |-- _grid.scss
-|  |-- _lists.scss
-|  |-- _tables.scss
-|  `-- _typography.scss
-|-- config // Suit basinc mountCSS styles heres
-|  `-- _variables.scss
-|-- pages // Customize the base styles here
-|  `-- _home.scss
-|-- patterns // Some common patterns used on website
-|  |-- _breadcrumbs.scss
-|  |-- _embed-responsive.scss
-|  |-- _footers.scss
-|  |-- _headers.scss
-|  |-- _hero.scss
-|  |-- _media-object.scss
-|  |-- _messages.scss
-|  |-- _pagination.scss
-|  |-- _tags.scss
-|  |-- _utilities-forms.scss
-|  `-- _utilities-layout.scss
-|-- utils
-|  |-- _brands-colors.scss
-|  |-- _colors.scss
-|  |-- _font-stacks.scss
-|  `-- _mixins.scss
-`-- vendors
-   `-- _normalize.scss
-```
+• DONE
+    - Utils font stack
+    - Utils Colors
+    - Replace normalize by Reboot
+    - Base : Buttons
+
+• TODO
+    - Base : Forms TODO
+        All styles
+        All states
+    - Pattern : Section (todo : order variables)
+    - Pattern : Blocks (todo : order variables)
+    - Pattern : Visibility (find other classes)
+    - Pattern : Hero (todo : variabilize)
+    - Pattern : Media Object
+    - Utils : Mixins
+        Box shadow
+        Arrows
+    - Base : Tables
+    - Pattern : Headers
+    - Pattern : Footers
+    - 
+    - Pattern : Badges
+    - Pattern : Buttons
+    - Pattern : SVG & icons
+    - Pattern : Cards
+    - Pattern : Absolute positionnement
+    - Module : Sliders
+    - Module : Modals
+    - Module : Cookie
+    - Module : Menu responsive
+    - Module : Offcanva
+    - Module : Star rating
+
+
+TODO :
+    - Improve text color on theme maps loops : https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184

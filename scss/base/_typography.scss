@@ -2,62 +2,59 @@
 // _BaseTypographicStyles
 // ****************************************************************
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .title {
   font-family: $header_font_family;
-  line-height: $base_line_height;
+  font-weight: $bold;
+  line-height: $base_line_height * .8;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
   color: $header_font_color;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-h1,
-.title__h1 {
-  font-size: $base_font_size * 2.25; // 16 * 2.25 = 36px
+h1 {
+  font-size: $h1_size;
 }
 
-h2,
-.title__h2 {
-  font-size: $base_font_size * 2; // 16 * 2 = 32px
+h2 {
+  font-size: $h2_size;
 }
 
-h3,
-.title__h3 {
-  font-size: $base_font_size * 1.75; // 16 * 1.75 = 28px
+h3 {
+    font-size: $h3_size;
 }
 
-h4,
-.title__h4 {
-  font-size: $base_font_size * 1.5; // 16 * 1.5 = 24px
+h4 {
+    font-size: $h4_size;
 }
 
-h5,
-.title__h5 {
-  font-size: $base_font_size * 1.25; // 16 * 1.25 = 20px
+h5 {
+  font-size: $h5_size;
 }
 
-h6,
-.title__h6 {
-  font-size: $base_font_size;
+h6 {
+  font-size: $h6_size;
 }
 
-p,
-.text {
-  margin: 0 0 $base_line_height*0.5rem;
+p {
+  margin: 0 0 $x_spacing;
   font-family: $base_font_family;
+  color: $base_font_color;
 }
 
 a,
 .link {
   color: $base_link_color;
-  transition: all .3s ease;
-  text-decoration: none;
+  text-decoration: $text_decoration_base;
 
   @media (min-width : $desktop ) {
     &:hover {
       color: $hover_link_color;
+      text-decoration: $text_decoration_hover;
     }
-    &:active, &:focus {
+    &:active,
+    &:focus {
       color: $hover_link_color;
+      text-decoration: $text_decoration_hover;
       outline: none;
     }
   }
@@ -69,7 +66,8 @@ a,
 
 hr,
 .hr {
-  border-bottom: 1px solid $main_color;
+  display: block;
+  border-bottom: 1px solid $primary;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -85,7 +83,7 @@ img {
 blockquote {
     display: block;
     padding: ($base_font_size / 2) 0 ($base_font_size / 2) ($base_font_size / 1.5);
-    border-left: ($base_font_size / 2) solid $main_color;
+    border-left: ($base_font_size / 2) solid $primary;
     border-color: rgba(0,0,0,.1);
     font-size: $base_font_size;
     margin-left: 0;
@@ -115,11 +113,11 @@ del {
 }
 
 ins {
-    border-bottom: 1px dotted $main_color;
+    border-bottom: 1px dotted $primary;
 }
 
 mark {
-    background: $main_color;
+    background: $primary;
     padding: 0 .2rem;
 }
 
@@ -150,14 +148,9 @@ sub {
     bottom: -0.25em;
 }
 
-small,
-.small {
+small {
     font-size: 80%;
     line-height: $base_line_height * .9;
-}
-
-.lead {
-  font-size: 120%;
 }
 
 abbr[title],
@@ -176,7 +169,7 @@ hr {
 
 pre {
   background: $gray_light;
-  border-left: .3rem solid $main_color;
+  border-left: .3rem solid $primary;
   font-family: $monospace;
 }
 
@@ -199,3 +192,32 @@ pre > code {
 pre > p {
   padding: .3rem;
 }
+
+
+// _Utils
+//---------------------------------- //
+@each $theme, $color in $themes {
+  .text__#{$theme} {
+    color: $color !important;
+  }
+}
+
+@each $theme, $color in $themes {
+  .link__#{$theme} {
+    color: $color;
+    text-decoration: none;
+
+    @media (min-width : $desktop ) {
+      &:hover {
+        color: darken($color, 20);
+      }
+      &:active,
+      &:focus {
+        color: darken($color, 20);
+        outline: none;
+      }
+    }
+  }
+}
+
+// ------- End of Utils -------- \

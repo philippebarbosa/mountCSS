@@ -1,0 +1,114 @@
+// ****************************************************************
+// _Variables
+// ****************************************************************
+
+// COLOR SCHEME : See bottom for color scheme map
+$primary               : $turquoise;
+$secondary             : $purple;
+$tertiary              : $deep_blue;
+// $quartery              : $purple;
+$inverse               : $white;
+
+// DEFAULTS
+$html_font_size        : 62.5%;
+$base_font_weight      : 400;
+$base_font_size        : 1.6rem;
+$base_line_height      : 1.4;
+$base_background_color : $inverse;
+
+// COLOR SCHEME GENERATOR
+$themes: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'tertiary': $tertiary,
+  'inverse': $base_background_color
+);
+
+$states: (
+  'valid': $green,
+  'error': $red,
+  'info': $blue
+);
+
+// GRID
+$grid_gutter           : 1.6rem;
+$container_s_size      : 60%;
+$container_xs_size     : 50%;
+
+// MEDIA QUERIES
+$mobile_s              : 320px;
+$mobile                : 414px;
+$tablet                : 767px;
+$desktop               : 961px;
+$desktop_xl            : 1200px;
+$desktop_xxl           : 1600px;
+
+// TYPOGRAPHY
+$light                 : 300;
+$regular               : 400;
+$medium                : 500;
+$semibold              : 600;
+$bold                  : 700;
+$ultrabold             : 900;
+
+$sans_serif            : $helvetica;
+$serif                 : $helvetica;
+$monospace             : $consolas;
+$icon-font             : "Font-Awesome";
+
+$header_font_family    : $sans_serif;
+$base_font_family      : $serif;
+
+// Font sizes
+$h1_size       : 3.6rem;
+$h2_size       : 3.2rem;
+$h3_size       : 2.8rem;
+$h4_size       : 2.4rem;
+$h5_size       : 2rem;
+$h6_size       : $base_font_size;
+
+// TYPO COLORS
+$header_font_color     : $black;
+$base_font_color       : $black;
+
+// LINKS
+$base_link_color       : $primary;
+$hover_link_color      : darken($base_link_color, 20%);
+
+$text_decoration_base  : none;
+$text_decoration_hover : none;
+
+// SPACING & SIZE
+$x_spacing             : $grid_gutter;
+$y_spacing             : $grid_gutter;
+
+// BORDER
+$base_border_color : $gray;
+
+// BORDER RADIUS
+$border_radius : 3px;
+$form_border_radius: $border_radius;
+$btn_border_radius: $border_radius;
+
+// BOX SHADOW
+$border_radius : 3px;
+
+// Buttons
+$button_font_family : $base_font_family;
+$button_font_size : $base_font_size;
+$button_background_color : $primary;
+$button_font_weight : $bold;
+$button_line_height : $base_line_height;
+$button_border : 1px solid $primary;
+$button_border_radius : $border_radius;
+$button_color : $white;
+
+// FORMS
+$form_x_padding: $x_spacing;
+$form_y_padding: $y_spacing;
+
+$form_font_color: $base_font_color;
+
+
+
+// ------- End of Variables -------- \

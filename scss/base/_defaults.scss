@@ -1,3 +1,4 @@
+
 // ****************************************************************
 // _Defaults
 // ****************************************************************
@@ -9,7 +10,7 @@
 }
 
 html {
-  font-size:100%;
+  font-size: $html_font_size;
   box-sizing: border-box;
 }
 
@@ -30,4 +31,12 @@ body {
     display: table;
     clear: both;
   }
+}
+
+.wrap {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    background-color: $base_background_color;
 }

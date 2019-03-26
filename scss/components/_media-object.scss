@@ -1,0 +1,71 @@
+// ****************************************************************
+// _mediaobject
+// ****************************************************************
+
+// LAYOUT
+//---------------------------------- //
+
+// https://getbootstrap.com/docs/3.3/components/#media
+
+.media {
+  margin-top: $y_spacing;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.media,
+.media_body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media_body {
+  width: 10000px;
+}
+
+.media_object {
+  display: block;
+}
+
+.media_object.img-thumbnail {
+  max-width: none;
+}
+
+.media_right,
+.media > .pull-right {
+  padding-left: $x_spacing;
+}
+
+.media_left,
+.media > .pull-left {
+  padding-right: $x_spacing;
+}
+
+.media_left,
+.media_right,
+.media_body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media_middle {
+  vertical-align: middle;
+}
+
+.media_bottom {
+  vertical-align: bottom;
+}
+
+.media_heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.media_list {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+// ------- End of mediaobject -------- \

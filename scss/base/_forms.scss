@@ -1,243 +1,124 @@
-// ****************************************************************
-// _Forms
-// ****************************************************************
+/* ----------------------------- */
+/* ==Forms                       */
+/* ----------------------------- */
+/* thanks to HTML5boilerplate and https://shoelace.style/ */
 
-
-/**
- * Core
- */
+/* forms items */
+form,
 fieldset {
-  background-color: $fieldset_background_color;
-  border: 1px solid $base_border_color;
-  margin: 0 0 ($base_font_size / 2);
-  padding: $base_line_height;
-  @if $base_border_radius {
-    border-radius: $base_border_radius;
+  border: none;
+}
+
+fieldset {
+  padding: $form_x_padding;
+
+  & legend {
+    padding: 0 $form_y_padding;
+    border: 0;
+    white-space: normal;
   }
 }
 
-legend {
-  text-transform: uppercase;
-  padding: 0 ($base_font_size / 2);
-}
-
-input,
-label,
-select {
+.form__field {
   display: block;
-  font-family: $base_font_family;
-  font-size: $base_font_size;
+  margin-bottom: $grid_gutter * 2;
 }
 
 label {
-  font-weight: $bold;
+  display: inline-block;
+  cursor: pointer;
+}
 
-  &.required::after {
-    content: "*";
-  }
+[type="color"],
+[type="date"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid white;
+  box-shadow: 0 0 0 1px $base_font_color inset;
+  color: $form_font_color;
+  vertical-align: middle;
+  padding: $form_x_padding $form_y_padding;
+  margin: 0;
+  transition: 0.25s;
+  border-radius: $border_radius;
+  transition-property: box-shadow, background-color, color, border;
+  appearance: none;
+  box-shadow: none;
+  width: 100%;
+}
 
-  abbr {
+[type="submit"] {
+  background-color: $primary;
+  color: $white;
+  cursor: pointer;
+  border-color: white;
+}
+
+input[readonly] {
+  background-color: $primary;
+}
+
+select {
+  padding-right: 2rem;
+  border-radius: $border_radius;
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%2020%2020%22%20width%3D%2220%22%20height%3D%2220%22%3E%3Cpath%20d%3D%22%20M%209.96%2011.966%20L%203.523%205.589%20C%202.464%204.627%200.495%206.842%201.505%207.771%20L%201.505%207.771%20L%208.494%2014.763%20C%209.138%2015.35%2010.655%2015.369%2011.29%2014.763%20L%2011.29%2014.763%20L%2018.49%207.771%20C%2019.557%206.752%2017.364%204.68%2016.262%205.725%20L%2016.262%205.725%20L%209.96%2011.966%20Z%20%22%20fill%3D%22inherit%22/%3E%3C/svg%3E");
+  background-position: right .6rem center;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+}
+
+/* hiding IE11 arrow */
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  min-height: 5em;
+  vertical-align: top;
+  resize: vertical;
+  white-space: normal;
+}
+
+/* 'x' appears on right of search input when text is entered. This removes it */
+[type="search"] {
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
     display: none;
   }
 }
 
-input[type="color"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-input:not([type]),
-select[multiple=multiple],
-textarea {
-  background-color: $input_background_color;
-  border: 1px solid $base_border_color;
-  @if $base_border_radius {
-    border-radius: $base_border_radius;
-  }
-  box-shadow: $form_box_shadow;
-  box-sizing: border-box;
-  font-family: $input_font_family;
-  font-size: $base_font_size;
-  padding: $base_font_size / 2;
-  transition: border .4s ease;
+::-webkit-input-placeholder {
+  color: #777;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #777;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+
+progress {
   width: 100%;
-  -webkit-appearance: none;
-
-  &:hover {
-    border-color: darken($deep_gray, 10);
-  }
-
-  &:focus {
-    border-color: darken($base_border_color, 10);
-    border-left: ($base_font_size / 3) solid $main_color;
-    box-shadow: $form_box_shadow-focus;
-    outline: none;
-  }
-}
-
-textarea {
-  resize: vertical;
-}
-
-input[type="search"] {
-  appearance : none;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
-  margin-right: ($base_line_height / 2) / 2;
-}
-
-input[type="file"] {
-  padding-bottom: ($base_line_height / 2);
-  width: 100%;
-}
-
-select {
-  margin-bottom: $base_line_height;
-  max-width: 100%;
-  width: auto;
-}
-
-
-/**
- * Input States
- */
-.input__error {
-  border: 1px solid $error !important;
-  margin-bottom: .3rem;
-}
-
-.input__success {
-  border: 1px solid $success !important;
-  margin-bottom: .3rem;
-}
-
-.input__message--error {
-  color: $error;
-  font-size: 75%;
-}
-.input__message--success {
-  color: $success;
-  font-size: 75%;
-}
-
-
-
-/**
- * Sticked input/button
- */
-.sticked__form {
-    margin: 0 auto;
-    width: 100%;
-    @media (min-width : $tablet) {
-      width: 60%;
-      min-width: 430px;
-    }
-    input {
-        font: $light 1rem $header_font_color;
-
-        @media (min-width : $desktop) {
-          float: left;
-        }
-        width: auto;
-        height: 2.5rem;
-        line-height: 2.5rem;
-        margin: 0;
-        padding: 0 1rem;
-    }
-    input[type=email] {
-      @if $base_border_radius {
-        border-radius: $base_border_radius $base_border_radius 0 0;
-      }
-      // padding: 0 .5em;
-      width: 100%;
-      @media (min-width : $desktop) {
-          width: 70%;
-          @if $base_border_radius {
-            border-radius: $base_border_radius 0 0 $base_border_radius;
-          }
-      }
-
-        transition: background .2s;
-        &:focus {
-            outline: 0;
-        }
-    }
-    input[type=submit] {
-      width: 100%;
-      -webkit-appearance: none;
-      @if $base_border_radius {
-        border-radius: 0 0 $base_border_radius $base_border_radius;
-      }
-      @media (min-width : $desktop) {
-          width: 30%;
-          border-radius: 0 $base_border_radius $base_border_radius 0;
-      }
-        // padding: 0 .5em;
-        font-weight: $bold;
-        color: $white;
-        border: 0;
-        outline: 0;
-        margin-top: 0;
-        &:hover {
-            background: lighten($main_color,5%);
-        }
-        &:active {
-            outline: 0;
-            background: darken($main_color,5%);
-        }
-    }
-}
-
-
-
-/**
- * Reset input buttons styles
- */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-button {
-  appearence: none;
-  -webkit-font-smoothing: antialiased;
-  background-color: $base_btn_background_color;
-  border-radius: $base_border_radius;
-  border: none;
-  color: $base_btn_color;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $base_font_family;
-  font-size: $base_font_size;
-  font-weight: $bold;
-  line-height: 1;
-  padding: 0.75em 1em;
-  text-decoration: none;
-  user-select: none;
   vertical-align: middle;
-  white-space: nowrap;
-  transition: all .3s ease;
-  margin-top: 1rem;
-
-  &:hover,
-  &:focus {
-    background-color: $base_btn_hover_background_color;
-    color: $base_btn_hover_color;
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
 }

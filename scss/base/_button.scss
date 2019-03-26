@@ -1,0 +1,264 @@
+// ****************************************************************
+// _button
+// ****************************************************************
+.btn {
+    font-family: $button_font_family;
+    font-size: $button_font_size;
+    background-color: $button_background_color;
+    font-weight: $button_font_weight;
+    // cursor: pointer;
+    display: inline-block;
+    line-height: $base_line_height * 0.8;
+    padding: 1rem 2rem;
+    margin: $y_spacing 0;
+    height: auto;
+    border: $button_border;
+    border-radius: $button_border_radius;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: $button_color;
+
+    &.btn__outline {
+        background-color: transparent;
+        color: $button_background_color;
+    }
+
+    &.btn__inverse {
+        color: $base_font_color;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $base_font_color;
+        }
+    }
+}
+
+.btn,
+.btn:hover {
+    text-decoration: none;
+    color: $button_color;
+}
+
+.btn:focus,
+.btn:active {
+    outline: 0;
+    // border-color: white;
+    box-shadow: 0 0 3px $blue;
+    color: $button_color;
+}
+// ------- End of button -------- \
+
+@each $theme, $color in $themes {
+    .btn__#{$theme} {
+        border: 1px solid $color;
+        background-color: $color;
+        color: $button_color;
+        &:hover {
+            color: $button_color;
+        }
+        &:focus,
+        &:active {
+            border-color: $color;
+            box-shadow: 0 0 0 1px $color;
+        }
+        &.btn__outline {
+            background-color: transparent;
+            color: $color;
+        }
+    }
+}
+
+@each $state, $color in $states {
+    .btn__#{$state} {
+        border: 1px solid $color;
+        background-color: $color;
+        color: $button_color;
+        &:hover {
+            color: $button_color;
+        }
+        &:focus,
+        &:active {
+            border-color: $color;
+            box-shadow: 0 0 0 1px $color;
+        }
+        &.btn__outline {
+            background-color: transparent;
+            color: $color;
+        }
+    }
+}
+// ------- End of Tranparent button -------- \
+
+// _button link : remove all styles, for <button> with JS
+//---------------------------------- //
+.button__link,
+.button__link:hover,
+.button__link:focus,
+.button__link:active {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.button__link,
+.button__link:hover,
+.button__link:focus,
+.button__link:active {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+// ------- End of button link -------- \
+
+// ****************************************************************
+// 100% width button
+// ****************************************************************
+
+.btn__block {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    // Full width until tablet
+    &.sm__only {
+        @media (min-width : $tablet ) {
+            display: inline-block;
+            width: auto;
+        }
+    }
+
+    // Full width until desktop
+    &.smd__only {
+        @media (min-width : $desktop ) {
+            display: inline-block;
+            width: auto;
+        }
+    }
+}
+
+.btn__block__md {
+    @media (min-width : $tablet ) {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.btn__block__lg {
+    @media (min-width : $desktop ) {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// ------- End of 100% width button -------- \
+
+// ****************************************************************
+// Button size
+// ****************************************************************
+.btn__xxl {
+    padding: 4rem 6rem;
+}
+
+.btn__xl {
+    padding: 2rem 4rem;
+}
+
+.btn__small {
+    padding: .5rem 1rem;
+}
+
+.btn__xsmall {
+    padding: .2rem .5rem;
+}
+// ------- End of Button size  -------- \
+
+// ****************************************************************
+// Button with icon
+// ****************************************************************
+.btn {
+    .btn__icon {
+        display: inline-block;
+        vertical-align: middle;
+        height: $base_font_size;
+    }
+}
+
+// .btn__icon {
+//     svg {
+//         display: inline-block;
+//         vertical-align: middle;
+//         height: ($base_font_size * 1.5);
+//     }
+
+//     span {
+//         display: inline-block;
+//         vertical-align: middle;
+//     }
+
+//     span + svg {
+//         margin-left: ($grid_gutter / 2);
+//     }
+//     svg + span {
+//         margin-left: ($grid_gutter / 2);
+//     }
+// }
+
+// ------- End of Button with icon -------- \
+
+// ****************************************************************
+// Circular btn
+// ****************************************************************
+.btn__circular {
+    width: $base_font_size * 3;
+    height: $base_font_size * 3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+    text-align: center;
+
+    &.btn__xxl {
+        width: $base_font_size * 6;
+        height: $base_font_size * 6;
+    }
+
+    &.btn__xl {
+        width: $base_font_size * 4;
+        height: $base_font_size * 4;
+    }
+
+    &.btn__small {
+        width: $base_font_size * 2;
+        height: $base_font_size * 2;
+    }
+
+    &.btn__xsmall {
+        width: $base_font_size;
+        height: $base_font_size;
+    }
+}
+// ------- End of Circular btn -------- \
+
+// ****************************************************************
+// Layouts
+// ****************************************************************
+.btn__group {
+    text-align: center;
+}
+
+.btn__group__md {
+    @media (min-width : $tablet ) {
+        text-align: center;
+    }
+}
+
+.btn__group__lg {
+    @media (min-width : $desktop ) {
+        text-align: center;
+    }
+}
+// ------- End of Layouts -------- \

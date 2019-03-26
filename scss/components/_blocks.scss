@@ -1,0 +1,142 @@
+// ****************************************************************
+// _blocks
+// ****************************************************************
+
+// LAYOUT
+//---------------------------------- //
+
+$block_padding: 3rem 1rem;
+$block_border_radius: 8px;
+$block_box_shadow: none;
+$block_color: $black;
+
+.block {
+    display: block;
+    width: 100%;
+    padding: $block_padding;
+    background-color: transparent;
+    border-radius: $block_border_radius;
+    box-shadow: $block_box_shadow;
+    text-align: center;
+    color: $block_color;
+}
+
+$block_header_padding: 0;
+.block_header {
+    padding: $block_header_padding;
+}
+
+$block_content_padding: 2.5rem 0 0;
+.block_content {
+    padding: $block_content_padding;
+}
+
+// THEME
+//---------------------------------- //
+
+$block_primary_color : white;
+.block_primary {
+    background-color: $primary;
+    color: $block_primary_color;
+}
+
+$block_secondary_color : white;
+.block_secondary {
+    background-color: $secondary;
+    color: $block_secondary_color;
+}
+
+$block_tertiary_color : white;
+.block_tertiary {
+    background-color: $tertiary;
+    color: $block_tertiary_color;
+}
+
+$block_quartery_color : white;
+.block_quartery {
+    background-color: $quartery;
+    color: $block_quartery_color;
+}
+
+$block_transparent_color : white;
+.block_transparent {
+    background-color: transparent;
+    color: $block_transparent_color;
+}
+
+// ALIGNMENT
+//---------------------------------- //
+
+.block_left {
+    text-align: left;
+}
+
+.block_center {
+    text-align: center;
+}
+
+.block_right {
+    text-align: right;
+}
+
+// TYPOGAPHY
+//---------------------------------- //
+
+$block_title_size: 2rem;
+$block_title_md_size: 2rem;
+$block_title_lg_size: 2rem;
+
+$block_title_weight: $bold;
+$block_title_color: $quartery;
+$block_title_transform: inherit;
+.block_title {
+    @media (min-width : $tablet ) {
+        font-size: $block_title_md_size;
+    }
+    @media (min-width : $desktop ) {
+        font-size: $block_title_lg_size;
+    }
+    font-weight: $block_title_weight;
+    color: $block_title_color;
+    text-transform: $block_title_transform;
+}
+
+$block_title_small_size: 4rem;
+$block_title_small_md_size: 2rem;
+$block_title_small_lg_size: 2rem;
+
+$block_title_small_weight: $regular;
+$block_title_small_color: $quartery;
+.block_title_small {
+    font-size: $block_title_small_size;
+}
+
+$block_baseline_size: 1.2rem;
+$block_baseline_weight: $bold;
+$block_baseline_color: $quartery;
+$block_baseline_transform: uppercase;
+.block_baseline {
+    font-size: $block_baseline_size;
+    font-weight: $block_baseline_weight;
+    color: $block_baseline_color;
+    text-transform: $block_baseline_transform;
+}
+
+$block_baseline_small_size: 1.2rem;
+$block_baseline_small_weight: $regular;
+$block_baseline_small_color: $quartery;
+.block_baseline_small {
+    font-size: $block_title_small_size;
+}
+
+// BUTTONS
+//---------------------------------- //
+
+// FORM
+//---------------------------------- //
+
+// GRAPHICS
+//---------------------------------- //
+
+
+// ------- End of blocks -------- \

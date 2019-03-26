@@ -3,6 +3,7 @@
  */
 var gulp         = require('gulp');
     sass         = require('gulp-sass'),
+    sourcemaps   = require('gulp-sourcemaps'),
     postcss      = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     mqpacker     = require('css-mqpacker'),
@@ -15,7 +16,6 @@ var gulp         = require('gulp');
     notify       = require("gulp-notify"),
     browserSync  = require('browser-sync').create(),
     reload       = browserSync.reload;
-
 
 /**
  * PATHS
@@ -34,11 +34,13 @@ gulp.task('css', function () {
         })
     ];
     return gulp.src('scss/style.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle : 'expanded',
             sourceComments: 'map'
         })
         .on('error', notify.onError("Error: <%= error.message %>")))
+        .pipe(sourcemaps.write())
         .pipe(postcss(processors))
         .pipe(gulp.dest('css/'))
         .pipe(browserSync.stream());
@@ -73,14 +75,14 @@ gulp.task('jsScriptsBuild', function() { // Move and minify main js script file
     gulp.src('js/app/index.js')
     .pipe(concat('script.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('js/'))
+    .pipe(gulp.dest('js/'));
 });
 
 gulp.task('jsLibsBuild', function() { // Concatenate and minify libs file
   return gulp.src('js/app/plugins/*.js')
     .pipe(concat('plugins.js'))
     .pipe(uglify())
-    .pipe(gulp.dest(dist + 'js/'));
+    .pipe(gulp.dest('js/'));
 });
 
 gulp.task('browser-sync', function() {
@@ -97,8 +99,8 @@ gulp.task('browser-sync', function() {
 
 // default task (development)
 gulp.task('default', ['css', 'jsLibs', 'jsScripts', 'browser-sync'], function () {
-    gulp.watch('scss/**/*.scss', ['css']);
-    gulp.watch('js/**/*.js', ['jsScripts', 'jsLibs']);
+    gulp.watch('scss/**/*.scss', ['css']).on("change", reload);
+    gulp.watch('js/**/*.js', ['jsScripts', 'jsLibs']).on("change", reload);;
     // gulp.watch('img/**/*', ['images']);
     gulp.watch('**/*.html').on("change", reload);
 });

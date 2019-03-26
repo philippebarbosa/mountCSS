@@ -1,70 +1,30 @@
+
+
 // ****************************************************************
 // _Imports
 // ****************************************************************
 
-/**
- * _VENDORS
- */
-@import 'vendors/normalize';
+@import 'utils/font_stacks';
+@import 'utils/colors';
+
+@import 'vendors/reboot';
+
+@import 'variables';
+
+@import 'base/defaults';
+@import 'base/grid';
+@import 'base/typography';
+@import 'base/list';
+// @import 'base/forms';
+@import 'base/button';
+@import 'base/tables';
 
 
+// @import 'pattern/hero';
+// @import 'pattern/section';
+// @import 'pattern/blocks';
+// @import 'pattern/media-object';
+// @import 'pattern/visibility';
+// @import 'pattern/positionner';
+// @import 'pattern/data-table';
 
-
-
-/**
- * _UTILS : Some usefull things
- */
-@import 'utils/font-stacks',
-        'utils/colors',
-        'utils/brands-colors',
-        'utils/mixins';
-
-
-/**
- * _CONFIG : Your project variables
- */
-@import 'config/variables';
-
-
-
-
-/**
- * _BASE : The basics
- */
-@import 'base/defaults',
-        'base/typography',
-        'base/grid',
-        'base/lists',
-        'base/forms',
-        'base/buttons',
-        'base/tables';
-
-
-
-
-
-/**
- * _PATTERNS : Common patterns used on websites
- */
-@import 'patterns/headers',
-        'patterns/footers',
-        'patterns/breadcrumbs',
-        'patterns/pagination',
-        'patterns/media-object',
-        'patterns/messages',
-        'patterns/hero',
-        'patterns/tags',
-        'patterns/utilities-layout',
-        'patterns/embed-responsive';
-
-
-/**
- * _THEME : Your project specific components may be listed here
- */
-@import 'theme/theme';
-
-
-/**
- * _PAGE : If you need special styles for pages, here you go
- */
-@import 'pages/home';
