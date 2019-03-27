@@ -1,1 +1,3 @@
-$(function(){console.log("It works !")});
+;$(function() {
+    console.log("It works !");
+});

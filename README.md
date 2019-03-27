@@ -23,11 +23,11 @@ To quickly start to work, I added a small structure structure (index.html, js fo
     - Utils Colors
     - Replace normalize by Reboot
     - Base : Buttons
-
-• TODO
     - Base : Forms TODO
         All styles
         All states
+
+• TODO
     - Pattern : Section (todo : order variables)
     - Pattern : Blocks (todo : order variables)
     - Pattern : Visibility (find other classes)
@@ -36,12 +36,10 @@ To quickly start to work, I added a small structure structure (index.html, js fo
     - Utils : Mixins
         Box shadow
         Arrows
-    - Base : Tables
     - Pattern : Headers
     - Pattern : Footers
     - 
     - Pattern : Badges
-    - Pattern : Buttons
     - Pattern : SVG & icons
     - Pattern : Cards
     - Pattern : Absolute positionnement

@@ -547,7 +547,268 @@
                     </div>
 
                     <div class="col_12">
-                        todo
+                        <form>
+                            <fieldset>
+                                <legend>Classic form, no label</legend>
+
+                                <div class="form__field">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div class="form__field">
+                                    <input type="password" placeholder="Password">
+                                </div>
+
+                                <div class="form__field">
+                                    <label for="remember">
+                                        <input id="remember" type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <div class="form__field">
+                                    <button type="submit">Sign in</button>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <form>
+                            <fieldset>
+                                <legend>A form with labels</legend>
+
+                                <div class="form__field">
+                                    <label for="email" class="form__field__label">An email</label>
+                                    <input id="email" type="email" placeholder="Email">
+                                    <span class="form__field__message">This is a required field.</span>
+                                </div>
+
+                                <div class="form__field">
+                                    <label for="password" class="form__field__label">Password</label>
+                                    <input id="password" type="password" placeholder="Password">
+                                </div>
+
+                                <div class="form__field">
+                                    <label for="state" class="form__field__label"> State</label>
+                                    <select id="state">
+                                        <option>AL</option>
+                                        <option>CA</option>
+                                        <option>IL</option>
+                                    </select>
+                                </div>
+
+                                <div class="form__field">
+                                    <input type="email" placeholder="Readonly" readonly>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form>
+                            <fieldset>
+                                <legend>A form with aligned labels</legend>
+                                <div class="form__field aligned">
+                                    <label class="form__field__label" for="email">An email</label> <input id="email" placeholder="Email" type="email"> <span class="form__field__message">This is a required field.</span>
+                                </div>
+                                <div class="form__field aligned">
+                                    <label class="form__field__label" for="password">Password</label> <input id="password" placeholder="Password" type="password">
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form>
+                            <fieldset>
+                                <legend>Form states</legend>
+                                <div class="form__field form__field__error">
+                                    <label class="form__field__label" for="email">An email</label> <input id="email" placeholder="Email" type="email"> <span class="form__field__message">This is a required field.</span>
+                                </div>
+                                <div class="form__field form__field__valid">
+                                    <label class="form__field__label" for="email">An email</label> <input id="email" placeholder="Email" type="email"> <span class="form__field__message">This is a required field.</span>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <form>
+                            <h2>Form Element</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+
+                            <div class="form__field">
+                                <label for="text_field">Text Field:</label> <input type="text">
+                            </div>
+                            <div class="form__field">
+                                <label for="text_area">Text Area:</label>
+                                <textarea></textarea>
+                            </div>
+                            <div class="form__field">
+                                <label for="select_element">Select Element:</label> <select name="select_element">
+                                    <optgroup label="Option Group 1">
+                                        <option value="1">
+                                            Option 1
+                                        </option>
+                                        <option value="2">
+                                            Option 2
+                                        </option>
+                                        <option value="3">
+                                            Option 3
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Option Group 2">
+                                        <option value="1">
+                                            Option 1
+                                        </option>
+                                        <option value="2">
+                                            Option 2
+                                        </option>
+                                        <option value="3">
+                                            Option 3
+                                        </option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form__field">
+                                <label for="radio_buttons">Radio Buttons:</label>
+                                <label>
+                                    <input class="radio" name="radio_button" type="radio" value="radio_1">
+                                    Radio 1
+                                </label>
+                                <label>
+                                    <input class="radio" name="radio_button" type="radio" value="radio_2">
+                                    Radio 2
+                                </label>
+                                <label>
+                                    <input class="radio" name="radio_button" type="radio" value="radio_3">
+                                    Radio 3
+                                </label>
+                            </div>
+                            <div class="form__field">
+                                <label for="checkboxes">Checkboxes:</label>
+                                <label>
+                                    <input class="checkbox" name="checkboxes" type="checkbox" value="check_1">
+                                    Checkbox 1
+                                </label>
+                                <label>
+                                    <input class="checkbox" name="checkboxes" type="checkbox" value="check_2">
+                                    Checkbox 2
+                                </label>
+                                <label>
+                                    <input class="checkbox" name="checkboxes" type="checkbox" value="check_3"> Checkbox 3
+                                </label>
+                            </div>
+
+                            <div class="form__field">
+                                <label for="password">Password:</label> <input class="password" name="password" type="password">
+                            </div>
+                            <div class="form__field">
+                                <label for="file">File Input:</label> <input class="file" name="file" type="file">
+                            </div>
+                            <div class="form__field">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+
+                        <form action="#">
+                            <div class="form__field">
+                                <input type="checkbox" class="checkbox" id="c1">
+                                <label for="c1">Custom checkbox</label>
+
+                                <input type="checkbox" class="checkbox" checked="checked" id="c2">
+                                <label for="c2">Custom checkbox checked</label>
+
+                                <input type="checkbox" class="checkbox" checked="checked" id="c3" disabled="disabled">
+                                <label for="c3">Custom checkbox checked disabled</label>
+
+                                <input type="checkbox" class="checkbox" id="c3" disabled="disabled">
+                                <label for="c4">Custom checkbox disabled</label>
+                            </div>
+                            <div class="form__field">
+                                <input type="radio" class="radio" name="radio" id="r1">
+                                <label for="r1">Custom radio</label>
+
+                                <input type="radio" class="radio" name="radio" id="r2" checked="checked">
+                                <label for="r2">radio checked</label>
+
+                                <input type="radio" class="radio" name="radio" id="r3" checked="checked" disabled="disabled">
+                                <label for="r3">radio checked disabled</label>
+
+                                <input type="radio" class="radio" name="radio" id="r4" disabled="disabled">
+                                <label for="r4">radio disabled</label>
+                            </div>
+
+                            <div class="form__field">
+                                <input type="checkbox" class="switch" id="switch">
+                                <label for="switch" class="label">slide to unlock</label>
+                            </div>
+                        </form>
+
+                        <form>
+                            <h2>Form Structure and alignement</h2>
+
+                            <div class="row">
+                                <div class="col_12 col_md_6">
+                                    <div class="form__field">
+                                        <label for="text" class="form__field__label">Name :</label>
+                                        <input id="text" type="text" placeholder="John">
+                                    </div>
+                                </div>
+
+                                <div class="col_12 col_md_6">
+                                    <div class="form__field">
+                                        <label for="email" class="form__field__label">email</label>
+                                        <input id="email" type="email" placeholder="john@doe.com">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col_12 col_md_4">
+                                    <div class="form__field">
+                                        <label for="text" class="form__field__label">First name :</label>
+                                        <input id="text" type="text" placeholder="John">
+                                    </div>
+                                </div>
+
+                                <div class="col_12 col_md_4">
+                                    <div class="form__field">
+                                        <label for="text" class="form__field__label">Name :</label>
+                                        <input id="text" type="text" placeholder="Doe">
+                                    </div>
+                                </div>
+
+                                <div class="col_12 col_md_4">
+                                    <div class="form__field">
+                                        <label for="email" class="form__field__label">email</label>
+                                        <input id="email" type="email" placeholder="john@doe.com">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col_12">
+                                    <div class="form__field form__field__right">
+                                        <label for="rememberight">
+                                            <input id="rememberight" type="checkbox"> Remember me (right aligned)
+                                        </label>
+                                    </div>
+
+                                    <div class="form__field form__field__center">
+                                        <label for="remembercenter">
+                                            <input id="remembercenter" type="checkbox"> Remember me (center aligned)
+                                        </label>
+                                    </div>
+
+                                    <div class="form__field form__field__left">
+                                        <label for="rememberleft">
+                                            <input id="rememberleft" type="checkbox"> Remember me (left aligned)
+                                        </label>
+                                    </div>
+
+                                    <div class="form__field form__field__left">
+                                        <button type="submit" style="max-width:250px;">center submit</button>
+                                    </div>
+
+                                    <div class="form__field form__field__center">
+                                        <button type="submit" style="max-width:250px;">center submit</button>
+                                    </div>
+
+                                    <div class="form__field form__field__right">
+                                        <button type="submit" style="max-width:250px;">center submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

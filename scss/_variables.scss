@@ -2,19 +2,24 @@
 // _Variables
 // ****************************************************************
 
-// COLOR SCHEME : See bottom for color scheme map
+// COLOR THEME
 $primary               : $turquoise;
 $secondary             : $purple;
 $tertiary              : $deep_blue;
 // $quartery              : $purple;
 $inverse               : $white;
 
-// DEFAULTS
+// DEFAULTS SIZES
 $html_font_size        : 62.5%;
 $base_font_weight      : 400;
 $base_font_size        : 1.6rem;
 $base_line_height      : 1.4;
 $base_background_color : $inverse;
+
+// DEFAULTS COLORS
+$dark: $black;
+$light: $gray;
+$border_color: $gray;
 
 // COLOR SCHEME GENERATOR
 $themes: (
