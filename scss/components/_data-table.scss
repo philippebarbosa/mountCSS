@@ -19,7 +19,6 @@
     }
 }
 
-
 .data__title {
     text-align:left;
     float:left;
@@ -44,52 +43,4 @@
     padding: 0;
     margin: 10px 2px;
 }
-
 // ------- End of data -------- \
-
-//      <div class="data">
-//          <div class="data__row">
-//              <div class="data__title">
-//                  <div class="hgroup">
-//                      <p class="strong">1 actions</p>
-//                      <p class="strong"><small>La cuisine itinérante de Michel</small></p>
-//                  </div>
-//              </div>
-//              <div class="data__content">
-//                  <p class="strong">300€</p>
-//              </div>
-//
-//              <button class="btn-link data__remove btn__close">
-//                  &times;
-//              </button>
-//          </div>
-//
-//          <hr>
-//
-//          <div class="data__row__group">
-//              <div class="data__row">
-//                  <div class="data__title">
-//                      <p>
-//                          Frais de gestion
-//                          <button class="btn-link">
-//                              <img src="/img/operation_15.png" data-toggle="popover" data-trigger="hover" data-placement="auto" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea" width="20" data-original-title="" title="">
-//                          </button>
-//                      </p>
-//                  </div>
-//                  <div class="data__content">
-//                      <p class="strong">3€</p>
-//                  </div>
-//              </div>
-//
-//              <div class="data__row">
-//                  <div class="data__title">
-//                      <div class="hgroup">
-//                          <p class="strong">TOTAL :</p>
-//                      </div>
-//                  </div>
-//                  <div class="data__content">
-//                      <p class="strong">303€</p>
-//                  </div>
-//              </div>
-//          </div>
-//      </div>

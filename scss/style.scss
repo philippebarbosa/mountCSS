@@ -6,11 +6,12 @@
 
 @import 'utils/font_stacks';
 @import 'utils/colors';
-
+@import 'utils/mixins';
 @import 'vendors/reboot';
 
 @import 'variables';
 
+@import 'base/fontface';
 @import 'base/defaults';
 @import 'base/grid';
 @import 'base/typography';
@@ -21,13 +22,16 @@
 
 @import 'components/alignments';
 @import 'components/distribution';
+@import 'components/media-object';
+@import 'components/visibility';
+
 @import 'components/hero';
 @import 'components/section';
 @import 'components/block';
 @import 'components/hoverme';
-
-// @import 'components/media-object';
-// @import 'components/visibility';
-// @import 'components/positionner';
-// @import 'components/data-table';
+@import 'components/embedresponsive';
+@import 'components/pagination';
+@import 'components/svg';
+@import 'components/data-table';
+@import 'components/logolist';
 

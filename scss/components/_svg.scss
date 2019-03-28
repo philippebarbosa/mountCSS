@@ -1,0 +1,44 @@
+// ****************************************************************
+// _svg
+// ****************************************************************
+
+svg.svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: $base_font_size * 1.5;
+    height: $base_font_size * 1.5;
+}
+
+// Color :
+//---------------------------------- //
+@each $theme, $color in $themes {
+    svg.svg__#{$theme} {
+        fill: $color;
+    }
+}
+// ------- End of Color : -------- \
+
+// Size ;
+svg.svg__xl {
+    height: $base_font_size * 3;
+    width: $base_font_size * 3;
+}
+
+svg.svg__l {
+    height: $base_font_size * 2;
+    width: $base_font_size * 2;
+}
+
+svg.svg__s {
+    height: $base_font_size * 1;
+    width: $base_font_size * 1;
+}
+
+svg.svg__xs {
+    height: $base_font_size * .5;
+    width: $base_font_size * .5;
+}
+
+
+//---------------------------------- //
+// ------- End of Size ; -------- \

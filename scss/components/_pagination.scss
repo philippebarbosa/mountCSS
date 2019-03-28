@@ -1,0 +1,47 @@
+// ****************************************************************
+// _Pagination
+// ****************************************************************
+.pagination {
+    // letter-spacing: -0.31em;
+    // word-spacing: -0.43em;
+    list-style: none;
+    margin-left: 0;
+    text-align: center;
+    @extend .clearfix;
+}
+
+.pagination {
+    >li {
+        letter-spacing: normal;
+        word-spacing: normal;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: $medium;
+        font-size: 2rem;
+        padding: 0 .5rem;
+        @media (min-width: $desktop) {
+            padding: 0 1rem ;
+        }
+        >a {
+            display: block;
+
+            margin: -1.3rem;
+            text-decoration: none;
+            transition: all .3s ease;
+            padding: 1.3rem;
+            &:hover,
+            &:active,
+            &:focus,
+            {
+                color: $primary;
+                fill: $primary;
+            }
+        }
+    }
+    > li.active {
+        background-color: $primary;
+        > a {
+            color: $inverse;
+        }
+    }
+}

@@ -27,20 +27,19 @@ To quickly start to work, I added a small structure structure (index.html, js fo
         All styles
         All states
     - Pattern : Section (todo : order variables)
-
-• TODO
     - Pattern : Blocks (todo : order variables)
-    - Pattern : Visibility (find other classes)
     - Pattern : Hero (todo : variabilize)
     - Pattern : Media Object
+    - Pattern : SVG & icons
+
+• TODO
+    - Pattern : Visibility (find other classes)
     - Utils : Mixins
         Box shadow
         Arrows
     - Pattern : Headers
     - Pattern : Footers
-    - 
     - Pattern : Badges
-    - Pattern : SVG & icons
     - Pattern : Cards
     - Pattern : Absolute positionnement
     - Module : Sliders

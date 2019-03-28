@@ -1,0 +1,22 @@
+// ****************************************************************
+// Logolist
+// ****************************************************************
+
+.logolist {
+    text-align: center;
+    @media (min-width : $desktop ) {
+        display: block;
+        // text-align: left;
+    }
+    li {
+        margin: 0 .5rem 0;
+        @media (min-width : $desktop ) {
+        margin: 0 1rem 0 0;
+        }
+    }
+    img, svg {
+        // max-height: 1rem;
+    }
+}
+
+  // ------- End of Logolist -------- \
