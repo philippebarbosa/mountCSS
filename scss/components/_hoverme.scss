@@ -1,0 +1,38 @@
+// ****************************************************************
+// Hover me
+// ****************************************************************
+
+.hoverme {
+    display: block;
+    position: relative;
+    z-index: 50;
+}
+
+.hoverme__header {
+ //
+}
+
+.hoverme__content {
+    background-color: #fff;
+    @media (min-width : $desktop ) {
+        // padding: $grid_gutter;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity:0;
+        visibility: hidden;
+        transition: all .3s ease-in;
+    }
+}
+
+@media (min-width : $desktop ) {
+    .hoverme:hover {
+        .hoverme__content {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+// ------- End of Hover me -------- \

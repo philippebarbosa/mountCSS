@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/vendors/modernizr.js"></script>
     <style>
+      .demo_grid {
+        line-height: 3rem;
+        text-align: center;
+        background-color: gray;
+        /* font-weight: bold; */
+        color: white;
+        margin-bottom: 1.6rem;
+      }
+
+      .demo__distrib {
+          width: 2rem;
+          height: 2rem;
+          margin: 0 .1rem;
+          background-color: gray;
+      }
+
       .demo_section {
         display: block;
         text-transform: uppercase;
@@ -24,6 +40,313 @@
 <body>
 
 <div class="wrap" id="top" role="document">
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <h1 class="demo_section">Text and inline-block alignements :</h1>
+            </div>
+
+            <div class="col_12">
+                <div class="demo_grid">
+                    <div class="left">
+                        I'm left
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_12">
+                <div class="demo_grid">
+                    <div class="center">
+                        I'm center
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_12">
+                <div class="demo_grid">
+                    <div class="right">
+                        I'm right
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_12">
+                <div class="demo_grid">
+                    <div class="center left__md">
+                        Center on mobile, left from tablets
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_12">
+                <div class="demo_grid">
+                    <div class="left center__md right__lg">
+                        I'm left mobile, center table, right on desktop
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <h1 class="demo_section">Flexbox distribution (copy pasted from <a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank">Flex utils :</a> ) :</h1>
+            </div>
+
+            <div class="col_12">
+                <p>Flex + Space between</p>
+                <div style="height:5rem;border:1px solid gray;margin-bottom:1rem;">
+                    <div class="f_row justify_content_between">
+                        <div class="demo__distrib">&nbsp;</div>
+                        <div class="demo__distrib">&nbsp;</div>
+                        <div class="demo__distrib">&nbsp;</div>
+                    </div>
+                </div>
+
+                <p>Flex + Space around</p>
+                <div style="height:5rem;border:1px solid gray;margin-bottom:1rem;">
+                    <div class="f_row justify_content_around">
+                        <div class="demo__distrib">&nbsp;</div>
+                        <div class="demo__distrib">&nbsp;</div>
+                        <div class="demo__distrib">&nbsp;</div>
+                    </div>
+                </div>
+
+                <p>More example and responsive behavior : <a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank">Flex utils</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <h1 class="demo_section">Hero :</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col_12">
+                    <div class="hero__content">
+                        <h1 class="hero__title">My basic hero title</h1>
+                        <p class="hero__baseline">Hero baseline : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                    </div>
+
+                    <div class="hero__footer">
+                        <a href="#" class="btn btn__secondary">Hero CTA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scrolldown">
+            <button class="button__link">
+                Scroll down button
+            </button>
+        </div>
+    </div>
+
+    <div class="hero" style="background-image:url(https://www.philippebarbosa.com/app/uploads/2017/10/20160712__MG_8135.jpg);">
+        <div class="hero_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col_12">
+                    <div class="hero__content">
+                        <h1 class="hero__title">A hero with background image</h1>
+                        <p class="hero__baseline">Hero baseline : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero primary">
+        <div class="container">
+            <div class="row">
+                <div class="col_12">
+                    <div class="hero__content">
+                        <h1 class="hero__title">A hero themed : primary</h1>
+                        <p class="hero__baseline">You can use hero__primary, hero__secondary or hero__tertiary to theme the background color</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero with__video">
+        <div class="container">
+            <div class="row">
+                <div class="col_12">
+                    <div class="hero__content">
+                        <h1 class="hero__title">A hero with background video</h1>
+                        <p class="hero__baseline">Hero baseline : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__video">
+            <video playsinline muted autoplay loop class="video">
+                <source src="https://www.proprioo.fr/assets/videos/proprioo-hp.webm")" type="video/webm">
+                <source src="https://www.proprioo.fr/assets/videos/proprioo-hp.mp4")" type="video/mp4">
+            </video>
+            <img src="https://www.proprioo.fr/assets/images/homepage_mobile.jpg")" class="fallback_img" alt="">
+        </div>
+    </div>
+
+    <div class="hero hero__l">
+        <div class="hero_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col_12">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Hero sizes</h1>
+                        <p class="hero__baseline">You can use : hero__x,  hero__l, hero__s, hero__xs classes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <h1 class="demo_section">Sections :</h1>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col_12">
+                    <div class="section__header">
+                        <h2 class="section__title">This is a section title</h2>
+                        <p class="section__baseline">My section baseline is very awesome</p>
+                    </div>
+
+                    <div class="section__content">
+                        <div class="row">
+                            <div class="col_12 col_lg_8">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae odio a quam vero modi fugiat aperiam, debitis architecto accusamus voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellat odio, doloremque voluptate perspiciatis velit esse, veniam similique sit fuga harum quisquam ea facilis qui! Praesentium illum sit inventore culpa!</p>
+                                <p>Adipisicing elit. Vitae odio a quam vero modi fugiat aperiam, debitis architecto accusamus voluptate! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eaque alias nobis aperiam esse, autem maiores aliquam reprehenderit sed animi rem consequuntur nulla at sapiente recusandae culpa et quisquam fugiat!</p>
+                                <p>Vitae odio a quam vero modi fugiat aperiam, debitis architecto accusamus voluptate Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, asperiores? Placeat repudiandae saepe repellat harum tempore incidunt, deleniti quasi praesentium ullam voluptatibus sequi error quisquam eligendi nesciunt ducimus quis eum.!</p>
+                            </div>
+
+                            <div class="col_12 col_lg_4">
+                                <div class="section__image">
+                                    <img src='http://loremflickr.com/900/600' alt='Image'/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__footer">
+                        <a href="#" class="btn btn__inverse section__cta">Section footer can contain a CTA button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section__secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col_12">
+                    <div class="section__header">
+                        <h2 class="section__title">This is a themed section section title</h2>
+                        <p class="section__baseline">Use section__secondary, section__tertiary</p>
+                    </div>
+
+                    <div class="section__content">
+                        <div class="row">
+                            <div class="col_12">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae odio a quam vero modi fugiat aperiam, debitis architecto accusamus voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellat odio, doloremque voluptate perspiciatis velit esse, veniam similique sit fuga harum quisquam ea facilis qui! Praesentium illum sit inventore culpa!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__footer">
+                        <a href="#" class="btn btn__inverse section__cta">Section footer can contain a CTA button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <h1 class="demo_section">Blocks :</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <p>Blocks are items within a section, are elsewhere :</p> <br><br>
+            </div>
+
+            <div class="col_12 col_md_6">
+                <div class="block">
+                    <div class="block__inner">
+                        <div class="block__header">
+                            <h3 class="block__title">My block title</h3>
+                        </div>
+                        <div class="block__content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci laboriosam suscipit repudiandae eligendi deserunt.</p>
+                        </div>
+                        <div class="block__footer">
+                            My block footer
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col_12 col_md_6">
+                <div class="block">
+                    <div class="block__inner">
+                        <div class="block__header">
+                            <h3 class="block__title">My block title</h3>
+                        </div>
+                        <div class="block__content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci laboriosam suscipit repudiandae eligendi deserunt.</p>
+                        </div>
+                        <div class="block__footer">
+                            My block footer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col_12">
+                <h1 class="demo_section">Item with content on hover :</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col_12 col_md_6 push_md_3">
+                <div class="block hoverme">
+                    <div class="hoverme__header">
+                        <p>
+                            Hover me ! Use Hoverme class with another module class : Card, block, etc…
+                        </p>
+                    </div>
+                    <div class="hoverme__content">
+                        <p>hoverme__content appear on hover, stays visible on mobiles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 

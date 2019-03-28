@@ -1,0 +1,63 @@
+// ****************************************************************
+// Alignments
+// ****************************************************************
+
+// Left
+//---------------------------------- //
+.left {
+    text-align: left
+}
+
+.left__md {
+    @media (min-width : $tablet ) {
+       text-align: left;
+    }
+}
+
+.left__lg {
+    @media (min-width : $desktop ) {
+       text-align: left;
+    }
+}
+// ------- End of Lefy -------- \
+
+// Center
+//---------------------------------- //
+.center {
+    text-align: center;
+}
+
+.center__md {
+    @media (min-width : $tablet ) {
+       text-align: center;
+    }
+}
+
+.center__lg {
+    @media (min-width : $desktop ) {
+       text-align: center;
+    }
+}
+// ------- End of Center -------- \
+
+// Center
+//---------------------------------- //
+.right {
+    text-align: right;
+}
+
+.right__md {
+    @media (min-width : $tablet ) {
+       text-align: right;
+    }
+}
+
+.right__lg {
+    @media (min-width : $desktop ) {
+       text-align: right;
+    }
+}
+// ------- End of Center -------- \
+
+
+// ------- End of Alignments -------- \

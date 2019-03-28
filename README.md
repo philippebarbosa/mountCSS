@@ -26,9 +26,9 @@ To quickly start to work, I added a small structure structure (index.html, js fo
     - Base : Forms TODO
         All styles
         All states
+    - Pattern : Section (todo : order variables)
 
 • TODO
-    - Pattern : Section (todo : order variables)
     - Pattern : Blocks (todo : order variables)
     - Pattern : Visibility (find other classes)
     - Pattern : Hero (todo : variabilize)

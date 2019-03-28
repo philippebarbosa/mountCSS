@@ -1,0 +1,43 @@
+// ****************************************************************
+// _blocks
+// ****************************************************************
+
+// LAYOUT
+//---------------------------------- //
+
+$block_padding: 3rem;
+$block_border_radius: $border_radius;
+$block_box_shadow: 0 0 5px $gray;
+$block_color: $black;
+
+.block {
+    display: block;
+    width: 100%;
+    padding: $block_padding;
+    background-color: transparent;
+    border-radius: $block_border_radius;
+    box-shadow: $block_box_shadow;
+    // text-align: center;
+    color: $block_color;
+    margin: 0 0 ($grid_gutter * 2);
+}
+
+.block__inner {
+    position: relative;
+}
+
+.block__header {
+    margin-bottom: 3rem;
+}
+.block__title {
+
+}
+.block__content {
+    margin-bottom: 3rem;
+}
+.block__footer {
+
+}
+
+// THEME
+//---------------------------------- //
