@@ -1,0 +1,354 @@
+// ****************************************************************
+// FORMS
+// ****************************************************************
+
+// Base style
+//---------------------------------- //
+form,
+fieldset {
+  border: none;
+}
+
+form {
+    margin-bottom: $grid_gutter * 2;
+}
+
+fieldset {
+    //   padding: $form_x_padding;
+
+
+    legend {
+        // padding: 0 $form_y_padding ;
+        border: 0;
+        white-space: normal;
+        font-weight: $bold;
+        padding-bottom: $grid_gutter;
+  }
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+[type="color"],
+[type="date"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid $base_border_color;
+  box-shadow: 0 0 0 1px $base_font_color inset;
+  color: $form_font_color;
+  background-color: $base_background_color;
+  vertical-align: middle;
+  padding: $form_x_padding $form_y_padding;
+  margin: 0;
+  transition: 0.25s;
+  border-radius: $border_radius;
+  transition-property: box-shadow, background-color, color, border;
+  appearance: none;
+  box-shadow: none;
+  width: 100%;
+}
+
+// Custom focus
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color: transparentize($primary, .2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px transparentize($primary, .4);
+    outline: 0 none;
+}
+
+
+[type="submit"] {
+  background-color: $primary;
+  color: $white;
+  cursor: pointer;
+  border-color: white;
+}
+
+input[readonly] {
+  background-color: $light;
+}
+
+select {
+  padding-right: 2rem;
+  background-color: $base_background_color;
+  border-radius: $border_radius;
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%220%200%2020%2020%22%20width%3D%2220%22%20height%3D%2220%22%3E%3Cpath%20d%3D%22%20M%209.96%2011.966%20L%203.523%205.589%20C%202.464%204.627%200.495%206.842%201.505%207.771%20L%201.505%207.771%20L%208.494%2014.763%20C%209.138%2015.35%2010.655%2015.369%2011.29%2014.763%20L%2011.29%2014.763%20L%2018.49%207.771%20C%2019.557%206.752%2017.364%204.68%2016.262%205.725%20L%2016.262%205.725%20L%209.96%2011.966%20Z%20%22%20fill%3D%22inherit%22/%3E%3C/svg%3E");
+  background-position: right $grid_gutter center;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+}
+
+/* hiding IE11 arrow */
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  min-height: 5em;
+  vertical-align: top;
+  resize: vertical;
+  white-space: normal;
+}
+
+/* 'x' appears on right of search input when text is entered. This removes it */
+[type="search"] {
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #777;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #777;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+
+progress {
+  width: 100%;
+  vertical-align: middle;
+}
+// ------- End of Base style -------- \
+
+// Structure
+//---------------------------------- //
+.form__field {
+    display: block;
+    margin-bottom: $grid_gutter;
+}
+
+.form__field__message {
+    font-size: 85%;
+}
+
+.form__field.aligned {
+    .form__field__label {
+        @media (min-width : $tablet ) {
+            display: inline-block;
+            vertical-align: middle;
+            width: 10%;
+            margin-left: -.3333rem;
+            // text-align: right;
+        }
+    }
+    input,
+    select,
+    textarea {
+        display: inline-block;
+        vertical-align: middle;
+        width: 90%;
+        margin-left: -.3333rem;
+    }
+
+    .form__field__message {
+        @media (min-width : $desktop ) {
+            margin-left: 10%;
+        }
+    }
+}
+
+.form__field__left {
+    text-align: left;
+}
+
+.form__field__center {
+    text-align: center;
+}
+
+.form__field__right {
+    text-align: right;
+}
+
+// ------- End of Structure -------- \
+
+// Typography
+//---------------------------------- //
+.form__field__label {
+    color: $primary;
+    font-weight: $bold;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $base_font_color;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: $base_font_color;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: $base_font_color;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: $base_font_color;
+}
+// ------- End of Typography -------- \
+
+// States
+//---------------------------------- //
+@each $state, $color in $states {
+    .form__field__#{$state} {
+        [type="color"],
+        [type="date"],
+        [type="datetime-local"],
+        [type="email"],
+        [type="month"],
+        [type="number"],
+        [type="password"],
+        [type="search"],
+        [type="submit"],
+        [type="tel"],
+        [type="text"],
+        [type="time"],
+        [type="url"],
+        [type="week"],
+        select,
+        textarea {
+            border-color: $color;
+            color: $color;
+        }
+
+        .form__field__label,
+        .form__field__message {
+            color: $color;
+        }
+    }
+}
+// ------- End of States -------- \
+
+// Custom form : Checkbox, radio & switch
+//---------------------------------- //
+.checkbox {
+    border-radius: 4px;
+  }
+
+  .switch {
+    border-radius: 3em;
+  }
+
+  .radio {
+    border-radius: 50%;
+  }
+
+  .switch,
+  .checkbox,
+  .radio {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    vertical-align: text-bottom;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .switch ~ label,
+  .checkbox ~ label,
+  .radio ~ label {
+    cursor: pointer;
+  }
+
+  .switch::-ms-check,
+  .checkbox::-ms-check,
+  .radio::-ms-check {
+    display: none;
+  }
+
+  .switch {
+    width: 4rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 70%;
+    -webkit-box-shadow: inset -2rem 0 0 #333, inset 0 0 0 1px #333;
+            box-shadow: inset -2rem 0 0 #333, inset 0 0 0 1px #333;
+    -webkit-transition: -webkit-box-shadow .15s;
+    transition: -webkit-box-shadow .15s;
+    transition: box-shadow .15s;
+    transition: box-shadow .15s, -webkit-box-shadow .15s;
+    background-color: #fff;
+  }
+
+  .switch::before, .switch::after {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .switch::before {
+    content: "✕";
+    float: right;
+    margin-right: 0.66667rem;
+  }
+
+  .switch:checked {
+    -webkit-box-shadow: inset 2rem 0 0 #5CB85C, inset 0 0 0 1px #5CB85C;
+            box-shadow: inset 2rem 0 0 #5CB85C, inset 0 0 0 1px #5CB85C;
+  }
+
+  .switch:checked::before {
+    content: "✓";
+    float: left;
+    margin-left: 0.66667rem;
+  }
+
+  .checkbox {
+    width: 2rem;
+    height: 2rem;
+    -webkit-box-shadow: inset 0 0 0 1px #333;
+            box-shadow: inset 0 0 0 1px #333;
+    background-color: #fff;
+    -webkit-transition: background-color .15s;
+    transition: background-color .15s;
+  }
+
+  .checkbox:checked {
+    background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220%22%20y%3D%220%22%20viewBox%3D%220%200%208%208%22%20enable-background%3D%22new%200%200%208%208%22%20xml%3Aspace%3D%22preserve%22%3E%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M6.4%2C1L5.7%2C1.7L2.9%2C4.5L2.1%2C3.7L1.4%2C3L0%2C4.4l0.7%2C0.7l1.5%2C1.5l0.7%2C0.7l0.7-0.7l3.5-3.5l0.7-0.7L6.4%2C1L6.4%2C1z%22%20%2F%3E%0A%3C%2Fsvg%3E");
+    background-size: 60% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+  }
+
+  .radio {
+    width: 2rem;
+    height: 2rem;
+    background-size: 0% 0%;
+    -webkit-transition: background-size .15s;
+    transition: background-size .15s;
+    -webkit-box-shadow: inset 0 0 0 1px #333;
+            box-shadow: inset 0 0 0 1px #333;
+    background-color: #fff;
+  }
+
+  .radio:checked {
+    background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3Csvg%20version%3D%221.1%22%20width%3D%22100%22%20height%3D%22100%22%0AviewBox%3D%220%200%2080%2080%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%2240%22%20r%3D%2224%22%20style%3D%22fill%3A%23333333%22/%3E%3C/svg%3E");
+    background-size: 90% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+  }
+// ------- End of Custom form -------- \
+
+// ------- End of FORMS -------- \

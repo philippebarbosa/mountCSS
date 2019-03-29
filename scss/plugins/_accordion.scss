@@ -1,0 +1,57 @@
+// ****************************************************************
+// _accordion
+// ****************************************************************
+
+.accordion {
+//   max-width: 800px;
+//   border-top: 1px solid $border_color;
+}
+
+.accordion li {
+  border: 1px solid $border_color;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: $grid_gutter;
+}
+
+.accordion li p {
+  display: none;
+  padding: $grid_gutter $grid_gutter ($grid_gutter * 2);
+  // color: #6b97a4;
+}
+
+.accordion a {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding: 1rem 1.5rem;
+  color: $primary;
+  font-weight: $regular;
+  &.active {
+    font-weight: $bold;
+  }
+}
+
+.accordion a:after {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #4a6e78;
+  border-bottom: 2px solid #4a6e78;
+  position: absolute;
+  right: $grid_gutter;
+  content: " ";
+  top: 2.5rem;
+  transform: rotate(-45deg);
+}
+
+.accordion p {
+  padding: 2rem 0;
+}
+
+a.active:after {
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+// ------- End of accordion -------- \

@@ -1,6 +1,3 @@
-console.log("plugin works !");
-console.log("plugin works too !");
-
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___

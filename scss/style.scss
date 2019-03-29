@@ -7,11 +7,11 @@
 @import 'utils/font_stacks';
 @import 'utils/colors';
 @import 'utils/mixins';
-@import 'vendors/reboot';
 
 @import 'variables';
 
 @import 'base/fontface';
+@import 'base/reboot';
 @import 'base/defaults';
 @import 'base/grid';
 @import 'base/typography';
@@ -24,7 +24,6 @@
 @import 'components/distribution';
 @import 'components/media-object';
 @import 'components/visibility';
-
 @import 'components/hero';
 @import 'components/section';
 @import 'components/block';
@@ -34,4 +33,30 @@
 @import 'components/svg';
 @import 'components/data-table';
 @import 'components/logolist';
+
+@import 'vendors/slickjs';
+
+@import 'plugins/accordion';
+
+
+// ****************************************************************
+// You project theme
+// ****************************************************************
+
+@import 'theme/base/defaults';
+@import 'theme/base/typography';
+@import 'theme/base/list';
+@import 'theme/base/forms';
+@import 'theme/base/button';
+@import 'theme/base/tables';
+
+@import 'theme/components/block';
+@import 'theme/components/hero';
+@import 'theme/components/pagination';
+@import 'theme/components/svg';
+@import 'theme/components/section';
+
+@import 'theme/pages/home';
+@import 'theme/pages/contact';
+// ------- End of You project theme -------- \
 

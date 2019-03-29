@@ -1,0 +1,42 @@
+
+// ****************************************************************
+// _Defaults
+// ****************************************************************
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering:optimizeLegibility;
+}
+
+html {
+  font-size: $html_font_size;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: $base_font_weight $base_font_size $base_font_family;
+  line-height: $base_line_height;
+  background: $base_background_color;
+  color: $base_font_color;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.wrap {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    background-color: $base_background_color;
+}

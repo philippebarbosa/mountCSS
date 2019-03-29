@@ -1,0 +1,65 @@
+// ****************************************************************
+// _Tables
+// ****************************************************************
+
+
+/**
+ * Core styles
+ */
+table {
+  border-collapse: collapse;
+  margin: $base_font_size 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid darken($base_border_color, 15%);
+  font-weight: $bold;
+  padding: ($base_font_size / 2);
+  text-align: left;
+}
+
+td {
+  border: $base_border_color;
+  padding: ($base_font_size / 2);
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+
+/**
+ * Classic and hover theme
+ */
+.table__basic,
+.table__basic__hover {
+    color: #333;
+    background: $white;
+    border: 1px solid #d0d0d0;
+    tr,
+    td,
+    th {
+        border: 1px solid #d0d0d0;
+    }
+
+    tbody tr,
+    tbody td,
+    tbody th {
+        border: 1px solid #e0e0e0;
+    }
+}
+
+.table__basic__hover tr:hover {
+    color: #000;
+    background: #fafafa;
+}
+
+.table__basic__hover th {
+    background: #f0f0f0;
+}
+
+
