@@ -7,7 +7,7 @@
 
 $block_padding: 3rem;
 $block_border_radius: $border_radius;
-$block_box_shadow: 0 0 5px $gray;
+$block_box_shadow: $box_shadow;
 $block_color: $black;
 
 .block {
@@ -41,3 +41,10 @@ $block_color: $black;
 
 // THEME
 //---------------------------------- //
+
+@each $theme, $color in $themes {
+    .block__#{$theme} {
+        background-color: $color;
+        // color: $base_background_color;
+    }
+}

@@ -6,34 +6,41 @@
 $primary               : $turquoise;
 $secondary             : $purple;
 $tertiary              : $deep_blue;
-// $quartery              : $purple;
+$quartery              : $purple;
 $inverse               : $white;
+$dark                  : $black_faded;
+$light                 : $gray;
 
-// DEFAULTS SIZES
-$html_font_size        : 62.5%;
-$base_font_weight      : 400;
-$base_font_size        : 1.6rem;
-$base_line_height      : 1.4;
+// DEFAULT THEME MISC
 $base_background_color : $inverse;
-
-// DEFAULTS COLORS
-$dark: $black;
-$light: $gray;
 $border_color: $gray;
+$border_style : 1px solid $light;
+$border_radius : 0;
+$box_shadow: 0 0 5px $light;
+
 
 // COLOR SCHEME GENERATOR
 $themes: (
   'primary': $primary,
   'secondary': $secondary,
   'tertiary': $tertiary,
-  'inverse': $base_background_color
+  'inverse': $base_background_color,
+  'light': $light,
+  'dark': $dark
 );
 
 $states: (
   'valid': $green,
   'error': $red,
-  'info': $blue
+  'info': $orange
 );
+
+// DEFAULTS SIZES
+$html_font_size        : 62.5%;
+$base_font_weight      : 400;
+$base_font_size        : 1.6rem;
+$base_line_height      : 1.4;
+
 
 // GRID
 $grid_gutter           : 1.6rem;
@@ -87,16 +94,9 @@ $text_decoration_hover : none;
 $x_spacing             : $grid_gutter;
 $y_spacing             : $grid_gutter;
 
-// BORDER
-$base_border_color : $gray;
-
 // BORDER RADIUS
-$border_radius : 3px;
 $form_border_radius: $border_radius;
 $btn_border_radius: $border_radius;
-
-// BOX SHADOW
-$border_radius : 3px;
 
 // Buttons
 $button_font_family : $base_font_family;

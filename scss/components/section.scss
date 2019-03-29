@@ -43,6 +43,6 @@ $section_footer_margin: 3rem 0;
 @each $theme, $color in $themes {
     .section__#{$theme} {
         background-color: $color;
-        color: $base_background_color;
+        // color: $base_background_color;
     }
 }

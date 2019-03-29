@@ -14,14 +14,14 @@ table {
 }
 
 th {
-  border-bottom: 1px solid darken($base_border_color, 15%);
+  border-bottom: 1px solid darken($border_color, 15%);
   font-weight: $bold;
   padding: ($base_font_size / 2);
   text-align: left;
 }
 
 td {
-  border: $base_border_color;
+  border: $border_color;
   padding: ($base_font_size / 2);
 }
 
