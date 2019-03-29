@@ -23,10 +23,10 @@ var app = {
         // Classic slider
         $('.jsSlider').slick({
             dots: true,
-            fade: true,
-            autoplay:true,
-            autoplaySpeed: 5000,
-            arrow: false,
+            // fade: true,
+            // autoplay:true,
+            // autoplaySpeed: 5000,
+            arrow: true,
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1
@@ -59,6 +59,7 @@ var app = {
 
     start: function() {
         app.header();
+        app.goTop();
         app.sliders();
         app.accordion();
     },

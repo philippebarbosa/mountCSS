@@ -1,0 +1,32 @@
+// ****************************************************************
+// Modals
+// ****************************************************************
+
+// Vendor overrides
+//---------------------------------- //
+.remodal-overlay {
+    background: transparentize($dark, .2)
+}
+// ------- End of Vendor overrides -------- \
+
+// Structure
+//---------------------------------- //
+.modal__header {
+    display: block;
+    margin-bottom: $grid_gutter;
+    padding-bottom: $grid_gutter;
+    border-bottom: 1px solid $border_color;
+}
+
+.modal__content {
+    display: block;
+    margin-bottom: $grid_gutter * 2;
+}
+// ------- End of Structure -------- \
+
+// Typography
+//---------------------------------- //
+
+// ------- End of Typography -------- \
+
+// ------- End of Modals -------- \
