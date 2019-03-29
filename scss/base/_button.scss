@@ -1,9 +1,7 @@
 // ****************************************************************
 // _button
 // ****************************************************************
-.btn,
-input:not([type=checkbox]):not([type=radio]),
-button {
+.btn {
     font-family: $button_font_family;
     font-size: $button_font_size;
     background-color: $button_background_color;
