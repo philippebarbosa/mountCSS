@@ -202,6 +202,12 @@ pre > p {
   }
 }
 
+@each $state, $color in $states {
+    .text__#{$state} {
+        color: $color;
+    }
+}
+
 @each $theme, $color in $themes {
   .link__#{$theme} {
     color: $color;
