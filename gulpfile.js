@@ -91,6 +91,11 @@ gulp.task('browser-sync', function() {
             baseDir: "./"
         }
     });
+
+    // browserSync.init({
+    //     proxy: "yourlocal.dev"
+    // });
+
 });
 
  /**
