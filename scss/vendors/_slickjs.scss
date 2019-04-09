@@ -12,6 +12,10 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    padding: 0 ($grid_gutter);
+    @media (min-width : $desktop ) {
+        padding: 0 0;
+    }
 }
 .slick-list {
     position: relative;
