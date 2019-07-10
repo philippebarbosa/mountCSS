@@ -69,6 +69,9 @@ var app = {
 
     mobileStart: function() {
         console.log('It\'s a mobile !');
+
+        // Header : Remove disabled class that allow dropdowns to behave with hover
+        // $('.has_submenu_link').removeClass('disabled');
     }
   }
 
