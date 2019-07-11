@@ -4,7 +4,7 @@
   "description": "mountCSS is a SCSS starter and small component library to quickstart your websites.",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
-    "browser-sync": "^2.12.3",
+    "browser-sync": "^2.26.7",
     "css-mqpacker": "^4.0.0",
     "csswring": "^4.0.0",
     "gulp": "^3.9.1",
