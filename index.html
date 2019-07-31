@@ -16,6 +16,12 @@
             padding: 5%;
             max-width: 1000px;
         }
+        .wrap ul li * {
+            font-size: 14px;
+        }
+        .page_todo {
+            opacity: 0.2;
+        }
     </style>
 </head>
 <body>
@@ -29,7 +35,9 @@
 
     <ul>
         <li>
-            Usefull links for your project :
+            <h6>
+                Usefull links for your project :
+            </h6>
             <ul>
                 <li>
                     <a href="/_html5testpage.html">HTML 5 test page</a>
@@ -42,6 +50,29 @@
                 </li>
                 <li>
                     <a href="/_styleguide_javascript.html">Framework javascript items styleguide</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <hr>
+        </li>
+        <li>
+            <h6>
+                PAGES
+            </h6>
+            <ul>
+                <li>
+                    <a class="text__dark" href="./views/01-home/01-home.php">Homepage</a>
+                    <strong class="text__info">wip</strong>
+                </li>
+                <li class="page_todo">
+                    <a class="text__dark" href="./views/00-blank/00-blank.php">Page name</a>
+                </li>
+                <li class="page_todo">
+                    <a class="text__dark" href="./views/00-blank/00-blank.php">Page name</a>
+                </li>
+                <li class="page_todo">
+                    <a class="text__dark" href="./views/00-blank/00-blank.php">Page name</a>
                 </li>
             </ul>
         </li>
